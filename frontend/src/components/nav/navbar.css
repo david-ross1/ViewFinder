@@ -1,0 +1,116 @@
+@fontface {
+  font-family: 'Offside', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+}
+
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background: #ecd49c;
+}
+
+.NavBar button {
+  height: 20px;
+}
+
+.Links1 {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.Links2 {
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+* {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.chirper {
+  background: #ecd49c;
+  text-align: center;
+  color: black;
+   font-family: 'Offside', cursive;
+  padding-top: 6px;
+  font-size: 50px; 
+}
+
+.tlink {
+  padding: 20px;
+}
+
+.link {
+  color: white;
+}
+
+.session-button {
+  padding: 3px;
+}
+
+.submit,
+.logout,
+.session-button {
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #1d60e0;
+  height: 30px;
+  width: 90px;
+  color: white;
+  font-size: 14px;
+}
+
+.submit:hover,
+.logout:hover,
+.session-button:hover {
+  background: #107cff;
+  cursor: pointer;
+}
+
+.logout {
+  float: right;
+}
+
+.comment-links {
+  width: 100%;
+}
+
+
+.logout-button {
+  padding-right: 20px;
+}
+
+button {
+  all: unset;
+  color: blue;
+  -webkit-text-fill-color: blue;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  font: 14px;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button:focus {
+  outline: orange 5px auto;
+}
+
+.link {
+  color: white;
+}
+
+a.link {
+  padding: 10px;
+}
+
+.t-link {
+  display: flex;
+  justify-content: space-around;
+}

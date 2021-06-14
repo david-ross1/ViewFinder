@@ -1,0 +1,54 @@
+.login-form {
+  margin: 20px; 
+
+}
+
+.submit {
+  border-radius: 10px; 
+  margin-top: 20px; 
+  background: 008FB8;
+  height: 30px; 
+  width: 70px; 
+  margin-bottom: 15px; 
+}
+
+.submit:hover {
+  background: #1D60E0;
+  cursor: pointer 
+}
+
+.login-form-container {
+  margin-top: 30px; 
+  background: #008FB8;
+  border-radius: 10px; 
+}
+
+.session-container {
+  /* border: 20px solid gray; */
+}
+
+.login-form input {
+  margin: 10px; 
+  padding: 5px; 
+  border-radius: 5px;
+  
+
+	border: none;
+	padding: 5px;
+	font: 14px;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+button {
+  all: unset;
+  color: blue;
+  -webkit-text-fill-color: blue;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: orange 5px auto;
+}
+
