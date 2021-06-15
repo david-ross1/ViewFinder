@@ -35,13 +35,14 @@ class Photoapp2 extends Component {
 
   render() {
     return (
-      <div className="photo-upload-container">
-        <div className="photo-upload">
+      <div className="photo-upload-wrapper">
+        <div className="photo-upload-container">
+          <div className="photo-upload">
             <h3 className="photo-text">Upload photo</h3>
           </div>
           <input type="file" onChange={this.upload} />
         </div>
-
+      </div>
     );
   }
 }

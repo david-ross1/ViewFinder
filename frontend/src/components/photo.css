@@ -10,6 +10,8 @@
   border: 2px solid rgb(168, 187, 104);
   border-radius: 20px;
   padding: 10px;
+  background: #008FB8; 
+  opacity: 70%;
 }
 
 .photo-upload {
@@ -21,4 +23,8 @@
   font-weight: bold; 
   font-family: 'Offside', cursive;
   margin-bottom: 3px; 
+}
+
+.photo-upload-wrapper {
+  margin-left: 20px;
 }
