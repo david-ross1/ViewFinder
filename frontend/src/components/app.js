@@ -17,8 +17,6 @@ const App = () => (
   <div>
     <NavBarContainer />
     <PhotoApp2 />
-    <br></br> <br></br> <br></br> <br></br>
-    <PhotoApp />
     <Switch>
       <AuthRoute exact path="/" component={MainPage} />
       <AuthRoute exact path="/login" component={LoginFormContainer} />
