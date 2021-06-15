@@ -3,3 +3,14 @@
  .footer {
    font-family: 'Vast Shadow', cursive;
  }
+
+ .map-container {
+   border-radius: 5px;
+   border: 1px solid grey;
+ }
+
+ .mapboxgl-map {
+   height: 500px;
+   width: 800px;
+   margin: 0 auto;
+ }
