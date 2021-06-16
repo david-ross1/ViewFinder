@@ -1,7 +1,7 @@
 import React , { Component } from 'react'; 
 // import S3FileUpload from 'react-s3'
 import S3 from "react-aws-s3";
-import { awsAccessKeyId, awsSecretAccessKey } from "../config/keys"; 
+import { awsAccessKeyId, awsSecretAccessKey } from "../config1/keys"; 
 import './photo.css'
 
 const config = {
