@@ -1,8 +1,10 @@
 /node_modules
 /frontend/node_modules
 /config/keys_dev.js
-/frontend/src/config/keys_dev.js
-config/keys_dev.js
-frontend/src/config/keys_dev.js
 
-/frontend/src/config1/keys_dev.js
+config/keys_dev.js
+config/keys_prod.js
+frontend/src/config1/keys_prod.js
+
+frontend/src/config1/keys_dev.js
+  
