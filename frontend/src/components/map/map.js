@@ -40,8 +40,8 @@ const Map = () => {
     if(map.current) {return;}
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75",
-      center: [lng,lat],
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [lng, lat],
       zoom: zoom,
     });
     const navControl = new mapboxgl.NavigationControl();
