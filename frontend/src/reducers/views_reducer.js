@@ -10,9 +10,7 @@ const ViewsReducer = (state = {
   switch (action.type) {
     case RECEIVE_VIEWS:
       newState = Object.assign({},state);
-      action.views.forEach(view => {
-        newState.map[view.id] = view;
-      });
+      newState.map = action.geoJSON;
       return newState;
     case RECEIVE_FULL_VIEW_DATA:
       newState = Object.assign({},state);

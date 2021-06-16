@@ -4,9 +4,9 @@ export const RECEIVE_VIEWS = "RECEIVE_VIEWS";
 
 export const RECEIVE_FULL_VIEW_DATA = "RECEIVE_VIEW_DATA";
 
-export const recieveViews = (views) => ({
+export const recieveGeoJSON = (geoJSON) => ({
   type: RECEIVE_VIEWS,
-  views,
+  geoJSON,
 });
 
 export const receiveFullViewData = (view) => ({
