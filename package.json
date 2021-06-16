@@ -13,8 +13,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "browserslist": [
-    "defaults",
-    "not IE 11"
+    ">0.2%", "not dead", "not ie 11", "not chrome < 51", "not safari < 10"
   ],
   "repository": {
     "type": "git",
