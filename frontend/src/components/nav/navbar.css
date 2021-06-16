@@ -9,7 +9,6 @@
 
 
 
-
 .NavBar {
   display: flex;
   justify-content: space-between;
@@ -196,4 +195,15 @@ a.link {
 
 .loogo {
   /* margin: 50px; */
+}
+
+.logout {
+  background: none;
+  font-size: 27px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.logout:hover {
+  background-color: transparent;
 }

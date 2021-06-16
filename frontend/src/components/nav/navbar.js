@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import {FaUserCircle} from "react-icons/fa"
+import {FaUserCircle, FaUserLock } from "react-icons/fa"
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -33,7 +33,7 @@ class NavBar extends React.Component {
               </Link>
               <div className="logout-button">
                 <button className="logout" onClick={this.logoutUser}>
-                  Logout
+                <FaUserLock/>
                 </button>
               </div>
             </div>
