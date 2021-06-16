@@ -1,8 +1,11 @@
 import React, {useEffect, useRef, useState} from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
+const keys = require("../../config1/keys");
+// mapboxgl.accessToken = keys.mapboxAPI;
+mapboxgl.accessToken =
+  'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3BxNWUxbzAwY3hyMndsNzhteDl0bG5qIn0.bA15b2XeJm1u4JWxQgCJzA';
 
-mapboxgl.accessToken = require("../../config1/keys").mapboxAPI;
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;
@@ -38,8 +41,8 @@ const Map = () => {
     if(map.current) {return;}
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75",
-      center: [lng,lat],
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [lng, lat],
       zoom: zoom,
     });
     const navControl = new mapboxgl.NavigationControl();

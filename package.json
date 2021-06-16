@@ -1,7 +1,7 @@
 {
-  "name": "view-finder-2",
+  "name": "view-finder",
   "version": "1.0.0",
-  "description": "david's view-finder",
+  "description": "awesome view finder",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -18,14 +18,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/david-ross1/view-finder-2.git"
+    "url": "git+https://github.com/david-ross1/view-finder.git"
   },
   "author": "dr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/david-ross1/view-finder-2/issues"
+    "url": "https://github.com/david-ross1/view-finder/issues"
   },
-  "homepage": "https://github.com/david-ross1/view-finder-2#readme",
+  "homepage": "https://github.com/david-ross1/view-finder#readme",
   "dependencies": {
     "aws-sdk": "^2.928.0",
     "bcryptjs": "^2.4.3",
