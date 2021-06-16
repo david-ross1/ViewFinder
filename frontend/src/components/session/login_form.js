@@ -1,6 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "./session.css";
+
+
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +40,7 @@ class LoginForm extends React.Component {
 
   demoUser(e) {
     e.preventDefault();
-    const user = {email:'Demo@demo.com', password: '123456'};
+    const user = {email:'demo@demo.com', password: '123456'};
     this.props.login(user).then(this.props.closeModal)
   }
 
