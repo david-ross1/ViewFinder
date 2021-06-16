@@ -22,9 +22,6 @@ const App = () => (
     <PhotoApp2 />
     <Switch>
       <AuthRoute exact path="/" component={MainPage} />
-      <AuthRoute exact path="/login" component={LoginFormContainer} />
-      <AuthRoute exact path="/signup" component={SignupFormContainer} />
-
       <ProtectedRoute exact path="/comments" component={CommentsContainer} />
       <ProtectedRoute exact path="/profile" component={ProfileContainer} />
       <ProtectedRoute
