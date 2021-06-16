@@ -1,6 +1,6 @@
 import React from "react";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
-import { Switch } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import NavBarContainer from "./nav/navbar_container";
 
 import CommentsContainer from "./comments/comments_container";
@@ -21,7 +21,7 @@ const App = () => (
     <NavBarContainer />
     <PhotoApp2 />
     <Switch>
-      <AuthRoute exact path="/" component={MainPage} />
+      <Route exact path="/" component={MainPage} />
       <ProtectedRoute exact path="/comments" component={CommentsContainer} />
       <ProtectedRoute exact path="/profile" component={ProfileContainer} />
       <ProtectedRoute
