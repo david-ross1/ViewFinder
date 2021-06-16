@@ -22,7 +22,7 @@ class Comment extends React.Component {
 
   render() {
     if (this.state.comments.length === 0) {
-      return <div>There are no Comments</div>;
+      return <div className='comment-text'>Be the first to comment</div>;
     } else {
       return (
         <div className="comment-header">

@@ -7,5 +7,3 @@ module.exports = {
   awsBucketName: process.env.AWS_BUCKET_NAME,
   awsRegion: process.env.AWS_REGION,
 };
-
-

@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore({});
   }
   const root = document.getElementById('root');
-  document.body.style = "background: #B6A328";
+  // document.body.style = "background: #B6A328";
+  document.body.style =
+    "background-image: url(https://view-finder.s3.us-west-1.amazonaws.com/06_SF_USSMemorial1.JPG";
 
   ReactDOM.render(<Root store={store} />, root);
 });
