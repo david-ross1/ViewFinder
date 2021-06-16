@@ -1,7 +1,7 @@
 {
-  "name": "mern-twitter-2",
+  "name": "view-finder-2",
   "version": "1.0.0",
-  "description": "david's mern-twitter",
+  "description": "david's view-finder",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -12,16 +12,20 @@
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/david-ross1/mern-twitter-2.git"
+    "url": "git+https://github.com/david-ross1/view-finder-2.git"
   },
   "author": "dr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/david-ross1/mern-twitter-2/issues"
+    "url": "https://github.com/david-ross1/view-finder-2/issues"
   },
-  "homepage": "https://github.com/david-ross1/mern-twitter-2#readme",
+  "homepage": "https://github.com/david-ross1/view-finder-2#readme",
   "dependencies": {
     "aws-sdk": "^2.928.0",
     "bcryptjs": "^2.4.3",
