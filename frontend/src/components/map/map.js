@@ -1,8 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
-
-mapboxgl.accessToken = require("../../config1/keys").mapboxAPI;
+const keys = require("../../config1/keys");
+mapboxgl.accessToken = keys.mapboxAPI;
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;
