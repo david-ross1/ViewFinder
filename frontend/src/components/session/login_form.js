@@ -11,8 +11,10 @@ class LoginForm extends React.Component {
       errors: {},
     };
 
+    this.demoUser = this.demoUser.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
+    this.otherForm = this.otherForm.bind(this)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -30,6 +32,16 @@ class LoginForm extends React.Component {
       });
   }
 
+  otherForm() {
+    this.props.otherForm()
+  }
+
+  demoUser(e) {
+    e.preventDefault();
+    const user = {email:'Demo@demo.com', password: '123456'};
+    this.props.login(user).then(this.props.closeModal)
+  }
+
   handleSubmit(e) {
     e.preventDefault();
 
@@ -38,7 +50,7 @@ class LoginForm extends React.Component {
       password: this.state.password,
     };
 
-    this.props.login(user);
+    this.props.login(user).then(this.props.closeModal);
   }
 
   renderErrors() {
@@ -55,15 +67,19 @@ class LoginForm extends React.Component {
     return (
       <div className="login-form-container">
         <div className="login-form">
+          <button className='test-button' onClick={this.otherForm}>Sign Up</button> 
           <form onSubmit={this.handleSubmit}>
             <div className="input">
               <br />
-              <input
-                type="text"
-                value={this.state.email}
-                onChange={this.update("email")}
-                placeholder="Email"
-              />
+              <label>Email:
+                <input
+                  type="text"
+                  value={this.state.email}
+                  onChange={this.update("email")}
+                  placeholder="Email"
+                />
+              </label>
+              
               <br />
               <input
                 type="password"
@@ -75,6 +91,13 @@ class LoginForm extends React.Component {
               <input className="submit" type="submit" value="Submit" />
               {this.renderErrors()}
             </div>
+            <div className='demo-button'>                     
+            <button
+              onClick={this.demoUser}
+              className="demo-submit"
+              >Demo Login
+            </button>
+          </div>
           </form>
         </div>
       </div>

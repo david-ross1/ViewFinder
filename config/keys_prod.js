@@ -8,3 +8,6 @@ module.exports = {
   awsRegion: process.env.AWS_REGION,
   mapboxAPI: process.env.MAPBOX_API,
 };
+
+
+
