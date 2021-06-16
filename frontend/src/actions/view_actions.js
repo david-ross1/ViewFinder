@@ -4,7 +4,7 @@ export const RECEIVE_VIEWS = "RECEIVE_VIEWS";
 
 export const RECEIVE_FULL_VIEW_DATA = "RECEIVE_VIEW_DATA";
 
-export const recieveGeoJSON = (geoJSON) => ({
+export const receiveGeoJSON = (geoJSON) => ({
   type: RECEIVE_VIEWS,
   geoJSON,
 });
@@ -14,7 +14,7 @@ export const receiveFullViewData = (view) => ({
   view,
 });
 
-export const fetchViews = () => dispatch => ViewApiUtil.getViews().then(views => dispatch(receiveViews(views)));
+export const fetchViews = () => dispatch => ViewApiUtil.getViews().then(views => dispatch(receiveGeoJSON(views)));
 
 export const fetchView = id => dispatch => ViewApiUtil.getView(id).then(view => dispatch(receiveFullViewData(view)));
 
