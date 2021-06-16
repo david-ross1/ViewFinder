@@ -31,7 +31,9 @@
 .Links2 {
   margin: 0px;
   display: flex;
-  justify-content: space-around;
+  padding-right: 25px;
+  margin-bottom: 5px;
+  justify-content: flex-end;
     background:
 	repeating-linear-gradient(
 		50deg,

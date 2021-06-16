@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import {FaUserCircle} from "react-icons/fa"
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -44,7 +45,7 @@ class NavBar extends React.Component {
         <div className="session-container">
           <div className="NavBar Links2">
             
-            <button onClick={() => openModal('login')} className='nav-button-login'>Login</button>
+            <button onClick={() => openModal('login')} className='nav-button-login'><FaUserCircle/></button>
             
           </div>
         </div>
