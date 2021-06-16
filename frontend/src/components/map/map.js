@@ -6,6 +6,8 @@ const keys = require("../../config1/keys");
 mapboxgl.accessToken =
   'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3BxNWUxbzAwY3hyMndsNzhteDl0bG5qIn0.bA15b2XeJm1u4JWxQgCJzA';
 
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;
