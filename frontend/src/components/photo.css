@@ -1,0 +1,30 @@
+@fontface {
+  font-family: 'Offside', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+}
+
+
+.photo-upload-container {
+  width: 200px;
+  height: 100px;  
+  border: 2px solid rgb(168, 187, 104);
+  border-radius: 20px;
+  padding: 10px;
+  background: #008FB8; 
+  opacity: 70%;
+}
+
+.photo-upload {
+  border-bottom: 2px solid black; 
+  padding: 10px; 
+}
+
+.photo-text {
+  font-weight: bold; 
+  font-family: 'Offside', cursive;
+  margin-bottom: 3px; 
+}
+
+.photo-upload-wrapper {
+  margin-left: 20px;
+}
