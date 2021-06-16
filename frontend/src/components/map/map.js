@@ -12,7 +12,7 @@ const [locLng,locLat] = [-122.250,37.807];
 //   [-120.679,36.474]
 // ];
 
-const Map = () => {
+const Map = ({geoJSON,focusId}) => {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(locLng);
@@ -57,10 +57,6 @@ const Map = () => {
   return (
     <div className="App">
       <div ref={mapContainer} className="map-container">
-        {/* <div className="button-container">
-          <button onClick={zoomIn}>+</button>
-          <button onClick={zoomOut}>-</button>
-        </div> */}
       </div>
     </div>
   );
