@@ -15,6 +15,7 @@ class NavBar extends React.Component {
   }
 
   getLinks() {
+    let {openModal} = this.props
     if (this.props.loggedIn) {
       return (
         <div className="NavBar">
@@ -42,17 +43,9 @@ class NavBar extends React.Component {
       return (
         <div className="session-container">
           <div className="NavBar Links2">
-            <button className="session-button">
-              {" "}
-              <Link className="link" to={"/signup"}>
-                Signup
-              </Link>{" "}
-            </button>
-            <button className="session-button">
-              <Link className="link" to={"/login"}>
-                Login
-              </Link>
-            </button>
+            
+            <button onClick={() => openModal('login')} className='nav-button-login'>Login</button>
+            
           </div>
         </div>
       );
