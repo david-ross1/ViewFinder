@@ -16,6 +16,7 @@ const ViewsReducer = (state = {
       newState = Object.assign({},state);
       newState.sidebar = action.view;
       newState.focusId = action.view.id;
+      return newState;
     default:
       return state;
   }
