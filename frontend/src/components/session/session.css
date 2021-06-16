@@ -22,7 +22,7 @@
   background: #008FB8;
   opacity: 87%;
   border-radius: 10px; 
-  width: 210px;
+  width: auto;
 }
 
 .session-container {
