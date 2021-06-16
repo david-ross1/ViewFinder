@@ -12,7 +12,8 @@ class SignupForm extends React.Component {
       password2: '',
       errors: {}
     };
-
+    
+    this.otherForm = this.otherForm.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
   }
@@ -23,6 +24,10 @@ class SignupForm extends React.Component {
     }
 
     this.setState({errors: nextProps.errors})
+  }
+
+  otherForm() {
+    this.props.otherForm()
   }
 
   update(field) {
@@ -40,7 +45,7 @@ class SignupForm extends React.Component {
       password2: this.state.password2
     };
 
-    this.props.signup(user, this.props.history); 
+    this.props.signup(user).then(this.props.closeModal); 
   }
 
   renderErrors() {
@@ -57,10 +62,16 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      <div className="login-wrapper">
-        <div className="login-form-container">
-          <form onSubmit={this.handleSubmit}>
-            <div className="login-form">
+      
+      <div className="login-form-container">
+        <div className='login-head'>
+          <button className='sign-button' onClick={this.otherForm}><p className='button-text'>Sign Up</p></button>
+          <button className='close-button' onClick={this.props.closeModal}>X</button>
+        </div>
+        <form className="session-form-sign" onSubmit={this.handleSubmit}>
+          <div className="login-form">
+            <div className="input">
+              <label>Email:</label>
               <br />
               <input
                 type="text"
@@ -68,13 +79,23 @@ class SignupForm extends React.Component {
                 onChange={this.update("email")}
                 placeholder="Email"
               />
+            </div>  
               <br />
+            <div className="input">
+            
+              <label>Name:</label> 
+              <br />  
               <input
                 type="text"
                 value={this.state.name}
                 onChange={this.update("name")}
                 placeholder="Name"
               />
+            </div>
+              <br />
+            <div className="input">
+            
+              <label>Password:</label>
               <br />
               <input
                 type="password"
@@ -82,20 +103,26 @@ class SignupForm extends React.Component {
                 onChange={this.update("password")}
                 placeholder="Password"
               />
-              <br />
+            </div>
+            <br />
+            <div className="input">
+            
+              <label>Re-enter password:</label>
+              <br />  
               <input
                 type="password"
                 value={this.state.password2}
                 onChange={this.update("password2")}
                 placeholder="Confirm Password"
               />
-              <br />
-              <input className="submit" type="submit" value="Submit" />
-              {this.renderErrors()}
             </div>
-          </form>
-        </div>
+            <br />
+            <input className="submit" type="submit" value="Submit" />
+            {this.renderErrors()}
+          </div>
+        </form>
       </div>
+      
     );
   }
 }

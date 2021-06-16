@@ -15,45 +15,39 @@ class Footer extends React.Component {
                         <div className="footer-column">
                             <h3 className="footer-header">Jonathan Hill</h3>
                             <ul className="footer-list">
-                                <br/>
                                 <p><a href={"https://github.com/kerapace"} className='footer-links'><img className="footer-logo"src={github}  />GitHub</a></p>
-                                <br/>
+                                <p className='text-block'><img className="footer-logo" src={linkedin} /> Coming soon</p>
                                 
-                                <p><img className="footer-logo" src={linkedin} />Coming soon</p>
-                                <br/>
                             </ul>
                         </div>
                         <div className="footer-column">
                             <h3 className="footer-header">David Ross</h3>
                             <ul className="footer-list">
-                                <br/>
                                 <p><a href={"https://github.com/david-ross1"} className='footer-links'><img className="footer-logo"src={github}  />GitHub</a></p>
-                                <br/>
-                                
-                                <p><img className="footer-logo" src={linkedin} />Coming soon</p>
-                                <br/>
+                                <p className="text-block"><img className="footer-logo" src={linkedin} /> Coming soon</p>
+
                             </ul>
                         </div>
                         <div className="footer-column">
                             <h3 className="footer-header">Mohammad Ali</h3>
                             <ul className="footer-list">
-                                <br/>
+
                                 <p><a href={"https://github.com/mataghva"} className='footer-links'><img className="footer-logo"src={github}  />GitHub</a></p>
-                                <br/>
+
                                 
                                 <p><a href={"www.linkedin.com/in/mohammad-ali-taghva-4b06b237"} className='footer-links'><img className="footer-logo" src={linkedin} />LinkedIn</a></p>
-                                <br/>
+
                             </ul>
                         </div>
                         <div className="footer-column">
                             <h3 className="footer-header">Alfredo Ramirez Mendez</h3>
                             <ul className="footer-list">
-                                <br/>
+
                                 <p><a href={"https://github.com/alfredorz6"} className='footer-links'><img className="footer-logo" src={github}  />GitHub</a></p>
-                                <br/>
+
                                 
                                 <p><a href={"https://www.linkedin.com/in/alfredo-alejandro-ramirez-mendez-7aa552129/"} className='footer-links'><img className="footer-logo" src={linkedin} />LinkedIn</a></p>
-                                <br/>
+ 
                             </ul>
                         </div>
                     </div>
