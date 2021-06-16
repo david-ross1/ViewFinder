@@ -1,7 +1,7 @@
 {
-  "name": "mern-twitter-2",
+  "name": "view-finder",
   "version": "1.0.0",
-  "description": "david's mern-twitter",
+  "description": "awesome view finder",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -19,9 +19,9 @@
   "author": "dr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/david-ross1/mern-twitter-2/issues"
+    "url": "https://github.com/david-ross1/view-finder/issues"
   },
-  "homepage": "https://github.com/david-ross1/mern-twitter-2#readme",
+  "homepage": "https://github.com/david-ross1/view-finder#readme",
   "dependencies": {
     "aws-sdk": "^2.928.0",
     "bcryptjs": "^2.4.3",
