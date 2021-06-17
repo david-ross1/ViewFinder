@@ -11,6 +11,7 @@ const MIN_ZOOM = 7;
 const [locLng,locLat] = [-122.250,37.807];
 // const maxBounds = [
 //   [-123.956,38.999],
+
 //   [-120.679,36.474]
 // ];
 

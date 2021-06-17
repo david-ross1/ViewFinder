@@ -1,7 +1,7 @@
 {
-  "name": "mern-twitter-2",
+  "name": "view-finder",
   "version": "1.0.0",
-  "description": "david's mern-twitter",
+  "description": "awesome view finder",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -12,17 +12,32 @@
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "not chrome < 51",
+      "not safari < 10"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/david-ross1/mern-twitter-2.git"
+    "url": "git+https://github.com/david-ross1/view-finder.git"
   },
   "author": "dr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/david-ross1/mern-twitter-2/issues"
+    "url": "https://github.com/david-ross1/view-finder/issues"
   },
-  "homepage": "https://github.com/david-ross1/mern-twitter-2#readme",
+  "homepage": "https://github.com/david-ross1/view-finder#readme",
   "dependencies": {
+    "aws-sdk": "^2.928.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "classnames": "^2.3.1",
@@ -36,6 +51,7 @@
     "validator": "^13.6.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "react-images-upload": "^1.2.8"
   }
 }
