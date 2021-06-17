@@ -2,8 +2,11 @@
 /frontend/node_modules
 /config/keys_dev.js
 
-config/keys_dev.js
-config/keys_prod.js
-frontend/src/config1/keys_prod1.js
-frontend/src/config1/keys_dev1.js
-  
+config/keys_dev
+# config/keys_prod.js
+# frontend/src/config1/keys_prod.js
+
+
+
+
+/frontend/src/config1/keys_dev1.js 
