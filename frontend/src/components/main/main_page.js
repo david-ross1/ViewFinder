@@ -6,7 +6,14 @@ class MainPage extends React.Component {
   render() {
     return (
       <div>
-        <MapContainer/>
+        <div className='main-body'>
+          <div className='map-container'>
+            <MapContainer/>
+          </div>
+          <div className='thumbnails'>
+            
+          </div>
+        </div>
         <footer className="footer">Copyright &copy; 2021 ViewFinder</footer>
       </div>
     );
