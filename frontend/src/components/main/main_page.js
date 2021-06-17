@@ -5,7 +5,7 @@ import "./main.css";
 class MainPage extends React.Component {
   render() {
     return (
-      <div>
+      <div className='mappy'>
         <MapContainer/>
         <footer className="footer">Copyright &copy; 2021 ViewFinder</footer>
       </div>
