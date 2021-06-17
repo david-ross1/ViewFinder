@@ -32,10 +32,11 @@ const Map = ({geoJSON,focusId,fetchViews,createView,fetchView}) => {
     fetchViews()
   },[]);
   return (<ReactMapGL
+    mapStyle={"mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75"}
     mapboxApiAccessToken={mapboxApiAccessToken}
     {...viewport}
-    width={"500px"}
-    height={"500px"}
+    width={"100%"}
+    height={"100%"}
     onViewportChange={viewport => setViewport(viewport)}
   >
     {!geoJSON.features ? "" : geoJSON.features.map(feature => (
