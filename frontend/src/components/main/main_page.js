@@ -1,12 +1,12 @@
 import React from "react";
-import Map from "../map/map";
+import MapContainer from "../map/map_container";
 import "./main.css";
 
 class MainPage extends React.Component {
   render() {
     return (
       <div>
-        <Map/>
+        <MapContainer/>
         <footer className="footer">Copyright &copy; 2021 ViewFinder</footer>
       </div>
     );
