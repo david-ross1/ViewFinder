@@ -9,17 +9,19 @@ import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
 import ProfileContainer from "./profile/profile_container";
 import CommentComposeContainer from "./comments/comment_compose_container";
+import Footer from "./footer/footer"
+import Modal from "./modal/modal"
 
-
+import PhotoApp from "./photoapp";
+import PhotoApp2 from './photoapp2'
 
 const App = () => (
   <div>
+    <Modal/>
     <NavBarContainer />
+    <PhotoApp2 />
     <Switch>
       <AuthRoute exact path="/" component={MainPage} />
-      <AuthRoute exact path="/login" component={LoginFormContainer} />
-      <AuthRoute exact path="/signup" component={SignupFormContainer} />
-
       <ProtectedRoute exact path="/comments" component={CommentsContainer} />
       <ProtectedRoute exact path="/profile" component={ProfileContainer} />
       <ProtectedRoute
@@ -28,6 +30,7 @@ const App = () => (
         component={CommentComposeContainer}
       />
     </Switch>
+    <Footer/>
   </div>
 );
 

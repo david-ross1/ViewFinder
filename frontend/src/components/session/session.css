@@ -20,7 +20,9 @@
 .login-form-container {
   margin-top: 30px; 
   background: #008FB8;
+  opacity: 87%;
   border-radius: 10px; 
+  width: auto;
 }
 
 .session-container {
@@ -28,13 +30,12 @@
 }
 
 .login-form input {
-  margin: 10px; 
+  margin: 5px; 
   padding: 5px; 
   border-radius: 5px;
-  
 
 	border: none;
-	padding: 5px;
+	padding: 4px;
 	font: 14px;
 	cursor: pointer;
 	outline: inherit;
@@ -52,3 +53,6 @@ button:focus {
   outline: orange 5px auto;
 }
 
+.login-wrapper {
+  margin-left: 20px; 
+}
