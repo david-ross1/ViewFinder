@@ -3,6 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
 const View = require("../../models/View");
+const Comment = require('../../models/Comment');
 
 const toGeoJSON = (viewData) => ({
   "type": "FeatureCollection",
@@ -28,18 +29,22 @@ router.get("/" , (req,res) => {
 });
 
 router.get("/:viewId", (req, res) => {
-  View.findById(req.params.viewId).populate('photo','s3Link').populate('comments').then(view => res.json(view))
+  View.findById(req.params.viewId).then(view => res.json(view)).catch((err) => console.log(err))
 });
+
+//.populate('photo','s3Link').populate('comments')
 
 router.post("/", 
   passport.authenticate("jwt", {session: false}),
   (req,res) => { 
-    const newView = {
+    const newView = new View({
       longitude: req.body.longitude,
       latitude: req.body.latitude,
       locationName: req.body.locationName,
       photos: req.body.photo ? [req.body.photo] : [],
       comments: [],
-    }
+    });
     newView.save().then(view => res.json(view));
 });
+
+module.exports = router;

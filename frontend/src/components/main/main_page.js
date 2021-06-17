@@ -1,5 +1,5 @@
 import React from "react";
-import MapContainer from "../map/map";
+import MapContainer from "../map/map_container";
 import "./main.css";
 
 class MainPage extends React.Component {
