@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 import ReactMapGL, {Marker} from 'react-map-gl';
 import classNames from 'classnames';
 
-const mapboxApiAccessToken = require("../../config1/keys_dev1").mapboxAPI;
+const mapboxApiAccessToken = require("../../config1/keys_dev").mapboxAPI;
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;
