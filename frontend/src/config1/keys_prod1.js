@@ -5,6 +5,6 @@ module.exports = {
   awsAccessKeyId: process.env.AWS_ACCESS_KEY_ID,
   awsSecretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   awsBucketName: process.env.AWS_BUCKET_NAME,
-  awsRegion: process.env.AWS_REGION  
+  awsRegion: process.env.AWS_REGION,
+  mapboxAPI: process.env.MAPBOX_API,
 };
-  
