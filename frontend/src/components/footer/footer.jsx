@@ -51,16 +51,7 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="bottom-footer">
-                        <div className="country-currency">
-                            <p>United States   </p>
-                            <p> |</p>
-                            <p>   English (US) </p>
-                        </div>
-                        <div className="terms-of-use">
-                            <p><a href={"https://github.com/david-ross1/ViewFinder"} className='footer-links'><img className="footer-logo"src={github}  />Git Repo</a></p>
-                        </div>
-                    </div>
+                    
                 </div>
             </footer>
         )

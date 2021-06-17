@@ -7,7 +7,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 175px;
+    height: 15%;
     width: 100%;
     padding: 0;
     
@@ -23,8 +23,6 @@
     font-family: 'Oleo Script', cursive;
     margin: 0px 0px;
     justify-content: space-between;
-    padding-left: 200px;
-    padding-right: 200px;
     line-height: 1.5;
     margin-bottom: 5px;
 }
@@ -49,32 +47,8 @@
     border: none;
 }
 
-.bottom-footer {
-    font-family: 'Oleo Script', cursive;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bolder;
-    background-color: #028137;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.country-currency, .terms-of-use {
-    display: flex;
-    flex-direction: row;
-    margin: 0px 30px;
-    color: white;
-    padding-left: 200px;
-    padding-right: 200px;
-    font-size: 12px;
-}
-
 a .footer-logo {
     margin: 0px 15px;
-}
-
-.country-currency p {
-    padding-right: 7px;
 }
 
 .footer {
