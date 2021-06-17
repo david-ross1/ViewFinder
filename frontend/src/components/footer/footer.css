@@ -108,6 +108,8 @@ background-blend-mode: multiply;
     font-weight: 500;
     align-items: flex-start;
     align-content: flex-start;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .footer-links {
