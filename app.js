@@ -7,6 +7,7 @@ const passport = require("passport");
 
 const users = require("./routes/api/users");
 const comments = require("./routes/api/comments");
+const views = require("./routes/api/views");
 
 const path = require("path");
 if (process.env.NODE_ENV === "production") {
@@ -31,6 +32,7 @@ app.use(bodyParser.json());
 
 app.use("/api/users", users);
 app.use("/api/comments", comments);
+app.use("/api/views",views)
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server is running on port ${port}`));
