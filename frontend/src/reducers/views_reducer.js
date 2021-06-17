@@ -7,7 +7,6 @@ const ViewsReducer = (state = {
 }, action) => {
   Object.freeze(state);
   let newState = {};
-  debugger
   switch (action.type) {
     case RECEIVE_VIEWS:
       newState = Object.assign({},state);
