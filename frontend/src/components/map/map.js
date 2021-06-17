@@ -1,8 +1,9 @@
 import React, {useEffect, useRef, useState} from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
-import ReactMapGL, {Marker} from 'react-map-gl';
+import ReactMapGL, {Marker, NavigationControl} from 'react-map-gl';
 import classNames from 'classnames';
+import NewLocationFormContainer from './new_location_form_container';
 
 const mapboxApiAccessToken = require("../../config1/keys_dev").mapboxAPI;
 
@@ -22,36 +23,65 @@ const Pin = () => (
   </svg>
 );
 
-const Map = ({geoJSON,focusId,fetchViews,createView,fetchView}) => {
+const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
+  const [newPinLocation, setNewPinLocation] = useState({
+    longitude: null,
+    latitude: null,
+  });
+  const [displayLocationForm,setDisplayLocationForm] = useState(false);
+  const _onClick = (e) => {
+    setNewPinLocation({
+      longitude: e.lngLat[0],
+      latitude: e.lngLat[1],
+    });
+    setDisplayLocationForm(true);
+  };
   const [viewport, setViewport] = useState({
     latitude: locLat,
     longitude: locLng,
     zoom: 8,
   });
+  const [readyToPlace, setReadyToPlace] = useState(false);
   useEffect(() => {
     fetchViews()
   },[]);
-  return (<ReactMapGL
-    mapStyle={"mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75"}
-    mapboxApiAccessToken={mapboxApiAccessToken}
-    {...viewport}
-    width={"100%"}
-    height={"100%"}
-    onViewportChange={viewport => setViewport(viewport)}
-  >
-    {!geoJSON.features ? "" : geoJSON.features.map(feature => (
-      <Marker key={feature.geometry.properties.id}
-        longitude={feature.geometry.coordinates[0]}
-        latitude={feature.geometry.coordinates[1]} 
-        className={classNames("view-location",{"selected": feature.geometry.properties.id === focusId})}
-        onClick={() => {
-          fetchView(feature.geometry.properties.id)
-        }}
-      >
-        <Pin/>
-      </Marker>
-    ))}
-  </ReactMapGL>);
+    return (
+  <div class="map-container">
+    <ReactMapGL
+      mapStyle={"mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75"}
+      mapboxApiAccessToken={mapboxApiAccessToken}
+      {...viewport}
+      width={"500px"}
+      height={"500px"}
+      onViewportChange={viewport => setViewport(viewport)}
+      onClick = {(e) => readyToPlace ? _onClick(e) : ""}
+    >
+      {!geoJSON.features ? "" : geoJSON.features.map(feature => (
+        <Marker key={feature.geometry.properties.id}
+          longitude={feature.geometry.coordinates[0]}
+          latitude={feature.geometry.coordinates[1]} 
+          className={classNames("view-location",{"selected": feature.geometry.properties.id === focusId})}
+          onClick={(e) => {
+            fetchView(feature.geometry.properties.id);
+            e.stopPropagation();
+          }}
+        >
+          <Pin/>
+        </Marker>
+      ))}
+      {newPinLocation.longitude === null || newPinLocation.latitude === null ? "" : (
+        <Marker key={"new"} className={"view-location new selected"}
+          {...newPinLocation}
+        >
+          <Pin/>
+        </Marker>
+      )}
+      <NavigationControl />
+      <button className={"new-location-button"} onClick={() => setReadyToPlace(!readyToPlace)}>Place New Location</button>
+    </ReactMapGL>
+    {!displayLocationForm ? "" : (<NewLocationFormContainer setDisplayLocationForm={setDisplayLocationForm} {...newPinLocation} />)}
+  </div>
+  );
   // const zoomIn = () => {
   //   if(!map.current || zoom >= MAX_ZOOM) {return;}
   //   map.current.easeTo({

@@ -1,7 +1,8 @@
 import React , { Component } from 'react'; 
 // import S3FileUpload from 'react-s3'
 import S3 from "react-aws-s3";
-import { awsAccessKeyId, awsSecretAccessKey } from "../config1/keys"; 
+import { awsAccessKeyId, awsSecretAccessKey } from "../config1/keys";
+
 import './photo.css'
 
 const config = {
@@ -17,13 +18,12 @@ const ReactS3Client = new S3(config);
 class Photoapp2 extends Component {
   constructor() {
     super(); 
-
     this.upload = this.upload.bind(this)
   }
 
-
   upload(e) {
     console.log(e.target.files[0]);
+    debugger
     ReactS3Client.uploadFile( e.target.files[0] , e.target.files.name)
       .then( (data) => {
         console.log(data)

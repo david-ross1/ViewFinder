@@ -36,12 +36,21 @@ router.get("/:viewId", (req, res) => {
 
 router.post("/", 
   passport.authenticate("jwt", {session: false}),
-  (req,res) => { 
+  (req,res) => {
+    const photoIds = [];
+    let newPhoto = null;
+    req.body.photos.forEach((photo) => {
+      newPhoto = new Photo({
+        s3Link: photo.s3Link,
+        user: req.user.id,
+      });
+      newPhoto.save().then(photo => photoIds.push(photo._id));
+    }); 
     const newView = new View({
       longitude: req.body.longitude,
       latitude: req.body.latitude,
       locationName: req.body.locationName,
-      photos: req.body.photo ? [req.body.photo] : [],
+      photos: req.body.photos ? req.body.photos : [],
       comments: [],
     });
     newView.save().then(view => res.json(view));
