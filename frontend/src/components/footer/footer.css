@@ -104,8 +104,6 @@ background-blend-mode: multiply;
 .footer-list {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
     align-items: flex-start;
     align-content: flex-start;
     display: flex;
