@@ -11,7 +11,8 @@
     "frontend-install": "npm install --prefix frontend",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
+    "seedgoose": "seedgoose"
   },
   "browserslist": {
     "production": [
@@ -50,6 +51,7 @@
     "mongoose-seed": "^0.6.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "seedgoose": "^2.0.2",
     "validator": "^13.6.0"
   },
   "devDependencies": {

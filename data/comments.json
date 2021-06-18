@@ -1,0 +1,37 @@
+{
+    "com1": {
+        "user": "John",
+        "text": "Once at the top, well, you already know how great the views are, especially on clear days, and the Bay Breeze is always on point!!",
+        "date": "2021-06-18T04:16:14.250+00:00"
+    },
+    "com2": {
+        "user": "Spencer",
+        "text": "When in SF, you just come here for to have a good panoramic view of the city. Easy drive and there are plenty of parking.",
+        "date": "2021-06-18T04:16:14.250+00:00"
+    },
+    "com3": {
+        "user": "Mike",
+        "text": "It was before the pandemic but this was one of the most beautiful spots to visit in San Francisco.",
+        "date": "2021-06-18T04:16:14.250+00:00"
+    },
+    "com4": {
+        "user": "John",
+        "text": "Amazing views!",
+        "date": "2021-06-18T04:16:14.250+00:00"
+    },
+    "com5": {
+        "user": "Spencer",
+        "text": "Best way to see ALL of San Francisco.",
+        "date": "2021-06-18T04:16:14.250+00:00"
+    },
+    "com6": {
+        "user": "Mike",
+        "text": "Never gets tired, love being by the water.",
+        "date": "2021-06-18T04:16:14.250+00:00"
+    },
+    "com7": {
+        "user": "John",
+        "text": "Peaceful and relaxing.",
+        "date": "2021-06-18T04:16:14.250+00:00"
+    }
+}

@@ -1,0 +1,359 @@
+{
+    "01_SF_GoldenGate": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/01_SF_GoldenGate.JPG",
+        "user": "John"
+    },
+    "02_SF_GoldenGate1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/02_SF_GoldenGate1.JPG",
+        "user": "Spencer"
+    },
+    "02_SF_GoldenGate2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/02_SF_GoldenGate2.JPG",
+        "user": "Spencer"
+    },
+    "02_SF_GoldenGate3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/02_SF_GoldenGate3.JPG",
+        "user": "Spencer"
+    },
+    "03_SF_GoldenGate1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/03_SF_GoldenGate1.JPG",
+        "user": "Spencer"
+    },
+    "03_SF_GoldenGate2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/03_SF_GoldenGate2.JPG",
+        "user": "Spencer"
+    },
+    "03_SF_GoldenGate3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/03_SF_GoldenGate3.JPG",
+        "user": "Spencer"
+    },
+    "04_SF_LincolnPark": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/04_SF_LincolnPark.JPG",
+        "user": "Mike"
+    },
+    "05_SF_LandsEnd": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/05_SF_LandsEnd.JPG",
+        "user": "John"
+    },
+    "06_SF_USSMemorial1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/06_SF_USSMemorial1.JPG",
+        "user": "Spencer"
+    },
+    "06_SF_USSMemorial2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/06_SF_USSMemorial2.JPG",
+        "user": "Spencer"
+    },
+    "06_SF_USSMemorial3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/06_SF_USSMemorial3.JPG",
+        "user": "Spencer"
+    },
+    "06_SF_USSMemorial4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/06_SF_USSMemorial4.JPG",
+        "user": "Spencer"
+    },
+    "07_SF_QueenWilh1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/07_SF_QueenWilh1.JPG",
+        "user": "Mike"
+    },
+    "07_SF_QueenWilh2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/07_SF_QueenWilh2.JPG",
+        "user": "Mike"
+    },
+    "07_SF_QueenWilh3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/07_SF_QueenWilh3.JPG",
+        "user": "Mike"
+    },
+    "07_SF_QueenWilh4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/07_SF_QueenWilh4.JPG",
+        "user": "Mike"
+    },
+    "08_SF_Botanical1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical1.JPG",
+        "user": "John"
+    },
+    "08_SF_Botanical2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical2.JPG",
+        "user": "John"
+    },
+    "08_SF_Botanical3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical3.JPG",
+        "user": "John"
+    },
+    "08_SF_Botanical4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical4.JPG",
+        "user": "John"
+    },
+    "09_SF_Oracle1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/09_SF_Oracle1.JPG",
+        "user": "Spencer"
+    },
+    "09_SF_Oracle2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/09_SF_Oracle2.JPG",
+        "user": "Spencer"
+    },
+    "09_SF_Oracle3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/09_SF_Oracle3.JPG",
+        "user": "Spencer"
+    },
+    "10_SF_TwinPeaks1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/10_SF_TwinPeaks1.JPG",
+        "user": "Mike"
+    },
+    "10_SF_TwinPeaks2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/10_SF_TwinPeaks2.JPG",
+        "user": "Mike"
+    },
+    "10_SF_TwinPeaks3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/10_SF_TwinPeaks3.JPG",
+        "user": "Mike"
+    },
+    "10_SF_TwinPeaks4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/10_SF_TwinPeaks4.JPG",
+        "user": "Mike"
+    },
+    "11_BR_BayView1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/11_BR_BayView1.JPG",
+        "user": "John"
+    },
+    "11_BR_BayView2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/11_BR_BayView2.JPG",
+        "user": "John"
+    },
+    "12_BR_Tilden1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/12_BR_Tilden1.JPG",
+        "user": "Spencer"
+    },
+    "12_BR_Tilden2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/12_BR_Tilden2.JPG",
+        "user": "Spencer"
+    },
+    "12_BR_Tilden3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/12_BR_Tilden3.JPG",
+        "user": "Spencer"
+    },
+    "12_BR_Tilden4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/12_BR_Tilden4.JPG",
+        "user": "Spencer"
+    },
+    "13_RI_RichmondBr1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/13_RI_RichmondBr1.JPG",
+        "user": "Mike"
+    },
+    "13_RI_RichmondBr2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/13_RI_RichmondBr2.JPG",
+        "user": "Mike"
+    },
+    "13_RI_RichmondBr3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/13_RI_RichmondBr3.JPG",
+        "user": "Mike"
+    },
+    "13_RI_RichmondBr4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/13_RI_RichmondBr4.JPG",
+        "user": "Mike"
+    },
+    "14_MI_GardnerFire1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/14_MI_GardnerFire1.JPG",
+        "user": "John"
+    },
+    "14_MI_GardnerFire2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/14_MI_GardnerFire2.JPG",
+        "user": "John"
+    },
+    "14_MI_GardnerFire3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/14_MI_GardnerFire3.JPG",
+        "user": "John"
+    },
+    "15_OK_JackLondon1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/15_OK_JackLondon1.JPG",
+        "user": "John"
+    },
+    "15_OK_JackLondon2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/15_OK_JackLondon2.JPG",
+        "user": "John"
+    },
+    "15_OK_JackLondon3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/15_OK_JackLondon3.JPG",
+        "user": "John"
+    },
+    "16_SF_VistaPoint1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/16_SF_VistaPoint1.JPG",
+        "user": "Spencer"
+    },
+    "16_SF_VistaPoint2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/16_SF_VistaPoint2.JPG",
+        "user": "Spencer"
+    },
+    "16_SF_VistaPoint3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/16_SF_VistaPoint3.JPG",
+        "user": "Spencer"
+    },
+    "16_SF_VistaPoint4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/16_SF_VistaPoint4.JPG",
+        "user": "Spencer"
+    },
+    "17_SR_HollowRidge1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/17_SR_HollowRidge1.JPG",
+        "user": "Mike"
+    },
+    "17_SR_HollowRidge2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/17_SR_HollowRidge2.JPG",
+        "user": "Mike"
+    },
+    "17_SR_HollowRidge3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/17_SR_HollowRidge3.JPG",
+        "user": "Mike"
+    },
+    "17_SR_HollowRidge4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/17_SR_HollowRidge4.JPG",
+        "user": "Mike"
+    },
+    "18_SR_McNears1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/18_SR_McNears1.JPG",
+        "user": "John"
+    },
+    "18_SR_McNears2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/18_SR_McNears2.JPG",
+        "user": "John"
+    },
+    "18_SR_McNears3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/18_SR_McNears3.JPG",
+        "user": "John"
+    },
+    "19_SM_Sawyer1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/19_SM_Sawyer1.JPG",
+        "user": "Spencer"
+    },
+    "19_SM_Sawyer2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/19_SM_Sawyer2.JPG",
+        "user": "Spencer"
+    },
+    "19_SM_Sawyer3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/19_SM_Sawyer3.JPG",
+        "user": "Spencer"
+    },
+    "20_SM_Leo1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/20_SM_Leo1.JPG",
+        "user": "Mike"
+    },
+    "20_SM_Leo2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/20_SM_Leo2.JPG",
+        "user": "Mike"
+    },
+    "20_SM_Leo3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/20_SM_Leo3.JPG",
+        "user": "Mike"
+    },
+    "21_BR_BayView": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/21_BR_BayView.JPG",
+        "user": "John"
+    },
+    "22_ST_Arizona1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/22_ST_Arizona1.JPG",
+        "user": "Spencer"
+    },
+    "22_ST_Arizona2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/22_ST_Arizona2.JPG",
+        "user": "Spencer"
+    },
+    "22_ST_Arizona3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/22_ST_Arizona3.JPG",
+        "user": "Spencer"
+    },
+    "22_ST_Arizona4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/22_ST_Arizona4.JPG",
+        "user": "Spencer"
+    },
+    "23_PA_VistaHill1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/23_PA_VistaHill1.JPG",
+        "user": "Mike"
+    },
+    "23_PA_VistaHill2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/23_PA_VistaHill2.JPG",
+        "user": "Mike"
+    },
+    "23_PA_VistaHill3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/23_PA_VistaHill3.JPG",
+        "user": "Mike"
+    },
+    "24_CU_StevenCr1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/24_CU_StevenCr1.JPG",
+        "user": "John"
+    },
+    "24_CU_StevenCr2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/24_CU_StevenCr2.JPG",
+        "user": "John"
+    },
+    "25_SJ_VistaDr1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/25_SJ_VistaDr1.JPG",
+        "user": "Spencer"
+    },
+    "26_FR_Rancho1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/26_FR_Rancho1.JPG",
+        "user": "Mike"
+    },
+    "26_FR_Rancho2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/26_FR_Rancho2.JPG",
+        "user": "Mike"
+    },
+    "26_FR_Rancho3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/26_FR_Rancho3.JPG",
+        "user": "Mike"
+    },
+    "26_FR_Rancho4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/26_FR_Rancho4.JPG",
+        "user": "Mike"
+    },
+    "27_FR_Canyon1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/27_FR_Canyon1.JPG",
+        "user": "John"
+    },
+    "27_FR_Canyon2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/27_FR_Canyon2.JPG",
+        "user": "John"
+    },
+    "27_FR_Canyon3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/27_FR_Canyon3.JPG",
+        "user": "John"
+    },
+    "28_SL_Fairmont1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/28_SL_Fairmont1.JPG",
+        "user": "Spencer"
+    },
+    "28_SL_Fairmont2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/28_SL_Fairmont2.JPG",
+        "user": "Spencer"
+    },
+    "28_SL_Fairmont3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/28_SL_Fairmont3.JPG",
+        "user": "Spencer"
+    },
+    "29_OK_Harbor1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/29_OK_Harbor1.JPG",
+        "user": "Mike"
+    },
+    "29_OK_Harbor2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/29_OK_Harbor2.JPG",
+        "user": "Mike"
+    },
+    "29_OK_Harbor3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/29_OK_Harbor3.JPG",
+        "user": "Mike"
+    },
+    "30_SO_Wildlife1": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/30_SO_Wildlife1.JPG",
+        "user": "John"
+    },
+    "30_SO_Wildlife2": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/30_SO_Wildlife2.JPG",
+        "user": "John"
+    },
+    "30_SO_Wildlife3": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/30_SO_Wildlife3.JPG",
+        "user": "John"
+    },
+    "30_SO_Wildlife4": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/30_SO_Wildlife4.JPG",
+        "user": "John"
+    }
+}
+
