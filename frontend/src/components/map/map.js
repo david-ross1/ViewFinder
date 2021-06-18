@@ -74,11 +74,11 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
         </Marker>
       )}
       <NavigationControl />
-      <button className={"new-location-button"} onClick={() => {
+    </ReactMapGL>
+    <button className={"new-location-button"} onClick={() => {
         setNewPinLocation(null);
         setReadyToPlace(!readyToPlace); 
       }}>Place New Location</button>
-    </ReactMapGL>
     {!displayLocationForm ? "" : (<NewLocationFormContainer fetchViews={fetchViews} fetchView={fetchView} setDisplayLocationForm={setDisplayLocationForm} {...newPinLocation} />)}
   </div>
   );
