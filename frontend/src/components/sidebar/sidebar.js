@@ -5,8 +5,8 @@ import Carousel from '../carousel/carouse'
 
 const Sidebar = ({focusView}) => {
   // const [splashIdx, setSplashIdx] = useState(0);
-  return !focusView ? "" : (
-    <>
+  return Object.values(focusView).length === 0 ? "" : (
+    
       <section className="sidebar">
         <div className="picture-carousel">
           <Carousel photos={focusView.photos} />
@@ -14,10 +14,10 @@ const Sidebar = ({focusView}) => {
             <figure key={idx} className={classNames({"focused": idx === splashIdx})} onClick={() => setSplashIdx(idx)}><img src={photo.s3Link}/></figure>
           ))} */}
         </div>
-        <h2>{focusView.locationName}</h2>
-        <p>{focusView.description}</p>
+        <h2 className="view-name">{focusView.locationName}</h2>
+        <p className="view-desc">{focusView.description}</p>
       </section>
-    </>
+    
   );
 }
 

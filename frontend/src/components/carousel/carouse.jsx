@@ -1,5 +1,6 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
+import './carousel.css'
 import { connect } from 'react-redux';
 
 class Carousel extends React.Component {
@@ -10,10 +11,13 @@ class Carousel extends React.Component {
         currentIndex: 0,
         
       }
+      this.slideTo=this.slideTo.bind(this)
       
     }
 
-    slideTo = (i) => this.setState({ currentIndex: i });
+    slideTo(i) {
+      this.setState({ currentIndex: i })
+    } 
 
     onSlideChanged = (e) => this.setState({ currentIndex: e.item });
 
@@ -26,8 +30,8 @@ class Carousel extends React.Component {
         return <div> </div>
       } else {
       return (
-        <ul>{this.props.photos.map((item, i) =>
-          <li key={i} onClick={() => this.slideTo(i)}>Thumb<img src={item.s3Link} /></li>)}
+        <ul className='thumb-bar'>{this.props.photos.map((item, i) =>
+          <li className='thumbs' key={i} onClick={(i) => this.slideTo(i)}><img src={item.s3Link} /></li>)}
         </ul>
         )
       }
@@ -38,11 +42,11 @@ class Carousel extends React.Component {
 
       return (<AliceCarousel
         dotsDisabled={true}
-        buttonsDisabled={true}
+        buttonsDisabled={false}
         slideToIndex={currentIndex}
         onSlideChanged={this.onSlideChanged}
       >
-        {!this.props.photos ? "" : this.props.photos.map((item, i) => <div key={i} className="photos"><h2><img src={item.s3Link} /></h2></div>) }
+        {!this.props.photos ? "" : this.props.photos.map((item, i) => <div key={i} className="photos"><h2><img className='photo' src={item.s3Link} /></h2></div>) }
       </AliceCarousel>);
     }
 
@@ -50,9 +54,9 @@ class Carousel extends React.Component {
       debugger
       return (
         <div>
+          
           { this.renderThumbs() }
-          <button onClick={() => this.slidePrev()}>{"<"}</button>
-          <button onClick={() => this.slideNext()}>{">"}</button>
+          
           { this.renderGallery() }
         </div>
       );

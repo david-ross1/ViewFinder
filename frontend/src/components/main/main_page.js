@@ -14,7 +14,7 @@ class MainPage extends React.Component {
           <div className='side-section'>
             <SidebarContainer/>
 
-            <div className='comments'></div>
+            {/* <div className='comments'></div> */}
                    
           </div>
         </div>
