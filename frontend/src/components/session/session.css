@@ -13,7 +13,7 @@
 
 
 .login-form {
-  margin: 20px; 
+  margin: 0px; 
   align-content: center;
   align-items: center;
 
@@ -24,7 +24,7 @@
   margin-top: 20px; 
   background: 008FB8;
   height: 30px; 
-  width: 70px; 
+  width: 75px; 
   margin-bottom: 15px; 
 }
 
@@ -38,7 +38,7 @@
 }
 
 .login-form-container {
-  opacity: 87%;
+  opacity: 100%;
   width: auto;
   width: 100%;
 }
@@ -80,7 +80,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
-  margin-left: 27px;
+  margin-left: 20px;
   margin-right: 17px;
   
 }
@@ -94,13 +94,14 @@ button:focus {
 }
 
 .sign-button {
+  margin-top: 15px;
   border-radius: 10px; 
-  background-color: #1d60e0;
+  background-color: #17ab6e;
   height: 30px; 
   width: auto;
   padding-right: 5px;
   padding-left: 5px;
-  margin-bottom: 15px; 
+  margin-bottom: 0px; 
   align-items: center;
   
 }
@@ -141,4 +142,13 @@ button:focus {
 
 p.button-text {
     font-family: 'Offside', cursive;
+}
+
+.demo-button .submit {
+    font-family: 'Offside', cursive;
+}
+
+input.submit.button {
+    font-family: 'Offside', cursive;
+  width: 175px;
 }
