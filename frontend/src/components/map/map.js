@@ -24,10 +24,7 @@ const Pin = () => (
 );
 
 const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
-  const [newPinLocation, setNewPinLocation] = useState({
-    longitude: null,
-    latitude: null,
-  });
+  const [newPinLocation, setNewPinLocation] = useState(null);
   const [displayLocationForm,setDisplayLocationForm] = useState(false);
   const _onClick = (e) => {
     setNewPinLocation({
@@ -44,9 +41,9 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
   const [readyToPlace, setReadyToPlace] = useState(false);
   useEffect(() => {
     fetchViews()
-  },[]);
+  },[fetchViews]);
     return (
-  <div class="map-container">
+  <div className="map-container">
     <ReactMapGL
       mapStyle={"mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75"}
       mapboxApiAccessToken={mapboxApiAccessToken}
@@ -69,7 +66,7 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
           <Pin/>
         </Marker>
       ))}
-      {newPinLocation.longitude === null || newPinLocation.latitude === null ? "" : (
+      {newPinLocation === null ? "" : (
         <Marker key={"new"} className={"view-location new selected"}
           {...newPinLocation}
         >
@@ -77,9 +74,12 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
         </Marker>
       )}
       <NavigationControl />
-      <button className={"new-location-button"} onClick={() => setReadyToPlace(!readyToPlace)}>Place New Location</button>
+      <button className={"new-location-button"} onClick={() => {
+        setNewPinLocation(null);
+        setReadyToPlace(!readyToPlace); 
+      }}>Place New Location</button>
     </ReactMapGL>
-    {!displayLocationForm ? "" : (<NewLocationFormContainer setDisplayLocationForm={setDisplayLocationForm} {...newPinLocation} />)}
+    {!displayLocationForm ? "" : (<NewLocationFormContainer fetchViews={fetchViews} fetchView={fetchView} setDisplayLocationForm={setDisplayLocationForm} {...newPinLocation} />)}
   </div>
   );
   // const zoomIn = () => {

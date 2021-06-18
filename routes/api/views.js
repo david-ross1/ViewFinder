@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const View = require("../../models/View");
 const Comment = require('../../models/Comment');
+const Photo = require("../../models/Photo");
 
 const toGeoJSON = (viewData) => ({
   "type": "FeatureCollection",
@@ -36,24 +37,24 @@ router.get("/:viewId", (req, res) => {
 
 router.post("/", 
   passport.authenticate("jwt", {session: false}),
+  // I apologize for writing this
   (req,res) => {
-    const photoIds = [];
-    let newPhoto = null;
-    req.body.photos.forEach((photo) => {
-      newPhoto = new Photo({
-        s3Link: photo.s3Link,
-        user: req.user.id,
-      });
-      newPhoto.save().then(photo => photoIds.push(photo._id));
-    }); 
-    const newView = new View({
-      longitude: req.body.longitude,
-      latitude: req.body.latitude,
-      locationName: req.body.locationName,
-      photos: req.body.photos ? req.body.photos : [],
-      comments: [],
+    Promise.all(req.body.photos.map((photo) => 
+      new Photo({ s3Link: photo.s3Link, user: req.user.id})
+      .save()))
+      .then(values => values.map(v => v._id))
+      .then(photoIds => {
+        const newView = new View({
+          longitude: req.body.longitude,
+          latitude: req.body.latitude,
+          locationName: req.body.locationName,
+          name: req.body.name,
+          description: req.body.description,
+          photos: photoIds,
+          comments: [],
+        });
+    return newView.save().then(view => res.json(view));
     });
-    newView.save().then(view => res.json(view));
 });
 
 module.exports = router;
