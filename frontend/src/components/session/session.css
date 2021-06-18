@@ -13,7 +13,7 @@
 
 
 .login-form {
-  margin: 20px; 
+  margin: 0px; 
   align-content: center;
   align-items: center;
 
@@ -22,23 +22,35 @@
 .submit {
   border-radius: 10px; 
   margin-top: 20px; 
-  background: 008FB8;
+  background: #17ab6e;
   height: 30px; 
-  width: 70px; 
+  width: 75px; 
   margin-bottom: 15px; 
+    margin: 40px;
+  background-color: rgb(49, 183, 170); /* Needed for IEs */
+
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
+
 .submit:hover {
-  background: #1D60E0;
+  background: #00a336;
   cursor: pointer 
 }
 
 .forn-input {
   font-size: 30px 
+
 }
 
 .login-form-container {
-  opacity: 87%;
+  opacity: 100%;
   width: auto;
   width: 100%;
 }
@@ -58,6 +70,10 @@
 	cursor: pointer;
 	outline: inherit;
   width: 170px;
+
+
+  
+
 }
 
 
@@ -69,8 +85,16 @@ button {
 }
 
 button:focus {
-  outline: orange 5px auto;
+  /* outline: orange 5px auto; */
 }
+
+/* button:hover {
+  color: #00a336;
+}
+
+p.button-text:hover {
+  color: #00a336;
+} */
 
 .submit {
   width: 170px;
@@ -80,7 +104,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
-  margin-left: 27px;
+  margin-left: 20px;
   margin-right: 17px;
   
 }
@@ -94,14 +118,25 @@ button:focus {
 }
 
 .sign-button {
+  margin-top: 15px;
   border-radius: 10px; 
-  background-color: #1d60e0;
+  background-color: #17ab6e;
   height: 30px; 
   width: auto;
   padding-right: 5px;
   padding-left: 5px;
-  margin-bottom: 15px; 
+  margin-bottom: 0px; 
   align-items: center;
+
+    background-color: rgb(49, 183, 170); /* Needed for IEs */
+
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
   
 }
 
@@ -118,11 +153,25 @@ button:focus {
   align-items: center;
   font-weight: 600;
   font-size: 20px; 
+  margin-top: 20px;
+
+
+  background-color: rgb(49, 183, 170); /* Needed for IEs */
+
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  
+
 }
 
 .demo-button {
   border-radius: 5px; 
-  background-color: #1d60e0;
+  background-color: #17ab6e;
   margin-bottom: 15px; 
   align-items: center;
   width: 170px;
@@ -132,6 +181,17 @@ button:focus {
   padding-left: 6px;
   font-family: 'Offside', cursive;
   text-align: center;
+
+  background-color: rgb(49, 183, 170); /* Needed for IEs */
+
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
 }
 
 .login-text {
@@ -142,3 +202,13 @@ button:focus {
 p.button-text {
     font-family: 'Offside', cursive;
 }
+
+.demo-button .submit {
+    font-family: 'Offside', cursive;
+}
+
+input.submit.button {
+    font-family: 'Offside', cursive;
+  width: 175px;
+}
+
