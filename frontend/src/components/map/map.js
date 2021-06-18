@@ -43,7 +43,7 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
     fetchViews()
   },[fetchViews]);
     return (
-  <div className="map-container">
+  <div className="map">
     <ReactMapGL
       mapStyle={"mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75"}
       mapboxApiAccessToken={mapboxApiAccessToken}
