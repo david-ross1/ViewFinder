@@ -3,6 +3,11 @@
   src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
 }
 
+@fontface {
+  font-family: 'Offside', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+}
+
 
 
 
@@ -28,6 +33,9 @@
   cursor: pointer 
 }
 
+.forn-input {
+  font-size: 30px 
+}
 
 .login-form-container {
   opacity: 87%;
@@ -117,10 +125,20 @@ button:focus {
   background-color: #1d60e0;
   margin-bottom: 15px; 
   align-items: center;
-  width: 85px;
+  width: 170px;
   height: 24px;
   padding-top: 6px;
   padding-right: 4px;
   padding-left: 6px;
-  font-family: 
+  font-family: 'Offside', cursive;
+  text-align: center;
+}
+
+.login-text {
+  font-size: 16px; 
+  font-family: 'Offside', cursive;
+}
+
+p.button-text {
+    font-family: 'Offside', cursive;
 }
