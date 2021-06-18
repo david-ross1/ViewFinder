@@ -10,7 +10,9 @@ class MainPage extends React.Component {
           <div className='map-container'>
             <MapContainer/>
           </div>
-          <div className='thumbnails'>
+          <div className='side-section'>
+            <div className="carousel"></div>
+            <div className='comments'></div>
           </div>
         </div>
         <footer className="footer">Copyright &copy; 2021 ViewFinder</footer>
