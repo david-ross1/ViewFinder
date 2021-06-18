@@ -6,7 +6,7 @@ const ViewSchema = new Schema({
     type: String,
   },
   photos: [
-    {type: Schema.Types.ObjectId, ref: 'Photo'}
+    {type: Schema.Types.ObjectId, ref: 'photo'}
   ],
   latitude: {
     type: Number,
@@ -23,7 +23,7 @@ const ViewSchema = new Schema({
     type: String,
   },
   comments: [
-    {type: Schema.Types.ObjectId, ref: 'Comment'}
+    {type: Schema.Types.ObjectId, ref: 'comment'}
   ]
 });
 
