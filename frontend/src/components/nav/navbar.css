@@ -7,7 +7,13 @@
   src: url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@700&display=swap')
 }
 
+.logo-link {
+  color: black; 
+}
 
+.logo-link:hover {
+  cursor: pointer
+}
 
 .NavBar {
   display: flex;

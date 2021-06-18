@@ -70,31 +70,36 @@ class LoginForm extends React.Component {
     return (
       <div className="login-form-container">
         <div className="login-form">
-          <div className='login-head'>
-            <button className='sign-button' onClick={this.otherForm}><p className='button-text'>Sign Up</p></button>
-            <button className='close-button' onClick={this.props.closeModal}>X</button>
+          <div className="login-head">
+            <button className="sign-button" onClick={this.otherForm}>
+              <p className="button-text">Sign Up</p>
+            </button>
+            <button className="close-button" onClick={this.props.closeModal}>
+              X
+            </button>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <form className="session-form" onSubmit={this.handleSubmit}>
             <div className="input">
-            
-              <label>Email:</label>
-              <br/>
-                <input
-                  type="text"
-                  value={this.state.email}
-                  onChange={this.update("email")}
-                  placeholder="Email"
-                  required
-                />
-            </div>  
-            <br/>
-            <br/>
-            <div>
-              <label>Password:</label>
-              <br/>  
+              <label></label>
+              <br />
               <input
+                className="login-text"
+                type="text"
+                value={this.state.email}
+                onChange={this.update("email")}
+                placeholder="Email"
+                required
+              />
+            </div>
+            <br />
+            <br />
+            <div>
+              <label></label>
+              <br />
+              <input
+                className="login-text"
                 type="password"
                 value={this.state.password}
                 onChange={this.update("password")}
@@ -103,17 +108,16 @@ class LoginForm extends React.Component {
               />
               <br />
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <input className="submit" type="submit" value="Submit" />
             {this.renderErrors()}
-            <br/>
-            <div className='demo-button'>                     
-            <button
-              onClick={this.demoUser}
-              className="demo-submit"
-              >Demo Login</button>
-          </div>
+            <br />
+            <div className="demo-button">
+              <button onClick={this.demoUser} className="demo-submit">
+                Demo Login
+              </button>
+            </div>
           </form>
         </div>
       </div>

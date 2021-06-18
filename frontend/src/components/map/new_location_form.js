@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import S3 from "react-aws-s3";
 import { awsAccessKeyId, awsSecretAccessKey } from "../../config1/keys";
+import './NewLocationForm.css';
 
 const config = {
   bucketName: "view-finder",
@@ -17,10 +18,9 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const photos = [];
-  const handleSubmit = () => createView({longitude, latitude, name, description, photos});
+  const handleSubmit = () => createView({longitude, latitude, locationName: name, description, photos});
   const upload = (e) => {
-    let pictureLength = e.target.files.length
-    ReactS3Client.uploadFile( e.target.files[pictureLength-1] , `${longitude.toFixed(4)},${latitude.toFixed(4)}-${pictureLength}`)
+    ReactS3Client.uploadFile( e.target.files[0] , `${longitude.toFixed(4)},${latitude.toFixed(4)}-${photos.length}`)
       .then( (data) => {
         photos.push({s3Link: data.location});
       })
@@ -30,7 +30,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
   };
 
   return (
-    <form onSubmit={e => {
+    <form className="new-location-form" onSubmit={e => {
       e.preventDefault();
       handleSubmit().then(fetchViews);
       setDisplayLocationForm(false);
@@ -41,8 +41,9 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       <label><h2>Description:</h2>
         <input value={description} onChange={(e) => setDescription(e.target.value)}/>
       </label>
+      <br/>
       <label>Images:
-        <input type="file" multiple onChange={upload}/>
+        <input type="file" onChange={upload}/>
       </label>
       <button>Create View</button>
     </form>

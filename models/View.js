@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const Photo = require('./Photo');
+const Comment = require('./Comment');
 
 const ViewSchema = new Schema({
   locationName: {

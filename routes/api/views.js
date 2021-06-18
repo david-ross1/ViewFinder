@@ -30,7 +30,7 @@ router.get("/" , (req,res) => {
 });
 
 router.get("/:viewId", (req, res) => {
-  View.findById(req.params.viewId).then(view => res.json(view)).catch((err) => console.log(err))
+  View.findById(req.params.viewId).populate({path: 'photos', model: 'photo'}).then(view => res.json(view)).catch((err) => console.log(err))
 });
 
 //.populate('photo','s3Link').populate('comments')
@@ -48,7 +48,6 @@ router.post("/",
           longitude: req.body.longitude,
           latitude: req.body.latitude,
           locationName: req.body.locationName,
-          name: req.body.name,
           description: req.body.description,
           photos: photoIds,
           comments: [],
