@@ -48,8 +48,8 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
       mapStyle={"mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75"}
       mapboxApiAccessToken={mapboxApiAccessToken}
       {...viewport}
-      width={"500px"}
-      height={"500px"}
+      width={"100%"}
+      height={"100%"}
       onViewportChange={viewport => setViewport(viewport)}
       onClick = {(e) => readyToPlace ? _onClick(e) : ""}
     >
