@@ -10,7 +10,7 @@ import CommentComposeContainer from "./comments/comment_compose_container";
 import Footer from "./footer/footer"
 import Modal from "./modal/modal"
 
-import PhotoApp from "./photoapp";
+
 import PhotoApp2 from './photoapp2'
 
 const App = () => (

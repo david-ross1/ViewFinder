@@ -11,7 +11,6 @@ class MainPage extends React.Component {
             <MapContainer/>
           </div>
           <div className='thumbnails'>
-            
           </div>
         </div>
         <footer className="footer">Copyright &copy; 2021 ViewFinder</footer>

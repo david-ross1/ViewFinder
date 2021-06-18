@@ -40,7 +40,7 @@ class LoginForm extends React.Component {
 
   demoUser(e) {
     e.preventDefault();
-    const user = {email:'demo@demo.com', password: '123456'};
+    const user = {email:'alex@demo.com', password: '123456'};
     this.props.login(user).then(this.props.closeModal)
   }
 
@@ -86,6 +86,7 @@ class LoginForm extends React.Component {
                   value={this.state.email}
                   onChange={this.update("email")}
                   placeholder="Email"
+                  required
                 />
             </div>  
             <br/>
@@ -98,6 +99,7 @@ class LoginForm extends React.Component {
                 value={this.state.password}
                 onChange={this.update("password")}
                 placeholder="Password"
+                required
               />
               <br />
             </div>
