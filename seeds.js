@@ -4,7 +4,7 @@ const db = require("./config/keys").mongoURI;
 seeder.connect(db, function () {
   seeder.loadModels(["models/User.js", "models/View.js", "models/Comment.js"]);
 
-  seeder.clearModels(["users"], function () {
+  seeder.clearModels(["user"], function () {
     seeder.populateModels(userData, function () {
       seeder.disconnect();
     });
@@ -25,13 +25,13 @@ seeder.connect(db, function () {
 
 const userData = [
   {
-    model: "users",
+    model: "user",
     documents: [
       {
         name: "demo",
         email: "demo@demo.com",
         password:
-          "$2a$10$ZUjwjnBIlOfhDVN/PqYzh.3d/7OLjzo.5/2CGFM//4zHDQhh/OcPW",
+          "$2a$10$JSwpSv3.03GcRVg.I8luWO9xEcrbn5/NUgm1Bg0qeNLCx8lIXwvuy",
       },
       {
         name: "demo one",

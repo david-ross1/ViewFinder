@@ -1,3 +1,12 @@
+@fontface {
+  font-family: 'Oleo Script', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+}
+
+
+
+
+
 .login-form {
   margin: 20px; 
   align-content: center;
@@ -108,4 +117,5 @@ button:focus {
   padding-top: 6px;
   padding-right: 4px;
   padding-left: 6px;
+  font-family: 
 }
