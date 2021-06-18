@@ -1,0 +1,51 @@
+{
+    "demo":
+      {
+        "name": "demo",
+        "email": "demo@demo.com",
+        "password":
+          "$2a$10$ZUjwjnBIlOfhDVN/PqYzh.3d/7OLjzo.5/2CGFM//4zHDQhh/OcPW",
+          "date": "2021-06-18T04:16:14.250+00:00"
+          
+      },
+    "John":
+      {
+        "name": "John",
+        "email": "a@user.com",
+        "password":
+          "$2a$10$ZUjwjnBIlOfhDVN/PqYzh.3d/7OLjzo.5/2CGFM//4zHDQhh/OcPW",
+          "date": "2021-06-18T04:16:14.250+00:00"
+      },
+    "Spencer":
+      {
+        "name": "Spencer",
+        "email": "b@user.com",
+        "password":
+          "$2a$10$ZUjwjnBIlOfhDVN/PqYzh.3d/7OLjzo.5/2CGFM//4zHDQhh/OcPW",
+          "date": "2021-06-18T04:16:14.250+00:00"
+      },
+    "Mike":
+      {
+        "name": "Mike",
+        "email": "c@user.com",
+        "password":
+          "$2a$10$ZUjwjnBIlOfhDVN/PqYzh.3d/7OLjzo.5/2CGFM//4zHDQhh/OcPW",
+          "date": "2021-06-18T04:16:14.250+00:00"
+      },
+    "Prince":
+      {
+        "name": "Prince",
+        "email": "d@user.com",
+        "password":
+          "$2a$10$ZUjwjnBIlOfhDVN/PqYzh.3d/7OLjzo.5/2CGFM//4zHDQhh/OcPW",
+          "date": "2021-06-18T04:16:14.250+00:00"
+      },
+    "Carly":
+      {
+        "name": "Carly Simon",
+        "email": "e@user.com",
+        "password":
+          "$2a$10$ZUjwjnBIlOfhDVN/PqYzh.3d/7OLjzo.5/2CGFM//4zHDQhh/OcPW",
+          "date": "2021-06-18T04:16:14.250+00:00"
+      }
+  }
