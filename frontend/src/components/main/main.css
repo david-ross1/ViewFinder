@@ -43,7 +43,7 @@
   border: 1px solid grey;
   align-items: center;
   border-radius: 15px;
-  background: radial-gradient(black, transparent);
+  background: radial-gradient(grey, transparent);
 }
 
  .photo {
