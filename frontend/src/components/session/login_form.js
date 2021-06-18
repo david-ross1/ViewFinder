@@ -85,6 +85,7 @@ class LoginForm extends React.Component {
                   value={this.state.email}
                   onChange={this.update("email")}
                   placeholder="Email"
+                  required
                 />
             </div>  
             <br/>
@@ -97,6 +98,7 @@ class LoginForm extends React.Component {
                 value={this.state.password}
                 onChange={this.update("password")}
                 placeholder="Password"
+                required
               />
               <br />
             </div>
