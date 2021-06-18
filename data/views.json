@@ -21,14 +21,14 @@
         "locationName": "Immigrant Point Overlook"
     },
     "Lincoln Park Steps": {
-        "photos": ["04_SF_LincolnPark"],
+        "photos": ["05_SF_LincolnPark"],
         "comments": ["com4"],
         "latitude": 37.78358239374311,
         "longitude": -122.49354973074924,
         "locationName": "Lincoln Park Steps"
     },   
     "Lands End Labyrinth": {
-        "photos": ["05_SF_LandsEnd"],
+        "photos": ["04_SF_LandsEnd"],
         "comments": ["com5"],
         "latitude": 37.788081531458616,
         "longitude": -122.5058492595848,
@@ -49,7 +49,7 @@
         "locationName": "Queen Wilhelmina Tulip Garden"
     },
     "San Francisco Botanical Garden": {
-        "photos": ["08_SF_Botanical1", "08_SF_Botanical2", "08_SF_Botanical3", "08_SF_Botanical4"],
+        "photos": ["08_SF_Botanical1", "08_SF_Botanical2", "08_SF_Botanical3"],
         "comments": ["com1"],
         "latitude": 37.76826023975391,
         "longitude": -122.46920127394549,
@@ -112,7 +112,7 @@
         "locationName": "Vista Point Treasure Island"
     },
     "Terran Linda Sleepy Hollow Ridge": {
-        "photos": ["17_SR_HollowRidge1", "17_SR_HollowRidge2", "17_SR_HollowRidge3", "17_SR_HollowRidge4"],
+        "photos": ["17_SR_HollowRidge1", "17_SR_HollowRidge2", "17_SR_HollowRidge3"],
         "comments": ["com6"],
         "latitude": 38.012044597702044,
         "longitude":  -122.56908731148616,
