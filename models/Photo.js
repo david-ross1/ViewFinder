@@ -9,6 +9,7 @@ const PhotoSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
     required: true,
+    ref: 'users'
   }
 });
 
