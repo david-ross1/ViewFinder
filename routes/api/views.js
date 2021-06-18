@@ -30,7 +30,7 @@ router.get("/" , (req,res) => {
 });
 
 router.get("/:viewId", (req, res) => {
-  View.findById(req.params.viewId).then(view => res.json(view)).catch((err) => console.log(err))
+  View.findById(req.params.viewId).populate('photos').then(view => res.json(view)).catch((err) => console.log(err))
 });
 
 //.populate('photo','s3Link').populate('comments')
