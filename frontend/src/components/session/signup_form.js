@@ -68,32 +68,36 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      
       <div className="login-form-container">
-        <div className='login-head'>
-          <button className='sign-button' onClick={this.otherForm}><p className='button-text'>Login</p></button>
-          <button className='close-button' onClick={this.props.closeModal}>X</button>
+        <div className="login-head">
+          <button className="sign-button" onClick={this.otherForm}>
+            <p className="button-text">Login</p>
+          </button>
+          <button className="close-button" onClick={this.props.closeModal}>
+            X
+          </button>
         </div>
         <form className="session-form-sign" onSubmit={this.handleSubmit}>
-        {this.renderErrors()}        
+          {this.renderErrors()}
           <div className="login-form">
             <div className="input">
-              <label>Email:</label>
+              <label></label>
               <br />
               <input
+                className="login-text"
                 type="text"
                 value={this.state.email}
                 onChange={this.update("email")}
                 placeholder="Email"
-                required 
+                required
               />
-            </div>  
-              <br />
+            </div>
+            <br />
             <div className="input">
-            
-              <label>Name:</label> 
-              <br />  
+              <label></label>
+              <br />
               <input
+                className="login-text"
                 type="text"
                 value={this.state.name}
                 onChange={this.update("name")}
@@ -101,12 +105,12 @@ class SignupForm extends React.Component {
                 required
               />
             </div>
-              <br />
+            <br />
             <div className="input">
-            
-              <label>Password:</label>
+              <label></label>
               <br />
               <input
+                className="login-text"
                 type="password"
                 value={this.state.password}
                 onChange={this.update("password")}
@@ -116,10 +120,10 @@ class SignupForm extends React.Component {
             </div>
             <br />
             <div className="input">
-            
-              <label>Re-enter password:</label>
-              <br />  
+              <label></label>
+              <br />
               <input
+                className="login-text"
                 type="password"
                 value={this.state.password2}
                 onChange={this.update("password2")}
@@ -132,7 +136,6 @@ class SignupForm extends React.Component {
           </div>
         </form>
       </div>
-      
     );
   }
 }
