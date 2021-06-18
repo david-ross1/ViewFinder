@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
-import ReactMapGL, {Marker, NavigationControl} from 'react-map-gl';
+import ReactMapGL, {Marker, NavigationControl, Popup} from 'react-map-gl';
 import classNames from 'classnames';
 import NewLocationFormContainer from './new_location_form_container';
 
@@ -67,19 +67,24 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
         </Marker>
       ))}
       {newPinLocation === null ? "" : (
-        <Marker key={"new"} className={"view-location new selected"}
-          {...newPinLocation}
-        >
-          <Pin/>
-        </Marker>
+      <Marker key={"new"} className={"view-location new selected"}
+        {...newPinLocation}
+      >
+        <Pin/>
+      </Marker>
       )}
+      {!displayLocationForm || newPinLocation === null ? "" : 
+        <Popup {...newPinLocation} closeButton={false}>
+            <NewLocationFormContainer fetchViews={fetchViews} fetchView={fetchView} setDisplayLocationForm={setDisplayLocationForm} {...newPinLocation} />
+        </Popup>
+      }
       <NavigationControl />
     </ReactMapGL>
     <button className={"new-location-button"} onClick={() => {
         setNewPinLocation(null);
         setReadyToPlace(!readyToPlace); 
       }}>Place New Location</button>
-    {!displayLocationForm ? "" : (<NewLocationFormContainer fetchViews={fetchViews} fetchView={fetchView} setDisplayLocationForm={setDisplayLocationForm} {...newPinLocation} />)}
+    {/* {!displayLocationForm ? "" : (<NewLocationFormContainer fetchViews={fetchViews} fetchView={fetchView} setDisplayLocationForm={setDisplayLocationForm} {...newPinLocation} />)} */}
   </div>
   );
   // const zoomIn = () => {

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import S3 from "react-aws-s3";
 import { awsAccessKeyId, awsSecretAccessKey } from "../../config1/keys";
+import './NewLocationForm.css';
 
 const config = {
   bucketName: "view-finder",
@@ -29,7 +30,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
   };
 
   return (
-    <form onSubmit={e => {
+    <form className="new-location-form" onSubmit={e => {
       e.preventDefault();
       handleSubmit().then(fetchViews);
       setDisplayLocationForm(false);
@@ -40,6 +41,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       <label><h2>Description:</h2>
         <input value={description} onChange={(e) => setDescription(e.target.value)}/>
       </label>
+      <br/>
       <label>Images:
         <input type="file" onChange={upload}/>
       </label>
