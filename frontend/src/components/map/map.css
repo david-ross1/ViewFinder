@@ -1,0 +1,74 @@
+@fontface {
+  font-family: 'Offside', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+}
+
+.map {
+  position: relative;
+}
+
+/* @fontface {
+    font-family: 'Oleo Script', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@700&display=swap')
+} */
+
+.zero {
+  fill: rgb(177, 1, 1);
+}
+
+.one {
+   fill: rgb(177, 1, 1);
+}
+
+.two {
+    fill: rgb(177, 1, 1);
+}
+
+.three {
+  fill: rgb(177, 1, 1);
+}
+
+.four {
+  fill: rgb(177, 1, 1);
+}
+
+.offset {
+  /* offset: 30px; */
+  transform:translate(-50%, -50%);
+}
+
+.view-location.selected pin  {
+  color: white;
+}
+
+
+
+.place-marker-text {
+  background-color: rgb(128, 64, 0); 
+  padding: 10px; 
+  width: 162px; 
+  border-radius: 10px; 
+  font-size: 16px; 
+  margin: 10px;
+  margin-left: 55px; 
+  background-color: rgb(175, 40, 40); /* Needed for IEs */
+
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  border-radius: 10px;  
+  font-family: 'Offside', cursive;
+  font-weight: bold; 
+
+}
+
+.place-marker-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
