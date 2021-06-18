@@ -7,6 +7,7 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 const comments = require("./routes/api/comments");
 const views = require("./routes/api/views");
+const photos = require("./routes/api/photos");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -30,7 +31,8 @@ mongoose
 
 app.use("/api/users", users);
 app.use("/api/comments", comments);
-app.use("/api/views",views)
+app.use("/api/views",views);
+app.use("/api/photos", photos);
 
 app.use(passport.initialize());
 require("./config/passport")(passport);

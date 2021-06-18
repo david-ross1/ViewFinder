@@ -12,22 +12,20 @@ class SignupForm extends React.Component {
       password2: '',
       errors: {}
     };
-    
-    this.otherForm = this.otherForm.bind(this)
+
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
+    this.otherForm = this.otherForm.bind(this)
+    this.alert = this.alert.bind(this)
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.signedIn === true) {
-  //     this.props.history.push('/');
-  //   }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.signedIn === true) {
+      this.props.otherForm();
+      this.alert()
+    }
 
-  //   this.setState({errors: nextProps.errors})
-  // }
-
-  otherForm() {
-    this.props.otherForm()
+    this.setState({errors: nextProps.errors})
   }
 
   update(field) {
@@ -45,8 +43,7 @@ class SignupForm extends React.Component {
       password2: this.state.password2
     };
 
-    this.props.signup(user).then(this.props.closeModal());
-    return alert('User Created') 
+    this.props.signup(user, this.props.history); 
   }
 
   renderErrors() {
@@ -61,15 +58,24 @@ class SignupForm extends React.Component {
     );
   }
 
+  otherForm() {
+    this.props.otherForm()
+  }
+
+  alert() {
+    return alert('User Created') 
+  }
+
   render() {
     return (
       
       <div className="login-form-container">
         <div className='login-head'>
-          <button className='sign-button' onClick={this.otherForm}><p className='button-text'>Sign Up</p></button>
+          <button className='sign-button' onClick={this.otherForm}><p className='button-text'>Login</p></button>
           <button className='close-button' onClick={this.props.closeModal}>X</button>
         </div>
         <form className="session-form-sign" onSubmit={this.handleSubmit}>
+        {this.renderErrors()}        
           <div className="login-form">
             <div className="input">
               <label>Email:</label>
@@ -123,7 +129,6 @@ class SignupForm extends React.Component {
             </div>
             <br />
             <input className="submit" type="submit" value="Submit" />
-            {this.renderErrors()}
           </div>
         </form>
       </div>

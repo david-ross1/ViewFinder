@@ -5,8 +5,13 @@
  .map-container {
    border-radius: 5px;
    border: 1px solid grey;
-   width: 899px;
-   height: 300px; 
+   width: 60%;
+   height: 100%;
+ }
+
+ .map {
+   width: 100%;
+   height: 100%;
  }
 
  .mapboxgl-map {
@@ -15,7 +20,17 @@
    margin: 0 auto;
  }
 
- .mappy {
-   width: px;
-   height: 500px;
+ .main-body {
+   display: flex;
+   height: 600px;
+   margin: 20px;
  }
+
+ .thumbnails {
+  border: 1px solid grey;
+  background-color: grey;
+  margin-left: 10px;
+  width: 40%;
+  height: 600px;
+ }
+
