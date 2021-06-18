@@ -6,7 +6,10 @@ class Carousel extends React.Component {
     constructor() {
       super();
 
-      this.props.currentIndex = 0
+      this.state = {
+        currentIndex: 0,
+        
+      }
       
     }
 
@@ -18,13 +21,20 @@ class Carousel extends React.Component {
 
     slidePrev = () => this.setState({ currentIndex: this.state.currentIndex - 1 });
 
-    renderThumbs = () =>
-      <ul>{this.props.photos.map((item, i) =>
-        <li key={i} onClick={() => this.slideTo(i)}>Thumb {item}</li>)}
-      </ul>;
+    renderThumbs() {
+      if (!this.props.photos) {
+        return <div> </div>
+      } else {
+      return (
+        <ul>{this.props.photos.map((item, i) =>
+          <li key={i} onClick={() => this.slideTo(i)}>Thumb<img src={item.s3Link} /></li>)}
+        </ul>
+        )
+      }
+    }
 
     renderGallery() {
-      const { currentIndex, photos } = this.props;
+      const { currentIndex } = this.state;
 
       return (<AliceCarousel
         dotsDisabled={true}
@@ -32,16 +42,17 @@ class Carousel extends React.Component {
         slideToIndex={currentIndex}
         onSlideChanged={this.onSlideChanged}
       >
-        { items.map((item, i) => <div key={i} className="photos"><h2>{ item }</h2></div>) }
+        {!this.props.photos ? "" : this.props.photos.map((item, i) => <div key={i} className="photos"><h2><img src={item.s3Link} /></h2></div>) }
       </AliceCarousel>);
     }
 
     render() {
+      debugger
       return (
         <div>
           { this.renderThumbs() }
-          <button onClick={() => this.slidePrev()}>Prev button</button>
-          <button onClick={() => this.slideNext()}>Next button</button>
+          <button onClick={() => this.slidePrev()}>{"<"}</button>
+          <button onClick={() => this.slideNext()}>{">"}</button>
           { this.renderGallery() }
         </div>
       );
