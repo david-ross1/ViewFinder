@@ -17,11 +17,13 @@ const App = () => (
   <div>
     <Modal/>
     <NavBarContainer />
-    <PhotoApp2 />
+    {/* <PhotoApp2 /> */}
     <Switch>
       <Route exact path="/" component={MainPage} />
-      <ProtectedRoute exact path="/comments" component={CommentsContainer} />
-      <ProtectedRoute exact path="/profile" component={ProfileContainer} />
+      <ProtectedRoute exact path="/" component={CommentsContainer} />
+      {/* <ProtectedRoute exact path="/comments" component={CommentsContainer} /> */}
+      <ProtectedRoute exact path="/" component={ProfileContainer} />
+      {/* <ProtectedRoute exact path="/profile" component={ProfileContainer} /> */}
       <ProtectedRoute
         exact
         path="/new_comment"

@@ -78,7 +78,7 @@ class SignupForm extends React.Component {
         {this.renderErrors()}        
           <div className="login-form">
             <div className="input">
-              <label>Email:</label>
+              <label></label>
               <br />
               <input
                 type="text"
@@ -91,7 +91,7 @@ class SignupForm extends React.Component {
               <br />
             <div className="input">
             
-              <label>Name:</label> 
+              <label></label> 
               <br />  
               <input
                 type="text"
@@ -104,7 +104,7 @@ class SignupForm extends React.Component {
               <br />
             <div className="input">
             
-              <label>Password:</label>
+              <label></label>
               <br />
               <input
                 type="password"
@@ -117,7 +117,7 @@ class SignupForm extends React.Component {
             <br />
             <div className="input">
             
-              <label>Re-enter password:</label>
+              <label></label>
               <br />  
               <input
                 type="password"

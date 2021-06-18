@@ -6,9 +6,16 @@ import {FaUserCircle, FaUserLock } from "react-icons/fa"
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { navigate: false }
     this.logoutUser = this.logoutUser.bind(this);
     this.getLinks = this.getLinks.bind(this);
+
   }
+
+  handleClick = () => {
+    this.setState({ navigate: true});
+  }
+
 
   logoutUser(e) {
     e.preventDefault();
@@ -22,13 +29,13 @@ class NavBar extends React.Component {
         <div className="NavBar">
           <div className="comment-links">
             <div className="t-link">
-              <Link className="link" to={"/comments"}>
+              <Link className="link" to={"/"}>
                 All Comments
               </Link>
-              <Link className="link" to={"/profile"}>
+              <Link className="link" to={"/"}>
                 Profile
               </Link>
-              <Link className="link" to={"/new_comment"}>
+              <Link className="link" to={"/"}>
                 Write a Comment
               </Link>
               <div className="logout-button">
@@ -58,7 +65,7 @@ class NavBar extends React.Component {
       <div className="logotainer">
         <div className="main-logo">
           <div className="loogo">
-            <h1>ViewFinder</h1>
+            <Link to='/' className='logo-link'>ViewFinder</Link>
             {this.getLinks()}
           </div>
         </div>
