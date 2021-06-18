@@ -5,7 +5,7 @@ import ReactMapGL, {Marker, NavigationControl} from 'react-map-gl';
 import classNames from 'classnames';
 import NewLocationFormContainer from './new_location_form_container';
 
-const mapboxApiAccessToken = require("../../config1/keys_dev").mapboxAPI;
+const mapboxApiAccessToken = require("../../config1/keys_dev1").mapboxAPI;
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;

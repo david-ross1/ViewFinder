@@ -10,6 +10,7 @@ const comments = require("./routes/api/comments");
 const views = require("./routes/api/views");
 const photos = require("./routes/api/photos");
 
+const port = process.env.PORT || 5000;
 const path = require("path");
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("frontend/build"));
@@ -23,19 +24,18 @@ mongoose
   .then(() => console.log("Connected to MongoDB successfully"))
   .catch((err) => console.log(err));
 
-app.get("/", (req, res) => res.send("Hello World!!"));
-
-app.use(passport.initialize());
-require("./config/passport")(passport);
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: false }));
+  app.use(bodyParser.json());
+// app.get("/", (req, res) => res.send("Hello World!!"));
 
 app.use("/api/users", users);
 app.use("/api/comments", comments);
 app.use("/api/views",views);
 app.use("/api/photos", photos);
 
-const port = process.env.PORT || 5000;
+app.use(passport.initialize());
+require("./config/passport")(passport);
+
+
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 
