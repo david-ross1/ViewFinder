@@ -1,7 +1,6 @@
 const express = require("express");
-const app = express();
-const db = require("./config/keys").mongoURI;
 const mongoose = require("mongoose");
+const db = require("./config/keys").mongoURI;
 const bodyParser = require("body-parser");
 const passport = require("passport");
 
@@ -10,8 +9,10 @@ const comments = require("./routes/api/comments");
 const views = require("./routes/api/views");
 const photos = require("./routes/api/photos");
 
+const app = express();
 const port = process.env.PORT || 5000;
 const path = require("path");
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("frontend/build"));
   app.get("/", (req, res) => {

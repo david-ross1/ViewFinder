@@ -23,6 +23,7 @@ class Photoapp2 extends Component {
 
   upload(e) {
     console.log(e.target.files[0]);
+    debugger;
     ReactS3Client.uploadFile( e.target.files[0] , e.target.files.name)
       .then( (data) => {
         console.log(data)

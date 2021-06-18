@@ -1,6 +1,7 @@
 import React from "react";
 import MapContainer from "../map/map_container";
 import "./main.css";
+import SidebarContainer from "../sidebar/sidebar_container";
 
 class MainPage extends React.Component {
   render() {
