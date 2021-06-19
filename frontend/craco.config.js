@@ -5,7 +5,7 @@ module.exports = {
     {
       plugin: rewireBabelLoader,
       options: {
-        excludes: [/mapbox-gl/],
+        excludes: [/node_modules/],
       },
     }
   ]
