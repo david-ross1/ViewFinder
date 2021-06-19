@@ -21,7 +21,7 @@
     width: 300px;
     height: 400px;
     border-radius: 8%;
-    background:
+    /* background:
 	linear-gradient(
 		limegreen,
 		transparent
@@ -37,7 +37,7 @@
 		transparent
 	);
 	
-background-blend-mode: screen;
+background-blend-mode: screen; */
 }
 
 
