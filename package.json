@@ -39,11 +39,13 @@
   },
   "homepage": "https://github.com/david-ross1/view-finder#readme",
   "dependencies": {
+    "@craco/craco": "^6.1.2",
     "aws-sdk": "^2.928.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "classnames": "^2.3.1",
     "concurrently": "^6.2.0",
+    "craco-babel-loader": "^0.1.4",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongo-seeding": "^3.7.0",
