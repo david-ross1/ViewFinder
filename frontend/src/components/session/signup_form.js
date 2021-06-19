@@ -1,37 +1,40 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
-import './session.css'
+import React from "react";
+import { withRouter } from "react-router-dom";
+import "./session.css";
 
 class SignupForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
-      name: '',
-      password: '',
-      password2: '',
-      errors: {}
+      email: "",
+      name: "",
+      password: "",
+      password2: "",
+      errors: {},
     };
 
+    this.otherForm = this.otherForm.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
-    this.otherForm = this.otherForm.bind(this)
-    this.alert = this.alert.bind(this)
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.signedIn === true) {
-      this.props.otherForm();
-      this.alert()
-    }
+  // componentWillReceiveProps(nextProps) {
+  //   if (nextProps.signedIn === true) {
+  //     this.props.history.push('/');
+  //   }
 
-    this.setState({errors: nextProps.errors})
+  //   this.setState({errors: nextProps.errors})
+  // }
+
+  otherForm() {
+    this.props.otherForm();
   }
 
   update(field) {
-    return e => this.setState({
-      [field]: e.currentTarget.value
-    });
+    return (e) =>
+      this.setState({
+        [field]: e.currentTarget.value,
+      });
   }
 
   handleSubmit(e) {
@@ -40,30 +43,21 @@ class SignupForm extends React.Component {
       email: this.state.email,
       name: this.state.name,
       password: this.state.password,
-      password2: this.state.password2
+      password2: this.state.password2,
     };
 
-    this.props.signup(user, this.props.history); 
+    this.props.signup(user).then(this.props.closeModal());
+    return alert("User Created");
   }
 
   renderErrors() {
-    return(
+    return (
       <ul>
         {Object.keys(this.state.errors).map((error, i) => (
-          <li key={`error-${i}`}>
-            {this.state.errors[error]}
-          </li>
+          <li key={`error-${i}`}>{this.state.errors[error]}</li>
         ))}
       </ul>
     );
-  }
-
-  otherForm() {
-    this.props.otherForm()
-  }
-
-  alert() {
-    return alert('User Created') 
   }
 
   render() {
@@ -71,68 +65,60 @@ class SignupForm extends React.Component {
       <div className="login-form-container">
         <div className="login-head">
           <button className="sign-button" onClick={this.otherForm}>
-            <p className="button-text">Login</p>
+            <p className="button-text">Sign Up</p>
           </button>
           <button className="close-button" onClick={this.props.closeModal}>
             X
           </button>
         </div>
         <form className="session-form-sign" onSubmit={this.handleSubmit}>
-          {this.renderErrors()}
           <div className="login-form">
             <div className="input">
-              <label></label>
+              <label>Email:</label>
               <br />
               <input
-                className="login-text"
                 type="text"
                 value={this.state.email}
                 onChange={this.update("email")}
                 placeholder="Email"
-                required
               />
             </div>
             <br />
             <div className="input">
-              <label></label>
+              <label>Name:</label>
               <br />
               <input
-                className="login-text"
                 type="text"
                 value={this.state.name}
                 onChange={this.update("name")}
                 placeholder="Name"
-                required
               />
             </div>
             <br />
             <div className="input">
-              <label></label>
+              <label>Password:</label>
               <br />
               <input
-                className="login-text"
                 type="password"
                 value={this.state.password}
                 onChange={this.update("password")}
                 placeholder="Password"
-                required
               />
             </div>
             <br />
             <div className="input">
-              <label></label>
+              <label>Re-enter password:</label>
               <br />
               <input
-                className="login-text"
                 type="password"
                 value={this.state.password2}
                 onChange={this.update("password2")}
                 placeholder="Confirm Password"
-                required
               />
             </div>
             <br />
-            <input className="submit button" type="submit" value="Submit" />
+            <input className="submit" type="submit" value="Submit" />
+            {this.renderErrors()}
           </div>
         </form>
       </div>
