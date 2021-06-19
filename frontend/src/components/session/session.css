@@ -70,6 +70,7 @@
 	cursor: pointer;
 	outline: inherit;
   width: 170px;
+  opacity: 100%
 
 
   
@@ -115,6 +116,7 @@ p.button-text:hover {
 
 .session-form-sign{
   padding-left: 15%;
+  opacity: 100%;
 }
 
 .sign-button {
