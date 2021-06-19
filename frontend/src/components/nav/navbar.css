@@ -182,9 +182,9 @@ button {
   outline: inherit;
 }
 
-button:focus {
+/* button:focus {
   outline: orange 5px auto;
-}
+} */
 
 .link {
   color: white;

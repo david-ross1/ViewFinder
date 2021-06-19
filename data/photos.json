@@ -27,13 +27,13 @@
         "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/03_SF_GoldenGate3.JPG",
         "user": "Spencer"
     },
-    "04_SF_LincolnPark": {
-        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/04_SF_LincolnPark.JPG",
-        "user": "Mike"
-    },
-    "05_SF_LandsEnd": {
-        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/05_SF_LandsEnd.JPG",
+    "04_SF_LandsEnd": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/04_SF_LandsEnd.JPG",
         "user": "John"
+    },
+    "05_SF_LincolnPark": {
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/05_SF_LincolnPark.JPG",
+        "user": "Mike"
     },
     "06_SF_USSMemorial1": {
         "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/06_SF_USSMemorial1.JPG",
@@ -68,19 +68,19 @@
         "user": "Mike"
     },
     "08_SF_Botanical1": {
-        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical1.JPG",
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF%2BBotanical1.JPG",
         "user": "John"
     },
     "08_SF_Botanical2": {
-        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical2.JPG",
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF%2BBotanical2.JPG",
         "user": "John"
     },
     "08_SF_Botanical3": {
-        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical3.JPG",
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF%2BBotanical3.JPG",
         "user": "John"
     },
     "08_SF_Botanical4": {
-        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF_Botanical4.JPG",
+        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/08_SF%2BBotanical4.JPG",
         "user": "John"
     },
     "09_SF_Oracle1": {
@@ -201,10 +201,6 @@
     },
     "17_SR_HollowRidge3": {
         "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/17_SR_HollowRidge3.JPG",
-        "user": "Mike"
-    },
-    "17_SR_HollowRidge4": {
-        "s3Link": "https://view-finder.s3.us-west-1.amazonaws.com/17_SR_HollowRidge4.JPG",
         "user": "Mike"
     },
     "18_SR_McNears1": {

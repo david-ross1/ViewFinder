@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import NewLocationFormContainer from './new_location_form_container';
 import './map.css'
 
-const mapboxApiAccessToken = require("../../config1/keys_dev1").mapboxAPI;
+const mapboxApiAccessToken = require("../../config1/keys").mapboxAPI;
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;
