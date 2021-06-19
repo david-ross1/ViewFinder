@@ -18,7 +18,7 @@ class MainPage extends React.Component {
                    
           </div>
         </div>
-        <footer className="footer">Copyright &copy; 2021 ViewFinder</footer>
+        <footer className="body-footer">Copyright &copy; 2021 ViewFinder</footer>
       </div>
     );
   }

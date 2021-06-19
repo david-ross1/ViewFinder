@@ -33,9 +33,6 @@ class NavBar extends React.Component {
                 All Comments
               </Link>
               <Link className="link" to={"/"}>
-                Profile
-              </Link>
-              <Link className="link" to={"/"}>
                 Write a Comment
               </Link>
               <div className="logout-button">
