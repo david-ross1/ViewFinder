@@ -213,3 +213,14 @@ a.link {
 .logout:hover {
   background-color: transparent;
 }
+
+.nav-button-login {
+ 
+  position: absolute; 
+}
+
+.profile-container {
+  position: relative; 
+  right: 10%; 
+  top: -10px; 
+}
