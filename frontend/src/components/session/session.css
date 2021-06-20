@@ -224,8 +224,10 @@ p.button-text {
 }
 
 input.submit.button {
-    font-family: 'Offside', cursive;
+  font-family: 'Offside', cursive;
+  font-size: 16px;
   width: 175px;
+  font-weight: 400; 
 }
 
 .demo-submit {
@@ -234,6 +236,12 @@ input.submit.button {
 }
  
 
+.close-button {
+  border-radius: 5px; 
+  margin-right: 15px;
+  font-family: 'Offside', cursive;
+  width: 15px;
+}
 
 
 

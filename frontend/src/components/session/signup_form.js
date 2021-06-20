@@ -17,7 +17,7 @@ class SignupForm extends React.Component {
     this.clearedErrors = false;
     this.otherForm = this.otherForm.bind(this);
     this.alert = this.alert.bind(this);
-    this.login = this.login.bind(this);
+    // this.login = this.login.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
