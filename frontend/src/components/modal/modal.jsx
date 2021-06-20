@@ -1,20 +1,20 @@
-import React from 'react';
-import { closeModal } from '../../actions/modal_actions';
-import { connect } from 'react-redux';
-import LoginFormContainer from '../session/login_form_container';
-import SignupFormContainer from '../session/signup_form_container';
-import "./modal.css"
+import React from "react";
+import { closeModal } from "../../actions/modal_actions";
+import { connect } from "react-redux";
+import LoginFormContainer from "../session/login_form_container";
+import SignupFormContainer from "../session/signup_form_container";
+import "./modal.css";
 
-function Modal({modal, closeModal}) {
+function Modal({ modal, closeModal }) {
   if (!modal) {
     return null;
   }
   let component;
   switch (modal) {
-    case 'login':
+    case "login":
       component = <LoginFormContainer />;
       break;
-    case 'signup':
+    case "signup":
       component = <SignupFormContainer />;
       break;
     default:
@@ -22,22 +22,22 @@ function Modal({modal, closeModal}) {
   }
   return (
     <div className="modal-background" onClick={closeModal}>
-      <div className="modal-child" onClick={e => e.stopPropagation()}>
-        { component }
+      <div className="modal-child" onClick={(e) => e.stopPropagation()}>
+        {component}
       </div>
     </div>
   );
 }
 
-const mstp = state => {
+const mstp = (state) => {
   return {
-    modal: state.ui.modal
+    modal: state.ui.modal,
   };
 };
 
-const mdtp = dispatch => {
+const mdtp = (dispatch) => {
   return {
-    closeModal: () => dispatch(closeModal())
+    closeModal: () => dispatch(closeModal()),
   };
 };
 

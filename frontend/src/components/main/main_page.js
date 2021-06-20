@@ -6,7 +6,7 @@ import SidebarContainer from "../sidebar/sidebar_container";
 class MainPage extends React.Component {
   render() {
     return (
-      <div>
+      <div className='map-tain'>
         <div className='main-body'>
           <div className='map-container'>
             <MapContainer/>
