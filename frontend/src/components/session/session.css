@@ -244,11 +244,10 @@ input.submit.button {
 }
 
 .login-form-container {
-  opacity: 50%;
+  opacity: 100%;
   width: auto;
   width: 100%;
-  z-index: 600; 
-  position: absolute;
+
 }
 
 .session-container {
