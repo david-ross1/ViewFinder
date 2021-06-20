@@ -11,7 +11,7 @@
 
 
 
-/* 
+
 .login-form {
   margin: 0px; 
   align-content: center;
@@ -26,8 +26,8 @@
   height: 30px; 
   width: 75px; 
   margin-bottom: 15px; 
-    margin: 40px; */
-  /* background-color: rgb(49, 183, 170); 
+    margin: 40px;
+   background-color: rgb(49, 183, 170); 
 
   -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
@@ -35,10 +35,10 @@
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1; */
-/* } */
+  zoom: 1; 
+ } 
 
-/* 
+
 .submit:hover {
   background: #00a336;
   cursor: pointer 
@@ -49,16 +49,31 @@
 
 }
 
+.login-forn-container-container {
+  position: relative; 
+  z-index: 550; 
+}
+
 .login-form-container {
+  z-index: 600; 
+  position: absolute; 
+  width: auto;
+  width: 100%;
+  left: 0px; 
+}
+
+
+
+/* .login-form-container {
   opacity: 100%;
   width: auto;
   width: 100%;
-} */
+}  */
 
 .session-container {
   /* border: 20px solid gray; */
 }
-/* 
+
 .login-form input {
   margin: 5px; 
   padding: 5px; 
@@ -83,7 +98,7 @@ button {
   color: white;
   -webkit-text-fill-color: white;
   cursor: pointer;
-} */
+} 
 
 button:focus {
   /* outline: orange 5px auto; */
@@ -97,7 +112,7 @@ p.button-text:hover {
   color: #00a336;
 } */
 
-/* .submit {
+.submit {
   width: 170px;
 }
 
@@ -128,9 +143,9 @@ p.button-text:hover {
   padding-right: 5px;
   padding-left: 5px;
   margin-bottom: 0px; 
-  align-items: center; */
+  align-items: center; 
 
-    /* background-color: rgb(49, 183, 170); 
+    background-color: rgb(49, 183, 170); 
 
   -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
@@ -138,11 +153,11 @@ p.button-text:hover {
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1; */
+  zoom: 1; 
   
-/* } */
+} 
 
-/* .button-text {
+.button-text {
   color: white
 }
 
@@ -156,9 +171,9 @@ p.button-text:hover {
   font-weight: 600;
   font-size: 20px; 
   margin-top: 20px;
- */
 
-  /* background-color: rgb(49, 183, 170); 
+
+  background-color: rgb(49, 183, 170); 
 
   -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
@@ -166,9 +181,8 @@ p.button-text:hover {
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1; */
+  zoom: 1; 
   
-/* 
 }
 
 .demo-button {
@@ -182,9 +196,9 @@ p.button-text:hover {
   padding-right: 4px;
   padding-left: 6px;
   font-family: 'Offside', cursive;
-  text-align: center; */
+  text-align: center;
 
-  /* background-color: rgb(49, 183, 170); 
+ background-color: rgb(49, 183, 170); 
 
   -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
@@ -192,8 +206,8 @@ p.button-text:hover {
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1; */
-/* 
+  zoom: 1; 
+
 }
 
 .login-text {
@@ -218,7 +232,16 @@ input.submit.button {
   width: 170px;
   height: 24px;
 }
- */
+ 
+
+
+
+
+
+
+/* 
+
+
 
 
 
@@ -256,9 +279,7 @@ input.submit.button {
   left: 0px; 
 }
 
-.session-container {
-  /* border: 20px solid gray; */
-}
+
 
 .login-form input {
   margin: 5px; 
@@ -280,9 +301,6 @@ button {
   cursor: pointer;
 }
 
-button:focus {
-  outline: orange 5px auto;
-}
 
 
 
@@ -339,4 +357,4 @@ button:focus {
   padding-top: 6px;
   padding-right: 4px;
   padding-left: 6px;
-}
+} */

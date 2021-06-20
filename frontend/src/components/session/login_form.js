@@ -66,59 +66,144 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div className='login-form-container-container'>
       <div className="login-form-container">
-        <div className="login-form">
-          <div className="login-head">
-            <button className="sign-button" onClick={this.otherForm}>
-              <p className="button-text">Sign Up</p>
-            </button>
-            <button className="close-button" onClick={this.props.closeModal}>
-              X
-            </button>
-          </div>
-          <br />
-          <br />
-          <form className="session-form" onSubmit={this.handleSubmit}>
+        <div className="login-head">
+          <button className="sign-button" onClick={this.otherForm}>
+            <p className="button-text">Sign Up</p>
+          </button>
+          <button className="close-button" onClick={this.props.closeModal}>
+            X
+          </button>
+        </div>
+        <form className="session-form-sign" onSubmit={this.handleSubmit}>
+          {this.renderErrors()}
+          <div className="login-form">
             <div className="input">
-              <label>Email:</label>
+              <label></label>
               <br />
               <input
+                className="login-text"
                 type="text"
                 value={this.state.email}
                 onChange={this.update("email")}
                 placeholder="Email"
+                required
               />
             </div>
             <br />
-            <br />
-            <div>
-              <label>Password:</label>
+            {/* <div className="input">
+              <label></label>
               <br />
               <input
+                className="login-text"
+                type="text"
+                value={this.state.name}
+                onChange={this.update("name")}
+                placeholder="Name"
+                required
+              />
+            </div> */}
+            <br />
+            <div className="input">
+              <label></label>
+              <br />
+              <input
+                className="login-text"
                 type="password"
                 value={this.state.password}
                 onChange={this.update("password")}
                 placeholder="Password"
+                required
               />
+            </div>
+            <br />
+            {/* <div className="input">
+              <label></label>
               <br />
-            </div>
+              <input
+                className="login-text"
+                type="password"
+                value={this.state.password2}
+                onChange={this.update("password2")}
+                placeholder="Confirm Password"
+                required
+              />
+            </div> */}
             <br />
-            <br />
-            <input className="submit" type="submit" value="Submit" />
+            <input className="submit button" type="submit" value="Submit" />
             {this.renderErrors()}
-            <br />
+            <br />{" "}
             <div className="demo-button">
+              {" "}
               <button onClick={this.demoUser} className="demo-submit">
-                Demo Login
-              </button>
+                Demo Login{" "}
+              </button>{" "}
             </div>
-          </form>
-        </div>
-      </div>
+          </div>
+        </form>
       </div>
     );
   }
 }
 
 export default withRouter(LoginForm);
+//   render() {
+//     return (
+//       <div className="login-form-container">
+//         <div className="login-form">
+//           <div className="login-head">
+//             <button className="sign-button" onClick={this.otherForm}>
+//               <p className="button-text">Sign Up</p>
+//             </button>
+//             <button className="close-button" onClick={this.props.closeModal}>
+//               X
+//             </button>
+//           </div>
+//           <br />
+//           <br />
+//           <form className="session-form" onSubmit={this.handleSubmit}>
+//             <div className="input">
+//               <label></label>
+//               <br />
+//               <input
+//                 className="login-text"
+//                 type="text"
+//                 value={this.state.email}
+//                 onChange={this.update("email")}
+//                 placeholder="Email"
+//                 required
+//               />
+//             </div>
+//             <br />
+//             <br />
+//             <div>
+//               <label></label>
+//               <br />
+//               <input
+//                 className="login-text"
+//                 type="password"
+//                 value={this.state.password}
+//                 onChange={this.update("password")}
+//                 placeholder="Password"
+//                 required
+//               />
+//               <br />
+//             </div>
+//             <br />
+//             <br />
+//             <input className="submit" type="submit" value="Submit" />
+//             {this.renderErrors()}
+//             <br />
+//             <div className="demo-button">
+//               <button onClick={this.demoUser} className="demo-submit">
+//                 Demo Login
+//               </button>
+//             </div>
+//           </form>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+// export default withRouter(LoginForm);
