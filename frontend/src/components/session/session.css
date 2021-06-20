@@ -244,7 +244,7 @@ input.submit.button {
 }
 
 .login-form-container {
-  opacity: 100%;
+  opacity: 100% !important; 
   width: auto;
   width: 100%;
 
