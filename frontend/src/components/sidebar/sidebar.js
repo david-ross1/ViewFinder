@@ -9,6 +9,7 @@ const Sidebar = ({focusView}) => {
     
       <section className="sidebar">
         <div className="picture-carousel">
+          {process.env.NODE_ENV === 'production' ? "HAHAHAHHAHAHHAHA" : ""}
           <Carousel photos={focusView.photos} />
           {/* {!focusView.photos ? "" : focusView.photos.map((photo,idx) => (
             <figure key={idx} className={classNames({"focused": idx === splashIdx})} onClick={() => setSplashIdx(idx)}><img src={photo.s3Link}/></figure>
