@@ -8,7 +8,6 @@ class MainPage extends React.Component {
     return (
       <div>
         <div className='main-body'>
-          {process.env.NODE_ENV}
           <div className='map-container'>
             <MapContainer/>
           </div>
