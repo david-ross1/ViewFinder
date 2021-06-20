@@ -7,6 +7,8 @@ import NewLocationFormContainer from './new_location_form_container';
 import './map.css'
 
 const mapboxApiAccessToken = require("../../config1/keys").mapboxAPI;
+const nodeEnv = require('../../config1/keys').nodeEnv;
+debugger
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;

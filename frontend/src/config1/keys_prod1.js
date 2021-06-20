@@ -1,4 +1,5 @@
 module.exports = {
+  nodeEnv: process.env.NODE_ENV,
   mongoURI: process.env.MONGO_URI,
   secretOrKey: process.env.SECRET_OR_KEY,
   awsFileUrlLink: process.env.AWS_FILE_URL_LINK,
