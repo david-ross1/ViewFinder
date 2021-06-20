@@ -2,7 +2,6 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import "./session.css";
 
-
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
@@ -133,14 +132,12 @@ class LoginForm extends React.Component {
             <br />
             <input className="submit button" type="submit" value="Submit" />
             {this.renderErrors()}
-            <br />
-            {" "}
+            <br />{" "}
             <div className="demo-button">
               {" "}
               <button onClick={this.demoUser} className="demo-submit">
-                 Demo Login {" "}
-              </button>
-              {" "}
+                Demo Login{" "}
+              </button>{" "}
             </div>
           </div>
         </form>
@@ -148,7 +145,6 @@ class LoginForm extends React.Component {
     );
   }
 }
-
 
 export default withRouter(LoginForm);
 //   render() {

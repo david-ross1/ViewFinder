@@ -48,9 +48,14 @@ class NavBar extends React.Component {
       return (
         <div className="session-container">
           <div className="NavBar Links2">
-            
-            <button onClick={() => openModal('login')} className='nav-button-login'><FaUserCircle/></button>
-            
+            <div className="profile-container">
+              <button
+                onClick={() => openModal("login")}
+                className="nav-button-login"
+              >
+                <FaUserCircle />
+              </button>
+            </div>
           </div>
         </div>
       );

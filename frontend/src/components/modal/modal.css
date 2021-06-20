@@ -17,10 +17,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 500;
-    /* background: #008FB8; */
+    background: #008FB8;
+    width: 350px;
+    height: 400px;
+    border-radius: 8%;
+
+
+
+    background: #008FB8; 
     width: 300px;
     height: 400px;
     border-radius: 8%;
+    background: blue; 
+
     background:
 	linear-gradient(
 		limegreen,
@@ -37,7 +46,53 @@
 		transparent
 	);
 	
-background-blend-mode: screen;
+background-blend-mode: screen; 
+ } 
+
+
+
+ /* .modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    
 }
+
+.modal-child {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500; */ 
+    /* background: #008FB8; */
+    /* width: 300px;
+    height: 400px;
+    border-radius: 8%;
+    background: blue; 
+    opacity: 25% */
+    /* background:
+	linear-gradient(
+		limegreen,
+		transparent
+	),
+	linear-gradient(
+		90deg,
+		skyblue,
+		transparent
+	),
+	linear-gradient(
+		-90deg,
+		coral,
+		transparent
+	);
+	
+background-blend-mode: screen; 
+ /* }  */
 
 
