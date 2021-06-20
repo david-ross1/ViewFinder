@@ -243,8 +243,14 @@ input.submit.button {
   cursor: pointer 
 }
 
+.login-forn-container-container {
+  position: relative; 
+  z-index: 550; 
+}
+
 .login-form-container {
-  opacity: 100% !important; 
+  z-index: 600; 
+  position: absolute; 
   width: auto;
   width: 100%;
 
