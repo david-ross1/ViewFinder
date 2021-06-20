@@ -6,7 +6,7 @@
    border-radius: 5px;
    border: 1px solid grey;
    width: 50%;
-   height: 90%;
+   height: 100%;
    align-content: center;
    margin: 10px auto
  }
@@ -27,8 +27,8 @@
 
  .main-body {
    display: flex;
-   height: 70%;
-   margin: 20px;
+   height: 100%;
+   margin: 0px;
  }
 
  .side-section {
