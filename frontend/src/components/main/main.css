@@ -7,7 +7,7 @@
       border: 1px solid grey; */
       background: transparent;
    width: 50%;
-   height: 87vh;
+   height: 80vh;
    /* align-content: center; */
    
  }
@@ -34,7 +34,7 @@
 
  .main-body {
    display: flex;
-   height: 87vh;
+   height: 80vh;
    margin: 0px;
  }
 
