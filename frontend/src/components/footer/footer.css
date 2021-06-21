@@ -1,7 +1,11 @@
-@fontface {
+/* @fontface {
     font-family: 'Oleo Script', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@700&display=swap')
-}
+} */
+@fontface {
+    font-family: 'Oleo Script', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap')
+  }
 
 .footer-component-block {
     position: relative;
@@ -20,7 +24,8 @@
     padding-top: 10px;
     color: white;
     font-size: 12px;
-    font-family: 'Oleo Script', cursive;
+    /* font-family: 'Oleo Script', cursive; */
+    font-family: 'Nova Flat', cursive;
     margin: 0px 0px;
     justify-content: space-between;
     line-height: 1.5;
@@ -34,9 +39,9 @@
 }
 
 .footer-header {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
-    padding-left: 40px;
+    padding-left: 10px; /*was 40*/
 }
 
 .footer-logo {

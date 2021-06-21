@@ -30,8 +30,8 @@ class Carousel extends React.Component {
         return <div> </div>
       } else {
       return (
-        <ul className='thumb-bar'>{this.props.photos.map((item, i) =>
-          <li className='thumbs' key={i} onClick={(i) => this.slideTo(i)}><img src={item.s3Link} /></li>)}
+        <ul className='thumb-bar'>{this.props.photos.map((item, i) => (
+          <li className='thumbs' key={i} onClick={(i) => this.slideTo(i)}><img src={item.s3Link} /></li>))}
         </ul>
         )
       }
@@ -65,10 +65,9 @@ class Carousel extends React.Component {
     render() {
       return (
         <div>
-          
-          { this.renderThumbs() }
-          
-          { this.renderGallery() }
+            { this.renderThumbs() }
+
+            { this.renderGallery() }
         </div>
       );
     }

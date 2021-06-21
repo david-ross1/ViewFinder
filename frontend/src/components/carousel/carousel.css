@@ -30,10 +30,10 @@
 
 .alice-carousel {
   position: relative;
-  width: 1000px;
+  width: 50vw; 
   margin: 0;
   direction: ltr; 
-  height: 100vh;
+  height: 60vh;
 }
 
 .alice-carousel__wrapper {
@@ -253,9 +253,6 @@
     
 }
 
-.photo {
-
-}
 
  .photo {
    width: 100%; 
@@ -263,11 +260,13 @@
  }
 
  .photo {
-   /* align-content: center; */
+   align-content: center;
  }
 
  .photos-tainer {
-   width: 900px; 
-   height: 700px; 
-   margin-left: 70px; 
+   /* align-content: center; */
+   margin: 0 auto;
+   max-width: 700px; 
+   max-height: 500px; 
+   /* margin-left: 70px;  */
  }
