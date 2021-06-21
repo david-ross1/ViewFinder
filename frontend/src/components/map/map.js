@@ -7,7 +7,8 @@ import NewLocationFormContainer from './new_location_form_container';
 import './map.css'
 
 // const mapboxApiAccessToken = require("../../config1/keys").mapboxAPI;
-const mapboxApiAccessToken = 'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0YXp4c2kxNmVrMndxcHhiaWRyb2E3In0.ZKUo8tHMWew87KIhnHHYLA'
+// const mapboxApiAccessToken = 'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0YXp4c2kxNmVrMndxcHhiaWRyb2E3In0.ZKUo8tHMWew87KIhnHHYLA'
+const mapboxApiAccessToken = "pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0NmFoMzIxNWV1MnBxbDM4bmZiMDF5In0.cQDPdpCOUYsBq5q4nm1i7A";
 
 
 const MAX_ZOOM = 16;
