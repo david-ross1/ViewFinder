@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
   // document.body.style = "background: #B6A328";
   document.body.style =
-    "background-image: url(https://view-finder.s3.us-west-1.amazonaws.com/gradient-unsplash.png";
+    // "background-image: url(https://view-finder.s3.us-west-1.amazonaws.com/gradient-unsplash.png";
     // "background-image: url(https://view-finder.s3.us-west-1.amazonaws.com/01_SF_GoldenGate.JPG";
  
 	
