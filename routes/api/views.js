@@ -10,11 +10,21 @@ const AWS = require("aws-sdk");
 const keys = require("../../config/keys");
 const AWSS3RootPath = keys.awsRootPath;
 
+function appendToFilename(filename, string) {
+  const lastDot = filename.lastIndexOf(".");
+  if (lastDot === -1) { return filename + string;}
+  else {
+    return filename.slice(0,lastDot) + string + filename.slice(lastDot);
+  }
+}
+
 const s3bucket = new AWS.S3({
   accessKeyId: keys.awsAccessKeyId,
-  secretAccessKey: keys.secretAccessKey,
+  secretAccessKey: keys.awsSecretAccessKey,
   region: keys.awsRegion,
 });
+
+
 
 const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
@@ -55,16 +65,16 @@ router.post("/",
     Promise.all(req.files.map((photo) => {
         const uploadParams = {
           Bucket: keys.awsBucketName,
-          Key: photo.originalname,
+          Key: appendToFilename(photo.originalname,Math.floor(1000*Math.random())),
           Body: photo.buffer,
           ContentType: photo.mimetype,
           ACL: "public-read",
         };
-        return s3bucket.upload(uploadParams,(err, data) => AWSS3RootPath + params.Key)
+        return s3bucket.upload(uploadParams)
         .promise()
-        .then((path) => new Photo({ s3Link: path, user: req.user.id}));
-      })
-      .save())
+        .then(() => new Photo({ s3Link: AWSS3RootPath+"/"+uploadParams.Key, user: req.user.id}).save())
+        .catch(err => console.log(err));
+      }))
       .then(values => values.map(v => v._id))
       .then(photoIds => {
         const newView = new View({
