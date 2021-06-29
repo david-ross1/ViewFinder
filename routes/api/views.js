@@ -5,6 +5,29 @@ const passport = require('passport');
 const View = require("../../models/View");
 const Comment = require('../../models/Comment');
 const Photo = require("../../models/Photo");
+const multer = require("multer");
+const AWS = require("aws-sdk");
+const keys = require("../../config/keys");
+const AWSS3RootPath = keys.awsRootPath;
+
+function appendToFilename(filename, string) {
+  const lastDot = filename.lastIndexOf(".");
+  if (lastDot === -1) { return filename + string;}
+  else {
+    return filename.slice(0,lastDot) + string + filename.slice(lastDot);
+  }
+}
+
+const s3bucket = new AWS.S3({
+  accessKeyId: keys.awsAccessKeyId,
+  secretAccessKey: keys.awsSecretAccessKey,
+  region: keys.awsRegion,
+});
+
+
+
+const storage = multer.memoryStorage();
+const upload = multer({storage: storage});
 
 const toGeoJSON = (viewData) => ({
   "type": "FeatureCollection",
@@ -37,11 +60,21 @@ router.get("/:viewId", (req, res) => {
 
 router.post("/", 
   passport.authenticate("jwt", {session: false}),
-  // I apologize for writing this
+  upload.array("photos",10),
   (req,res) => {
-    Promise.all(req.body.photos.map((photo) => 
-      new Photo({ s3Link: photo.s3Link, user: req.user.id})
-      .save()))
+    Promise.all(req.files.map((photo) => {
+        const uploadParams = {
+          Bucket: keys.awsBucketName,
+          Key: appendToFilename(photo.originalname,Math.floor(1000*Math.random())),
+          Body: photo.buffer,
+          ContentType: photo.mimetype,
+          ACL: "public-read",
+        };
+        return s3bucket.upload(uploadParams)
+        .promise()
+        .then(() => new Photo({ s3Link: AWSS3RootPath+"/"+uploadParams.Key, user: req.user.id}).save())
+        .catch(err => console.log(err));
+      }))
       .then(values => values.map(v => v._id))
       .then(photoIds => {
         const newView = new View({
