@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import CommentBox from "./comment_box";
 import "./comment.css";
 
-class Comment extends React.Component {
+class Comments extends React.Component {
   constructor(props) {
     super(props);
 
@@ -36,4 +36,4 @@ class Comment extends React.Component {
   }
 }
 
-export default withRouter(Comment);
+export default withRouter(Comments);
