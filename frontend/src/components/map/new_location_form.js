@@ -20,13 +20,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
   const photos = [];
   const handleSubmit = () => createView({longitude, latitude, locationName: name, description, photos});
   const upload = (e) => {
-    ReactS3Client.uploadFile( e.target.files[0] , `${longitude.toFixed(4)},${latitude.toFixed(4)}-${photos.length}`)
-      .then( (data) => {
-        photos.push({s3Link: data.location});
-      })
-      .catch((err) => {
-        alert(err);
-      });
+    photos.push(e.target.files[0])
   };
 
   return (
