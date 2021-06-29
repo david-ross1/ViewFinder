@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import classNames from 'classnames';
 import "./sidebar.css";
 import Carousel from '../carousel/carouse'
+import Comments from '../comments/comments'
 
 const Sidebar = ({focusView}) => {
   // const [splashIdx, setSplashIdx] = useState(0);
@@ -16,6 +17,7 @@ const Sidebar = ({focusView}) => {
         </div>
         <h2 className="view-name">{focusView.locationName}</h2>
         <p className="view-desc">{focusView.description}</p>
+        <p>{focusView.comments}</p>
       </section>
     
   );
