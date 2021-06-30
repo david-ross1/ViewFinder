@@ -10,4 +10,4 @@ const mapDispatchToProps = (dispatch) => ({
   uploadPhoto: (photoData) => dispatch(uploadPhoto(photoData)),
 });
 
-export default connect(null,mapDispatchToProps)(PhotoApp);
+export default connect(mapStateToProps,mapDispatchToProps)(PhotoApp);
