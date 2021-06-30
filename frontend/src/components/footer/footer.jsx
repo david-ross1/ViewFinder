@@ -35,7 +35,7 @@ class Footer extends React.Component {
                                 <p><a href={"https://github.com/mataghva"} className='footer-links'><img className="footer-logo"src={github} alt='' /></a></p>
 
                                 
-                                <p><a href={"www.linkedin.com/in/mohammad-ali-taghva-4b06b237"} className='footer-links'><img className="footer-logo" src={linkedin} alt='' /></a></p>
+                                <p><a href={"https://www.linkedin.com/in/mohammad-ali-taghva-4b06b237"} className='footer-links'><img className="footer-logo" src={linkedin} alt='' /></a></p>
 
                             </ul>
                         </div>

@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import "./sidebar.css";
 import Carousel from '../carousel/carouse'
 import PhotoApp from "../photoapp2";
+import Comments from '../comments/comments'
+import { FaUserAlt } from 'react-icons/fa'
 
 const Sidebar = ({focusView}) => {
   // const [splashIdx, setSplashIdx] = useState(0);
@@ -18,6 +20,23 @@ const Sidebar = ({focusView}) => {
         <h2 className="view-name">{focusView.locationName}</h2>
         <p className="view-desc">{focusView.description}</p>
         <PhotoApp/>
+        <ul className="sidebar-comment-container">
+          {
+            focusView.comments.map((comment) => (<li>
+                                                    <div class="sidebar-comment-user">
+                                                      <FaUserAlt/> {comment.user.name}:
+                                                    </div>
+                                                    <div class="sidebar-comment-text">
+                                                      {comment.text}
+                                                    </div>
+                                                    <br></br>
+
+                                                  </li>))
+          }
+        </ul>
+      
+        
+        
       </section>
   );
 }

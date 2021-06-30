@@ -1,7 +1,7 @@
 {
     "Crissy Field": {
         "photos": ["01_SF_GoldenGate"],
-        "comments": ["com1"],
+        "comments": ["com1", "com2", "com3", "com4"],
         "latitude": 37.80413864579928,
         "longitude": -122.46503785348509,
         "locationName": "Crissy Field"
