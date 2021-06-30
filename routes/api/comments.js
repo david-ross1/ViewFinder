@@ -44,7 +44,20 @@ router.post('/',
             user: req.user.id
         });
 
-        newComment.save().then(comment => res.json(comment));
+        newComment.save().then(comment => {
+            View.findOneAndUpdate(
+                { _id: req.body.viewId },
+                { $push: { comments: comment._id }},
+                (err, success) => {
+                  if (err) {
+                    console.log(err);
+                  }
+                  else {
+                    return res.json(comment);
+                  }
+                }
+            );
+        });
     }
 );
 
