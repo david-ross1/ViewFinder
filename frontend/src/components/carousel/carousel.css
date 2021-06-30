@@ -33,7 +33,7 @@
   width: 50vw; 
   margin: 0;
   direction: ltr; 
-  height: 60vh;
+  height: 40vh;
 }
 
 .alice-carousel__wrapper {
@@ -229,8 +229,8 @@
 }
 
 .thumbs > img {
-    width: 200px;
-    height: 140px;
+    width: 125px;
+    height: 80px;
     padding: 5px; 
 }
 
@@ -266,7 +266,7 @@
  .photos-tainer {
    /* align-content: center; */
    margin: 0 auto;
-   max-width: 700px; 
-   max-height: 500px; 
+   max-width: 600px; 
+   max-height: 400px; 
    /* margin-left: 70px;  */
  }

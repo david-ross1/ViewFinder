@@ -1,5 +1,10 @@
+@fontface {
+  font-family: 'Ubuntu', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap')
+}
+
 .picture-carousel {
-  height: 85%;
+  height: 70%;
   width: 100%;
     
 }
@@ -28,21 +33,27 @@
 
 .sidebar-comment-user {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   color: rgba(21, 3, 100, 0.993);
+  
 }
 
 .sidebar-comment-text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
-  color: rgba(21, 3, 100, 0.993);
+  color: rgb(88, 86, 86);
 
 }
 
 .sidebar-comment-container {
-  width: 400px;
-  margin-left: 130px;
+  background: #EEE;
+  border-radius: 5px;
+  width: 580px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
   line-height: 18px;
+  overflow-y: auto;
 
 }
