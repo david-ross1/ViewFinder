@@ -3,17 +3,6 @@ import S3 from "react-aws-s3";
 import { awsAccessKeyId, awsSecretAccessKey } from "../../config1/keys";
 import './NewLocationForm.css';
 
-const config = {
-  bucketName: "view-finder",
-  //dirName: "media" /* optional */,
-  region: "us-west-1",
-  accessKeyId: awsAccessKeyId,
-  secretAccessKey: awsSecretAccessKey,
-  //s3Url: "https:/your-custom-s3-url.com/" /* optional */,
-};
-
-const ReactS3Client = new S3(config);
-
 const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLocationForm}) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
