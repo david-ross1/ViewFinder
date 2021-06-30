@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-
 import './photo.css'
 
-const PhotoApp = () => {
+const PhotoApp = ({uploadPhoto, viewId}) => {
   const [file, setFile] = useState(null);
   const upload = (e) => {
     setFile(e.target.files[0]);
-    
+    uploadPhoto({photo: file, viewId});
   };
   return (
     <div className="photo-upload-wrapper">
@@ -20,4 +19,4 @@ const PhotoApp = () => {
   );
 }
 
-export default Photoapp2; 
+export default PhotoApp; 
