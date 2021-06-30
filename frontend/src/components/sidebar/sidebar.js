@@ -17,7 +17,21 @@ const Sidebar = ({focusView}) => {
         </div>
         <h2 className="view-name">{focusView.locationName}</h2>
         <p className="view-desc">{focusView.description}</p>
-        <p>{focusView.comments}</p>
+        <ul>
+          {
+            focusView.comments.map((comment) => (<li class="sidebar-comment-container">
+                                                    <div class="sidebar-comment-user">
+                                                      {comment.user.name}:
+                                                    </div>
+                                                    <div class="sidebar-comment-text">
+                                                      {comment.text}
+                                                    </div>
+                                                  </li>))
+          }
+        </ul>
+      
+        
+        
       </section>
     
   );
