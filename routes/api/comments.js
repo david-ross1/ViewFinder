@@ -41,9 +41,8 @@ router.post('/',
 
         const newComment = new Comment({
             text: req.body.text,
-            user: req.user.id
+            user: req.body.user.id
         });
-
         newComment.save().then(comment => {
             View.findOneAndUpdate(
                 { _id: req.body.viewId },
