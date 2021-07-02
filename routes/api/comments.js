@@ -41,10 +41,22 @@ router.post('/',
 
         const newComment = new Comment({
             text: req.body.text,
-            user: req.user.id
+            user: req.body.user.id
         });
-
-        newComment.save().then(comment => res.json(comment));
+        newComment.save().then(comment => {
+            View.findOneAndUpdate(
+                { _id: req.body.viewId },
+                { $push: { comments: comment._id }},
+                (err, success) => {
+                  if (err) {
+                    console.log(err);
+                  }
+                  else {
+                    return res.json(comment);
+                  }
+                }
+            );
+        });
     }
 );
 

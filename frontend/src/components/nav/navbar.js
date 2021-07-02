@@ -29,12 +29,12 @@ class NavBar extends React.Component {
         <div className="NavBar">
           <div className="comment-links">
             <div className="t-link">
-              <Link className="link" to={"/"}>
+              {/* <Link className="link" to={"/"}>
                 All Comments
               </Link>
               <Link className="link" to={"/"}>
                 Write a Comment
-              </Link>
+              </Link> */}
               <div className="logout-button">
                 <button className="logout" onClick={this.logoutUser}>
                 <FaUserLock/>

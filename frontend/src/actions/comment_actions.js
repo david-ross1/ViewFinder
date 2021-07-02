@@ -29,7 +29,8 @@ export const fetchUserComments = (id) => (dispatch) =>
     .then((comments) => dispatch(receiveUserComments(comments)))
     .catch((err) => console.log(err));
 
-export const composeComment = (data) => (dispatch) =>
-  writeComment(data)
+export const composeComment = (data) => (dispatch) => {
+  return writeComment(data)
     .then((comment) => dispatch(receiveNewComment(comment)))
     .catch((err) => console.log(err));
+}
