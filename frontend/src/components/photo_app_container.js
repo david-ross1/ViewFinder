@@ -2,8 +2,9 @@ import {connect} from "react-redux";
 import {uploadPhoto} from "../actions/photo_actions";
 import PhotoApp from "./photoapp2";
 
-const mapStateToProps = ({entities}) => ({
-  viewId: entities.views.focusId,
+const mapStateToProps = ({views,session}) => ({
+  viewId: views.focusId,
+  loggedIn: session.user !== null,
 });
 
 const mapDispatchToProps = (dispatch) => ({

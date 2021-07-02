@@ -6,6 +6,7 @@ const passport = require('passport');
 const Photo = require('../../models/Photo');
 const View = require('../../models/View');
 const AWS = require('aws-sdk');
+const crypto = require('crypto');
 const multer = require("multer");
 const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
@@ -46,15 +47,17 @@ router.post("/",
         user: req.user.id,
       });
       return newPhoto.save().then((photo) => {
-        View.findOneAndUpdate(
-          { _id: req.body.viewId },
+        View.findByIdAndUpdate(
+          req.body.viewId,
           { $push: { photos: photo._id }},
           (err, success) => {
             if (err) {
               console.log(err);
               res.status(500);
+              return res.json({noassociatedview: err});
             }
             else {
+              res.status(300);
               return res.json({photo, viewId: req.body.viewId});
             }
           }

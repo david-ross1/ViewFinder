@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import S3 from "react-aws-s3";
 import { awsAccessKeyId, awsSecretAccessKey } from "../../config1/keys";
 import './NewLocationForm.css';
 

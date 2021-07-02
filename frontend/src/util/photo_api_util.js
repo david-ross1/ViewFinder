@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 export const addPhoto = (photoData) => {
+  console.log(photoData);
   const fd = new FormData();
-  Object.keys(photoData).forEach(key => fd.append(key,viewData[key]));
-  return axios.post('/api/views/',fd);
+  Object.keys(photoData).forEach(key => fd.append(key,photoData[key]));
+  return axios.post('/api/photos/',fd);
 };
 
 export const deletePhoto = (photoData) => {

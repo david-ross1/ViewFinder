@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import classNames from 'classnames';
 import "./sidebar.css";
 import Carousel from '../carousel/carouse'
-import PhotoApp from "../photoapp2";
+import PhotoAppContainer from "../photo_app_container";
 import Comments from '../comments/comments'
 import { FaUserAlt } from 'react-icons/fa'
 
@@ -19,7 +19,7 @@ const Sidebar = ({focusView}) => {
         </div>
         <h2 className="view-name">{focusView.locationName}</h2>
         <p className="view-desc">{focusView.description}</p>
-        <PhotoApp/>
+        <PhotoAppContainer/>
         <ul className="sidebar-comment-container">
           {
             focusView.comments.map((comment) => (<li>

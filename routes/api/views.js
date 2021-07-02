@@ -24,8 +24,6 @@ const s3bucket = new AWS.S3({
   region: keys.awsRegion,
 });
 
-
-
 const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
 
@@ -60,8 +58,6 @@ router.get("/:viewId", (req, res) => {
       .catch((err) => console.log(err))
 });
 
-//.populate('photo','s3Link').populate('comments')
-
 router.post("/", 
   passport.authenticate("jwt", {session: false}),
   upload.array("photos",10),
@@ -89,7 +85,12 @@ router.post("/",
           photos: photoIds,
           comments: [],
         });
-    return newView.save().then(view => res.json(view));
+    return newView.save()
+      .then(view => res.json(view))
+      .catch(err => {
+        res.status(422);
+        return res.json({errors: err});
+      });
     });
 });
 
