@@ -187,7 +187,7 @@ font-family: 'Nova Flat', cursive;
   padding-right: 20px;
 }
 
-button {
+/* button {
   all: unset;
   color: blue;
   -webkit-text-fill-color: blue;
@@ -197,7 +197,7 @@ button {
   font: 14px;
   cursor: pointer;
   outline: inherit;
-}
+} */
 
 /* button:focus {
   outline: orange 5px auto;

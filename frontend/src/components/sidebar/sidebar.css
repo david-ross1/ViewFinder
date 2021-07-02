@@ -46,7 +46,7 @@
 
 }
 
-.sidebar-comment-container {
+.sidebar-comment-container, .write-comment-container {
   background: #EEE;
   border-radius: 5px;
   width: 580px;
@@ -56,4 +56,35 @@
   line-height: 18px;
   overflow-y: auto;
 
+}
+
+.write-comment-input{
+  width: 575px;
+  height: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+}
+
+.write-comment-button {
+  width: 135px;
+  height: 22px;
+  text-align: center;
+  border-style: outset;
+  -webkit-text-fill-color: white;
+  background: #1D60E0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.write-comment-button:hover {
+  background: #107cff;
+}
+
+.write-comment-button:active {
+  border-style: inset;
+}
+
+.comment-button-container {
+  text-align: center;
+  margin-left: -455px;
 }
