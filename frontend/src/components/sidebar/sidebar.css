@@ -39,14 +39,16 @@
   
 }
 
-.sidebar-comment-text {
+.sidebar-comment-text,
+.comment-place-holder {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
   color: rgb(88, 86, 86);
 
 }
 
-.sidebar-comment-container, .write-comment-container {
+.sidebar-comment-container, 
+.write-comment-container {
   background: #EEE;
   border-radius: 5px;
   width: 580px;
@@ -92,13 +94,6 @@
 .delete_icon {
   color: red
 }
-
-
-/* .comment-header {
-  padding: 10px;
-  color: white;
-  font-size: 13px;
-} */
 
 .write-comment-submit {
   padding: 10px;

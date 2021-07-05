@@ -32,8 +32,9 @@ class CommentsShow extends React.Component {
         const currentUserName = currentUser ? currentUser.name : undefined;
         let commentsArrayCopy = comments.slice(0); 
         return (
-            <div>
-                <ul className="sidebar-comment-container">
+            <div className="sidebar-comment-container">
+                {!commentsArrayCopy.length && <div className="comment-place-holder">There is no comments for this view</div>}
+                <ul>
                     {
                     commentsArrayCopy.sort(this.compareComments)
                                         .map((comment, idx) => (
