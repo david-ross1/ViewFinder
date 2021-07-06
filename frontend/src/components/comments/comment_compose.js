@@ -1,5 +1,4 @@
 import React from "react";
-import CommentBox from "./comment_box";
 
 class CommentCompose extends React.Component {
   constructor(props) {
@@ -13,18 +12,21 @@ class CommentCompose extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({ newComment: nextProps.newComment.text });
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   this.setState({ newComment: nextProps.newComment.text });
+  // }
 
-  handleSubmit(e) {
+  
+  async handleSubmit(e) {
     e.preventDefault();
     let comment = {
       text: this.state.text,
+      user: this.props.currentUser,
+      viewId: this.props.viewId
     };
-
-    this.props.composeComment(comment);
+    await this.props.composeComment(comment);
     this.setState({ text: "" });
+    this.props.trigerFunction(e)
   }
 
   update() {
@@ -39,13 +41,12 @@ class CommentCompose extends React.Component {
       <div className="write-comment-container">
         <form onSubmit={this.handleSubmit}>
           <div className="write-comment">
-            <input
-              type="textarea"
+            <textarea
               value={this.state.text}
               onChange={this.update()}
               placeholder="Write your comment..."
               className="write-comment-input"
-            />
+            ></textarea>
             <input
               className="write-comment-submit"
               type="submit"
@@ -53,8 +54,6 @@ class CommentCompose extends React.Component {
             />
           </div>
         </form>
-        <br />
-        <CommentBox text={this.state.newComment} />
       </div>
     );
   }

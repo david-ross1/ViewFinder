@@ -1,14 +1,13 @@
 import {connect} from 'react-redux';
-import {fetchView} from '../../actions/view_actions';
 import Sidebar from './sidebar';
 
-const mapStateToProps = (store) => ({
-  focusView: store.views.sidebar,
-  // focusId: store.views.focusId,
-});
+const mapStateToProps = (state) => {
+  return {
+  focusView: state.views.sidebar,
+  comments: state.views.sidebar.comments,
+  isAuthenticated: state.session.isAuthenticated,
+  currentUser: state.session.user}
+};
 
-const mapDispatchToProps = (dispatch) => ({
-  // fetchView: (id) => dispatch(fetchView(id)),
-});
 
-export default connect(mapStateToProps,mapDispatchToProps)(Sidebar);
+export default connect(mapStateToProps)(Sidebar);

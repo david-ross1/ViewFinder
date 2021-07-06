@@ -11,13 +11,13 @@ class Carousel extends React.Component {
         currentIndex: 0,
         
       }
-      this.slideTo=this.slideTo.bind(this)
-      
+      // this.slideTo=this.slideTo.bind(this)
+      this.renderThumbs=this.renderThumbs.bind(this)
+      this.renderGallery=this.renderGallery.bind(this)
     }
 
-    slideTo(i) {
-      this.setState({ currentIndex: i })
-    } 
+    slideTo = (i) => this.setState({ currentIndex: i })
+    
 
     onSlideChanged = (e) => this.setState({ currentIndex: e.item });
 
@@ -29,34 +29,46 @@ class Carousel extends React.Component {
       if (!this.props.photos) {
         return <div> </div>
       } else {
-      return (
-        <ul className='thumb-bar'>{this.props.photos.map((item, i) =>
-          <li className='thumbs' key={i} onClick={(i) => this.slideTo(i)}><img src={item.s3Link} /></li>)}
-        </ul>
-        )
+        // debugger
+        return (
+          <ul className='thumb-bar'>{this.props.photos.map((item, i) => (
+            <li className='thumbs' key={i} onClick={() => this.slideTo(i)}><img src={item.s3Link} /></li>))}
+          </ul>
+          )
       }
     }
 
     renderGallery() {
       const { currentIndex } = this.state;
+      const {photos} =this.props
 
-      return (<AliceCarousel
-        dotsDisabled={true}
-        buttonsDisabled={false}
-        slideToIndex={currentIndex}
-        onSlideChanged={this.onSlideChanged}
-      >
-        {!this.props.photos ? "" : this.props.photos.map((item, i) => <div key={i} className="photos"><h2><img className='photo' src={item.s3Link} /></h2></div>) }
-      </AliceCarousel>);
+      return (
+        <AliceCarousel
+          dotsDisabled={false}
+          buttonsDisabled={false}
+          slideToIndex={currentIndex}
+          onSlideChanged={this.onSlideChanged}
+        >
+          {!photos
+            ? ""
+            : photos.map((photo, i) => (
+                <div className="photos-tainer">
+                  <div key={i} className="photos">
+                    <h2>
+                      <img className="photo" src={photo.s3Link} />
+                    </h2>
+                  </div>
+                </div>
+              ))}
+        </AliceCarousel>
+      );
     }
 
     render() {
       return (
         <div>
-          
-          { this.renderThumbs() }
-          
-          { this.renderGallery() }
+            { this.renderThumbs() }
+            { this.renderGallery() }
         </div>
       );
     }

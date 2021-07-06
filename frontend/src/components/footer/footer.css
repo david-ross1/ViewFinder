@@ -1,7 +1,11 @@
-@fontface {
+/* @fontface {
     font-family: 'Oleo Script', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@700&display=swap')
-}
+} */
+@fontface {
+    font-family: 'Oleo Script', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap')
+  }
 
 .footer-component-block {
     position: relative;
@@ -20,7 +24,8 @@
     padding-top: 10px;
     color: white;
     font-size: 12px;
-    font-family: 'Oleo Script', cursive;
+    /* font-family: 'Oleo Script', cursive; */
+    font-family: 'Nova Flat', cursive;
     margin: 0px 0px;
     justify-content: space-between;
     line-height: 1.5;
@@ -34,9 +39,9 @@
 }
 
 .footer-header {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
-    padding-left: 40px;
+    padding-left: 10px; /*was 40*/
 }
 
 .footer-logo {
@@ -61,7 +66,15 @@ a .footer-logo {
 }
 
 .footer-component-block {
-    background:
+  background: rgb(2,26,191);
+background: linear-gradient(90deg, rgba(2,26,191,1) 0%, rgba(0,65,162,1) 12%, rgba(40,182,160,1) 34%, rgba(111,198,205,1) 70%, rgba(37,76,130,1) 87%, rgba(22,35,133,1) 100%);
+/* 
+background: rgb(189,187,28);
+background: linear-gradient(90deg, rgba(189,187,28,1) 0%, rgba(167,52,11,1) 50%, rgba(9,141,180,1) 100%);
+
+background: rgb(28,189,49);
+background: linear-gradient(90deg, rgba(28,189,49,1) 0%, rgba(98,121,30,1) 25%, rgba(167,52,11,1) 50%, rgba(120,79,62,1) 65%, rgba(66,109,119,1) 82%, rgba(9,141,180,1) 100%); */
+    /* background:
 	repeating-linear-gradient(
 		50deg,
 		#F7A37B,
@@ -93,7 +106,7 @@ a .footer-logo {
 		#0085C8 6em
 	);
 	
-background-blend-mode: multiply;
+background-blend-mode: multiply; */
 }
 * {
     font-family: 'Oleo Script', cursive;

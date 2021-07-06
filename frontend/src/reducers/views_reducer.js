@@ -1,4 +1,5 @@
 import {RECEIVE_VIEWS, RECEIVE_FULL_VIEW_DATA} from "../actions/view_actions";
+import { RECEIVE_VIEW_COMMENTS } from "../actions/comment_actions";
 
 const ViewsReducer = (state = {
   mapDisplay: {},
@@ -16,6 +17,10 @@ const ViewsReducer = (state = {
       newState = Object.assign({},state);
       newState.sidebar = action.view;
       newState.focusId = action.view._id;
+      return newState;
+    case RECEIVE_VIEW_COMMENTS:
+      newState = Object.assign({},state);
+      newState.sidebar.comments = action.comments.data.comments;
       return newState;
     default:
       return state;

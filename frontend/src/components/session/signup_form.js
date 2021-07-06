@@ -1,37 +1,39 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
-import './session.css'
+import React from "react";
+import { withRouter } from "react-router-dom";
+import "./session.css";
 
 class SignupForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
-      name: '',
-      password: '',
-      password2: '',
-      errors: {}
+      email: "",
+      name: "",
+      password: "",
+      password2: "",
+      errors: {},
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
-    this.otherForm = this.otherForm.bind(this)
-    this.alert = this.alert.bind(this)
+    this.otherForm = this.otherForm.bind(this);
+    this.alert = this.alert.bind(this);
+    // this.login = this.login.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.signedIn === true) {
       this.props.otherForm();
-      this.alert()
+      this.alert();
     }
 
-    this.setState({errors: nextProps.errors})
+    this.setState({ errors: nextProps.errors });
   }
 
   update(field) {
-    return e => this.setState({
-      [field]: e.currentTarget.value
-    });
+    return (e) =>
+      this.setState({
+        [field]: e.currentTarget.value,
+      });
   }
 
   handleSubmit(e) {
@@ -40,30 +42,28 @@ class SignupForm extends React.Component {
       email: this.state.email,
       name: this.state.name,
       password: this.state.password,
-      password2: this.state.password2
+      password2: this.state.password2,
     };
 
-    this.props.signup(user, this.props.history); 
+    this.props.signup(user, this.props.history);
   }
 
   renderErrors() {
-    return(
+    return (
       <ul>
         {Object.keys(this.state.errors).map((error, i) => (
-          <li key={`error-${i}`}>
-            {this.state.errors[error]}
-          </li>
+          <li key={`error-${i}`}>{this.state.errors[error]}</li>
         ))}
       </ul>
     );
   }
 
   otherForm() {
-    this.props.otherForm()
+    this.props.otherForm();
   }
 
   alert() {
-    return alert('User Created') 
+    return alert("User Created");
   }
 
   render() {

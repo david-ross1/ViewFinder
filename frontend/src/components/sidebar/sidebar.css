@@ -1,7 +1,12 @@
+@fontface {
+  font-family: 'Ubuntu', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap')
+}
+
 .picture-carousel {
-  height: 80%;
+  height: 70%;
   width: 100%;
-  
+    
 }
 
 .sidebar {
@@ -13,7 +18,7 @@
   color: white;
   font-weight: 600;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 35px;
 }
 
 .view-desc {
@@ -26,5 +31,187 @@
   padding-top: 10px;
 }
 
+.show-comment-user {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(21, 3, 100, 0.993);
+  
+}
+
+.show-comment-text,
+.comment-place-holder {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: rgb(88, 86, 86);
+  
+}
+
+.comment-section {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+.show-comment-container {
+  background: #EEE;
+  border-radius: 5px;
+  width: 580px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 18px;
+  overflow-y: auto;
+
+}
+
+ 
+.write-comment-container {
+  background: #EEE;
+  border-radius: 5px;
+  width: 580px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 18px;
+  overflow-y: auto;
+
+}
+
+.write-comment-input{
+  width: 580px;
+  height: 57px;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.write-comment-button,
+.show-delete-button {
+  width: 135px;
+  height: 25px;
+  text-align: center;
+  border-style: outset;
+  -webkit-text-fill-color: white;
+  background: #1D60E0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.write-comment-button:hover {
+  background: #107cff;
+}
+
+.write-comment-button:active {
+  border-style: inset;
+}
+
+.sidebar-comment-section {
+  position: relative;
+}
+.comment-button-container {
+  display: flex;
+  position: relative;
+  width: 580px;
+  margin: 0 auto;
+  /* text-align: center; */
+  /* margin-left: -325px; */
+  margin-top: 20px;
+}
+
+.delete-comment-button {
+  all: unset;
+  cursor: pointer;
+
+}
+.delete-icon {
+  color: red;
+  font-size: 18px;
+}
+
+.write-comment-submit {
+  padding: 10px;
+  border-radius: 5px;
+  background: #1d60e0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.write-comment-submit:hover {
+  color: white;
+  cursor: pointer;
+  background: #107cff;
+}
 
 
+.delete-modal-section {
+  width: 700px;
+  position: relative;
+}
+
+.delete-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(128,128,128,0.5); */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.delete-modal-container {
+  position: absolute;
+  top: -80px;
+  left: 90px;
+  background: #EEE;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 400px;
+  height: 140px;
+  padding: 10px;
+  line-height: 18px;
+  overflow-y: auto;
+  text-align: center;
+  z-index: 1000;
+}
+
+.delete-modal-confirm-sentence {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: black;
+  padding: 5px;
+}
+
+.delete-modal-comment {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  /* color: rgb(88, 86, 86); */
+  color: blue;
+  padding-top: 20px;
+}
+
+.delete-modal-confirm-button {
+  padding: 10px;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.delete-modal-cancel-button {
+padding: 10px;
+  border-radius: 5px;
+  background: #1d60e0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}

@@ -60,10 +60,22 @@
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
+
   border-radius: 10px;  
   font-family: 'Offside', cursive;
   font-weight: bold; 
   position: absolute;
   top: 10px;
   left: 55px;
+}
+
+.new-location-button {
+  all: unset;
+  color: white;
+  -webkit-text-fill-color: white;
+  cursor: pointer;
+}
+
+.create-view-button {
+  cursor: pointer;
 }

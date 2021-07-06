@@ -17,16 +17,11 @@ const ReactS3Client = new S3(config);
 const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLocationForm}) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const photos = [];
+  const [photos, setPhotos] = useState([]);
   const handleSubmit = () => createView({longitude, latitude, locationName: name, description, photos});
   const upload = (e) => {
-    ReactS3Client.uploadFile( e.target.files[0] , `${longitude.toFixed(4)},${latitude.toFixed(4)}-${photos.length}`)
-      .then( (data) => {
-        photos.push({s3Link: data.location});
-      })
-      .catch((err) => {
-        alert(err);
-      });
+    e.stopPropagation();
+    setPhotos(photos.concat([e.target.files[0]]));
   };
 
   return (
@@ -45,7 +40,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       <label>Images:
         <input type="file" onChange={upload}/>
       </label>
-      <button>Create View</button>
+      <button className="create-view-button">Create View</button>
     </form>
   );
 }

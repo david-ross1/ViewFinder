@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (decodedUser.exp < currentTime) {
       store.dispatch(logout());
-      window.location.href = '/login';
+      window.location.href = '/';
     }
   } else {
     store = configureStore({});
@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
   // document.body.style = "background: #B6A328";
   document.body.style =
-    "background-image: url(https://view-finder.s3.us-west-1.amazonaws.com/01_SF_GoldenGate.JPG";
+    // "background-image: url(https://view-finder.s3.us-west-1.amazonaws.com/gradient-unsplash.png";
+    // "background-image: url(https://view-finder.s3.us-west-1.amazonaws.com/01_SF_GoldenGate.JPG";
  
 	
 // background-blend-mode: screen;
