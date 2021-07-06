@@ -50,30 +50,47 @@ class Sidebar extends React.Component {
 								 comments.some((element) => (element.user.email === currentUserEmail)) : false;
     if (Object.values(focusView).length === 0) return "";
     return (
-        <section className="sidebar">
-          	<div className="picture-carousel">
-          	  <Carousel photos={focusView.photos} />
-				{/* {!focusView.photos ? "" : focusView.photos.map((photo,idx) => (
+      <section className="sidebar">
+        <div className="carousel-test">
+          <div className="picture-carousel">
+            <Carousel photos={focusView.photos} />
+            {/* {!focusView.photos ? "" : focusView.photos.map((photo,idx) => (
               <figure key={idx} className={classNames({"focused": idx === splashIdx})} onClick={() => setSplashIdx(idx)}><img src={photo.s3Link}/></figure>
             ))} */}
-          	</div>
-          	<h2 className="view-name">{focusView.locationName}</h2>
-          	<p className="view-desc">{focusView.description}</p>
-            <div className="sidebar-comment-section">
-          	  <div className="comment-button-container">
-          	    {isAuthenticated && <button className="write-comment-button" 
-				  					 onClick={this.handleWriteComment}>
-					  				{this.state.buttonText}</button>}
-                {isAuthenticated  && (userCommentExist || currentUserEmail === "admin@admin.com") && 
-								  !!comments.length && <button className="show-delete-button" 
-								  						onClick={this.handleDeleteIcon}>
-														{this.state.deleteButtonText}</button>}
-          	  </div>
-          	  {(isAuthenticated && !this.state.showPage) && <CommentComposeContainer trigerFunction={this.handleWriteComment}/>}
-			        {this.state.showPage && <CommentsShowContainer showDeleteIcon = {this.state.showDeleteIcon}/>}
-            </div>
-        </section>
-      );
+            <h2 className="view-name">{focusView.locationName}</h2>
+            <p className="view-desc">{focusView.description}</p>
+          </div>
+        </div>
+        <div className="sidebar-comment-section">
+          <div className="comment-button-container">
+            {isAuthenticated && (
+              <button
+                className="write-comment-button"
+                onClick={this.handleWriteComment}
+              >
+                {this.state.buttonText}
+              </button>
+            )}
+            {isAuthenticated &&
+              (userCommentExist || currentUserEmail === "admin@admin.com") &&
+              !!comments.length && (
+                <button
+                  className="show-delete-button"
+                  onClick={this.handleDeleteIcon}
+                >
+                  {this.state.deleteButtonText}
+                </button>
+              )}
+          </div>
+          {isAuthenticated && !this.state.showPage && (
+            <CommentComposeContainer trigerFunction={this.handleWriteComment} />
+          )}
+          {this.state.showPage && (
+            <CommentsShowContainer showDeleteIcon={this.state.showDeleteIcon} />
+          )}
+        </div>
+      </section>
+    );
     }
 };
 

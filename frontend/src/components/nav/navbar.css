@@ -103,6 +103,8 @@ background: linear-gradient(to right, #FFFDE4, #005AA7);  */
 
 .tlink {
   padding: 20px;
+  
+
 }
 
 .link {
@@ -144,12 +146,24 @@ background: linear-gradient(to right, #FFFDE4, #005AA7);  */
 
 .comment-links {
   width: 100%;
-  
+
+  		background-attachment: fixed,							fixed,							fixed;
+		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
+		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-position: top left,						center center,					center center;
+		background-size: cover;
+		overflow: hidden;
 }
 
 
 .logout-button {
-  padding-right: 20px;
+  padding-left: 73%;
+  font-size: 40px;
+
+}
+
+.logout-lock {
+  font-size: 40px; 
 }
 
 /* button {

@@ -38,7 +38,9 @@ class NavBar extends React.Component {
               </Link> */}
                 <div className="logout-button">
                   <button className="logout" onClick={this.logoutUser}>
-                    <FaUserLock />
+                    <div className="logout-lock">
+                      <FaUserLock />
+                    </div>
                   </button>
                 </div>
               </div>
