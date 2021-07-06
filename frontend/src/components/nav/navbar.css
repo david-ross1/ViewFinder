@@ -11,12 +11,36 @@
   src: url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap')
 }
 
+@fontface {
+font-family: 'Bigshot One', cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap")
+}
+
+@fontface {
+font-family: 'Warnes', cursive;  src: url("https://fonts.googleapis.com/css2?family=Warnes&display=swap")
+}
+
 
 
 /* https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap */
 
 .logo-link {
-  color: black; 
+font-family: 'Warnes', cursive;
+font-weight: 700;
+
+  color: rgb(255, 255, 255); 
+  font-size: 1.5em;
+  /* background: -webkit-linear-gradient(rgb(236, 156, 8), rgb(150, 11, 168)); */
+   /* background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; */
+
+
+ 
+
+
 }
 
 .logo-link:hover {
@@ -48,43 +72,10 @@
   /* margin-bottom: 5px; */
   justify-content: flex-end;
 
-background: rgb(2,26,191);
-background: linear-gradient(90deg, rgba(2,26,191,1) 0%, rgba(0,65,162,1) 12%, rgba(40,182,160,1) 34%, rgba(111,198,205,1) 70%, rgba(37,76,130,1) 87%, rgba(22,35,133,1) 100%);
+background: transparent;
 
-/* 
-    background:
-	repeating-linear-gradient(
-		50deg,
-		#F7A37B,
-		#F7A37B 1em,
-		#FFDEA8 1em,
-		#FFDEA8 2em,
-		#D0E4B0 2em,
-		#D0E4B0 3em,
-		#7CC5D0 3em,
-		#7CC5D0 4em,
-		#00A2E1 4em,
-		#00A2E1 5em,
-		#0085C8 5em,
-		#0085C8 6em
-	),
-	repeating-linear-gradient(
-		-50deg,
-		#F7A37B,
-		#F7A37B 1em,
-		#FFDEA8 1em,
-		#FFDEA8 2em,
-		#D0E4B0 2em,
-		#D0E4B0 3em,
-		#7CC5D0 3em,
-		#7CC5D0 4em,
-		#00A2E1 4em,
-		#00A2E1 5em,
-		#0085C8 5em,
-		#0085C8 6em
-	);
-	
-background-blend-mode: multiply; */
+
+
 }
 * {
   font-family: sans-serif;
@@ -93,55 +84,31 @@ background-blend-mode: multiply; */
 }
  
 .main-logo, .comment-links {
-  /* background:
-	repeating-linear-gradient(
-		50deg,
-		#F7A37B,
-		#F7A37B 1em,
-		#FFDEA8 1em,
-		#FFDEA8 2em,
-		#D0E4B0 2em,
-		#D0E4B0 3em,
-		#7CC5D0 3em,
-		#7CC5D0 4em,
-		#00A2E1 4em,
-		#00A2E1 5em,
-		#0085C8 5em,
-		#0085C8 6em
-	),
-	repeating-linear-gradient(
-		-50deg,
-		#F7A37B,
-		#F7A37B 1em,
-		#FFDEA8 1em,
-		#FFDEA8 2em,
-		#D0E4B0 2em,
-		#D0E4B0 3em,
-		#7CC5D0 3em,
-		#7CC5D0 4em,
-		#00A2E1 4em,
-		#00A2E1 5em,
-		#0085C8 5em,
-		#0085C8 6em
-	);
-	
-background-blend-mode: multiply; */
+/* 
 background: rgb(2,26,191);
-background: linear-gradient(90deg, rgba(2,26,191,1) 0%, rgba(0,65,162,1) 12%, rgba(40,182,160,1) 34%, rgba(111,198,205,1) 70%, rgba(37,76,130,1) 87%, rgba(22,35,133,1) 100%);
+background: linear-gradient(90deg, rgba(2,26,191,1) 0%, rgba(0,65,162,1) 12%, rgba(40,182,160,1) 34%, rgba(111,198,205,1) 70%, rgba(37,76,130,1) 87%, rgba(22,35,133,1) 100%); */
+
+/* background: #005AA7;  
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7); 
+background: linear-gradient(to right, #FFFDE4, #005AA7);  */
+
 
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
    /* font-family: 'Offside', cursive; */
   /* font-family: 'Lobster', cursive;   */
   /* font-family: 'Oleo Script', cursive; */
-font-family: 'Nova Flat', cursive;
+  font-family: 'Knewave', cursive;
+
   padding-top: 6px;
   font-size: 50px; 
-  color: rgb(5, 5, 5);
+  color: rgb(252, 252, 252);
 }
 
 .tlink {
   padding: 20px;
+  
+
 }
 
 .link {
@@ -159,7 +126,7 @@ font-family: 'Nova Flat', cursive;
 .session-button {
   border-radius: 10px;
   margin-top: 10px;
-  background: #1d60e0;
+  /* background: #1d60e0; */
   height: 30px;
   width: 90px;
   color: white;
@@ -169,7 +136,7 @@ font-family: 'Nova Flat', cursive;
 .submit:hover,
 .logout:hover,
 .session-button:hover {
-  background: #107cff;
+  /* background: #107cff; */
   cursor: pointer;
 }
 
@@ -183,12 +150,24 @@ font-family: 'Nova Flat', cursive;
 
 .comment-links {
   width: 100%;
-  
+
+  		background-attachment: fixed,							fixed,							fixed;
+		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
+		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-position: top left,						center center,					center center;
+		background-size: cover;
+		overflow: hidden;
 }
 
 
 .logout-button {
-  padding-right: 20px;
+  padding-left: 73%;
+  font-size: 40px;
+
+}
+
+.logout-lock {
+  font-size: 40px; 
 }
 
 /* button {
@@ -247,4 +226,19 @@ a.link {
   position: relative; 
   right: 10%; 
   top: -10px; 
+}
+
+.main-logo {
+background: transparent;
+
+}
+
+.maincontain {
+		background-attachment: fixed,							fixed,							fixed;
+		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
+		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-position: top left,						center center,					center center;
+		background-size: cover;
+		overflow: hidden;
+
 }

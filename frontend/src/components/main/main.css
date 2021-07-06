@@ -7,45 +7,62 @@
       border: 1px solid grey; */
       background: transparent;
    width: 50%;
-   height: 80vh;
+   height: 100%;
+   
+   /* height: 10vh; */
    /* align-content: center; */
    
  }
 
  .map {
    width: 100%;
-   height: 100%;
+   height: 100vh;
    align-content: center;
    border-radius: 15px;
    display: block; 
 
  }
 
- .map-tain {
+ /* .map-tain {
    height: 90%
 
- }
+ } */
 
  .mapboxgl-map {
-   /* height: 100%;
-   width: 50%; */
+   /* height: 10vh; */
+   /* width: 50%; */
    margin: 0 auto;
  }
 
  .main-body {
    display: flex;
-   height: 80vh;
-   margin: 0px;
+   width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+   position: fixed;
  }
 
  .side-section {
   margin-left: 0px; /* was 10*/
   justify-self: center;
   width: 50%;
-  /* height: 90%; */
+  /* height: 20px; */
+  height: 100vh;
   padding-top: 0;
+		background-attachment: fixed,							fixed,							fixed;
+		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
+		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-position: top left,						center center,					center center;
+		background-size: cover;
+		overflow: hidden;
+
+    
+
+
+
+/* 
 background: rgb(77,190,184);
-background: linear-gradient(90deg, rgba(77,190,184,1) 0%, rgba(95,194,195,1) 25%, rgba(98,198,209,1) 36%, rgba(86,157,180,1) 50%, rgba(47,92,140,1) 75%, rgba(22,38,130,1) 100%);
+background: linear-gradient(90deg, rgba(77,190,184,1) 0%, rgba(95,194,195,1) 25%, rgba(98,198,209,1) 36%, rgba(86,157,180,1) 50%, rgba(47,92,140,1) 75%, rgba(22,38,130,1) 100%); */
 
  }
  
@@ -62,4 +79,5 @@ background: linear-gradient(90deg, rgba(77,190,184,1) 0%, rgba(95,194,195,1) 25%
   bottom: 0px;
   color: white;
   font-weight: 500;
+  background: transparent
 }
