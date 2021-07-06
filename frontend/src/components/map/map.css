@@ -68,3 +68,14 @@
   top: 10px;
   left: 55px;
 }
+
+.new-location-button {
+  all: unset;
+  color: white;
+  -webkit-text-fill-color: white;
+  cursor: pointer;
+}
+
+.create-view-button {
+  cursor: pointer;
+}

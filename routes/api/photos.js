@@ -7,17 +7,31 @@ const Photo = require('../../models/Photo');
 const View = require('../../models/View');
 const AWS = require('aws-sdk');
 const crypto = require('crypto');
+const URLSafeBase64 = require('urlsafe-base64');
 const multer = require("multer");
 const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
 const AWSS3RootPath = keys.awsRootPath;
 
-function appendToFilename(filename, string) {
+function replaceFilename(filename, string) {
   const lastDot = filename.lastIndexOf(".");
-  if (lastDot === -1) { return filename + string;}
+  if (lastDot === -1) { return string; }
   else {
-    return filename.slice(0,lastDot) + string + filename.slice(lastDot);
+    return string + filename.slice(lastDot);
   }
+}
+
+const randomURLSafeBase64Key = () => {
+  let key = null;
+  crypto.randomBytes(32, (err, buf) => {
+    if (err) {
+      throw err;
+    }
+    else {
+      key = URLSafeBase64.encode(buf);
+    }
+  });
+  return key;
 }
 
 const s3bucket = new AWS.S3({
@@ -29,7 +43,7 @@ const s3bucket = new AWS.S3({
 function uploadParams(photo) {
   return {
     Bucket: keys.awsBucketName,
-    Key: appendToFilename(photo.originalname,Math.floor(1000*Math.random())),
+    Key: replaceFilename(photo.originalname,randomURLSafeBase64Key()),
     Body: photo.buffer,
     ContentType: photo.mimetype,
     ACL: "public-read",

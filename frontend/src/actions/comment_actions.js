@@ -1,16 +1,10 @@
-import { getComments, getUserComments, writeComment } from "../util/comment_api_util";
+import * as CommentApiUtil from "../util/comment_api_util";
 
-export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
-export const RECEIVE_USER_COMMENTS = "RECEIVE_USER_COMMENTS";
+export const RECEIVE_VIEW_COMMENTS = "RECEIVE_VIEW_COMMENTS";
 export const RECEIVE_NEW_COMMENT = "RECEIVE_NEW_COMMENT";
 
-export const receiveComments = (comments) => ({
-  type: RECEIVE_COMMENTS,
-  comments,
-});
-
-export const receiveUserComments = (comments) => ({
-  type: RECEIVE_USER_COMMENTS,
+export const receiveViewComments = (comments) => ({
+  type: RECEIVE_VIEW_COMMENTS,
   comments,
 });
 
@@ -19,18 +13,20 @@ export const receiveNewComment = (comment) => ({
   comment,
 });
 
-export const fetchComments = () => (dispatch) =>
-  getComments()
-    .then((comments) => dispatch(receiveComments(comments)))
+export const fetchViewComments = (view_id) => (dispatch) => {
+  return CommentApiUtil.getViewComments(view_id)
+    .then((comments) => dispatch(receiveViewComments(comments)))
     .catch((err) => console.log(err));
-
-export const fetchUserComments = (id) => (dispatch) =>
-  getUserComments(id)
-    .then((comments) => dispatch(receiveUserComments(comments)))
-    .catch((err) => console.log(err));
+};
 
 export const composeComment = (data) => (dispatch) => {
-  return writeComment(data)
+  return CommentApiUtil.writeComment(data)
     .then((comment) => dispatch(receiveNewComment(comment)))
     .catch((err) => console.log(err));
-}
+};
+
+export const deleteComment = (data) => (dispatch) => {
+  return CommentApiUtil.deleteComment(data)
+    .then(() => console.log("Successfully deleted"))
+    .catch((err) => console.log(err));
+};

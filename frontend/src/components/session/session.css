@@ -93,7 +93,9 @@
 }
 
 
-button {
+.close-button, 
+.sign-button, 
+.demo-submit {
   all: unset;
   color: white;
   -webkit-text-fill-color: white;

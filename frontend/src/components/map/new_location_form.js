@@ -28,7 +28,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       <label>Images:
         <input type="file" onChange={upload}/>
       </label>
-      <button>Create View</button>
+      <button className="create-view-button">Create View</button>
     </form>
   );
 }

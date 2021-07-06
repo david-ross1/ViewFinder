@@ -12,20 +12,21 @@ class CommentCompose extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({ newComment: nextProps.newComment.text });
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   this.setState({ newComment: nextProps.newComment.text });
+  // }
 
   
-  handleSubmit(e) {
+  async handleSubmit(e) {
     e.preventDefault();
     let comment = {
       text: this.state.text,
       user: this.props.currentUser,
       viewId: this.props.viewId
     };
-    this.props.composeComment(comment);
+    await this.props.composeComment(comment);
     this.setState({ text: "" });
+    this.props.trigerFunction(e)
   }
 
   update() {
