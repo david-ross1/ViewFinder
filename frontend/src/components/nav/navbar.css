@@ -175,6 +175,10 @@ font-family: 'Nova Flat', cursive;
 
 .logout {
   float: right;
+  all: unset;
+  color: white;
+  -webkit-text-fill-color: white;
+  cursor: pointer;
 }
 
 .comment-links {
@@ -232,8 +236,11 @@ a.link {
 }
 
 .nav-button-login {
- 
   position: absolute; 
+  all: unset;
+  color: white;
+  -webkit-text-fill-color: white;
+  cursor: pointer;
 }
 
 .profile-container {
