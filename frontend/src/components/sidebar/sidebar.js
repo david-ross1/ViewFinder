@@ -22,7 +22,6 @@ class Sidebar extends React.Component {
   }
   componentDidMount() {
     console.log("I am here in sidebar")
-    // const initialViewId = "60ccfe8f1fca6f6304f770f0";
     const initialViewId = "60ccfe961fca6f6304f7710a"
     this.props.fetchView(initialViewId);
   }
