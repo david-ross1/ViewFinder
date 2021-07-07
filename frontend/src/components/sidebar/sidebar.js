@@ -105,8 +105,21 @@ class Sidebar extends React.Component {
                 >
                   {this.state.deleteButtonText}
                 </button>
+              )}
+
+            {isAuthenticated && (
+              <button className="upload-photo"
+                onClick={this.handleUploadModal}
+              >
+                Upload Photo
+              </button>
+            )}
+
+            
+
               )}            
               {isAuthenticated ? <PhotoAppContainer /> : ""}
+
           </div>
           {isAuthenticated && !this.state.showPage && (
             <CommentComposeContainer trigerFunction={this.handleWriteComment} />

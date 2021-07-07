@@ -3,12 +3,34 @@
   src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 }
 
+
+
+
+
 /* .photoapp-upload {
   position: absolute;
   top: 1%;
   right: 51%;
   z-index: 999;
 } */
+
+.upload-photo {
+    width: 135px;
+  height: 35px;
+  text-align: center;
+  -webkit-text-fill-color: white;
+  background: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.upload-photo:hover {
+  background: rgb(29, 153, 29);
+}
 
 .photoapp-upload {
   position: absolute;
@@ -23,7 +45,7 @@
 }
 
 .car-icon:hover {
-  color: rgb(5, 237, 5);
+  color: rgb(34, 172, 34);
 }
 
 .carousel-test {
@@ -98,7 +120,7 @@
   background: #eee;
   border-radius: 5px;
   width: 580px;
-  height: 15%;
+  height: 12%;
   margin: 0 auto;
   padding: 10px;
   line-height: 18px;
@@ -114,7 +136,7 @@
 .wc-contain {
   width: 100%;
   align-items: center;
-  height: 15%;
+  height: 12%;
   padding-top: 10px;
 }
 
@@ -122,7 +144,7 @@
   background: #eee;
   border-radius: 5px;
   width: 580px;
-  height: 15%;
+  height: 12%;
   margin: 0 auto;
   padding: 10px;
   line-height: 18px;
@@ -150,8 +172,22 @@
   padding: 10px;
 }
 
-.write-comment-button,
+
 .show-delete-button {
+  width: 135px;
+  height: 35px;
+  text-align: center;
+  -webkit-text-fill-color: white;
+  background: #920b0b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.write-comment-button {
   width: 135px;
   height: 35px;
   text-align: center;
@@ -166,11 +202,11 @@
 }
 
 .write-comment-button:hover {
-  background: #4186c7;
+  background: #4891d4;
 }
 
 .show-delete-button:hover {
-  background: rgb(142, 20, 20);
+  background: rgb(165, 22, 22);
 }
 
 .write-comment-button:active {
