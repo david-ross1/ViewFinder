@@ -5,6 +5,7 @@ import Map from "./map";
 const mapStateToProps = (state) => ({  
     geoJSON: state.views.mapDisplay,
     focusId: state.views.focusId, 
+    loggedIn: !!state.session.user,
 });
 
 const mapDispatchToProps = (dispatch) => ({

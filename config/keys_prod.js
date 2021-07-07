@@ -7,4 +7,5 @@ module.exports = {
   awsBucketName: process.env.AWS_BUCKET_NAME,
   awsRegion: process.env.AWS_REGION,
   mapboxAPI: process.env.REACT_APP_MAPBOX_API,
+  awsRootPath: process.env.AWS_ROOT_PATH 
 };

@@ -16,21 +16,21 @@ const [locLng,locLat] = [-122.400,37.757];
 //   [-120.679,36.474]
 // ];
 
-const randomColor = () => {
-  return ['one','two','three', 'four', 'zero'][Math.floor(Math.random() * 5)]
-}
+// const randomColor = () => {
+//   return ['one','two','three', 'four', 'zero'][Math.floor(Math.random() * 5)]
+// }
 
 
 
 
-const Pin = () => (
-  <svg className={randomColor() + ' offset'}  xmlns="http://www.w3.org/2000/svg"
+const Pin = ({isSelected}) => (
+  <svg className={classNames('pin','offset',{'selected': isSelected})}  xmlns="http://www.w3.org/2000/svg"
     width="24" height="24" viewBox="0 0 24 24" >
     <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
   </svg>
 );
 
-const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
+const Map = ({geoJSON,focusId,fetchViews,fetchView, loggedIn}) => {
   const [newPinLocation, setNewPinLocation] = useState(null);
   const [displayLocationForm,setDisplayLocationForm] = useState(false);
   const _onClick = (e) => {
@@ -71,14 +71,14 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
             e.stopPropagation();
           }}
         >
-          <Pin className='map-pin'/>
+          <Pin className='map-pin' isSelected={feature.geometry.properties.id === focusId}/>
         </Marker>
       ))}
       {newPinLocation === null ? "" : (
         <Marker key={"new"} className={"view-location new selected"}
           {...newPinLocation}
         >
-          <Pin className='selected-pin' />
+          <Pin className='selected-pin'/>
         </Marker>
       )}
       {!displayLocationForm || newPinLocation === null ? "" : 
@@ -88,12 +88,15 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
       }
       <NavigationControl style={{top: "10px",left: "10px"}}/>
     </ReactMapGL>
-    <div className='place-marker-text'> 
-      <button className={"new-location-button"} onClick={() => {
-        setNewPinLocation(null);
-        setReadyToPlace(!readyToPlace); 
-      }}>Click here, then click on the map to upload your photos</button>
-    </div> 
+    {!loggedIn ? "" : (
+        <div className='place-marker-text'> 
+          <button className={"new-location-button"} onClick={() => {
+            setNewPinLocation(null);
+            setReadyToPlace(!readyToPlace); 
+          }}>Click here, then click on the map to upload your photos</button>
+        </div> 
+      )
+    }
   </div>
   );
   // const zoomIn = () => {

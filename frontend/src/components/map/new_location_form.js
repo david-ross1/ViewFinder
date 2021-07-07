@@ -10,7 +10,20 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
   const handleSubmit = () => createView({longitude, latitude, locationName: name, photos});
   const upload = (e) => {
     e.stopPropagation();
-    setPhotos(photos.concat([e.target.files[0]]));
+    const _errors = [];
+    if(e.target.files[0] === undefined) {
+      return;
+    }
+    if(!e.target.files[0]) {_errors.push("No file given")}
+    if(e.target.files[0].size/(1024**2) > 5) {_errors.push("File too large")}
+    if(e.target.files[0].type.split("/")[0] !== "image") {_errors.push("Not an image")}
+    if(_errors.length === 0) {
+      setPhotos(photos.concat([e.target.files[0]]));
+    }
+    else {
+      alert(_errors.join(", "));
+      // setErrors(_errors);
+    }
     // setPreviews(previews.concat(URL.createObjectURL(e.target.files[0])));
   };
 

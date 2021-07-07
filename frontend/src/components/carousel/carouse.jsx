@@ -42,6 +42,8 @@ class Carousel extends React.Component {
           disableButtonsControls={false}
           isActiveItem={currActiveIndex}
           onSlideChanged={this.onSlideChanged}
+          autoWidth={false}
+          autoHeight={false}
         >
           {!this.props.photos
             ? ""
