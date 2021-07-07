@@ -39,7 +39,7 @@ const toGeoJSON = (viewData) => ({
     }))
 });
 
-router.get("/" , (req,res) => {
+router.get("/", (req,res) => {
   View.find().then(views => res.json(toGeoJSON(views)))
 });
 
@@ -76,6 +76,7 @@ router.post("/",
           comments: [],
         });
     return newView.save()
+      .then(view => view.populate({path: 'photos', model: 'photo'}).execPopulate())
       .then(view => res.json(view))
       .catch(err => {
         res.status(422);

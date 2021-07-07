@@ -11,7 +11,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
   const upload = (e) => {
     e.stopPropagation();
     setPhotos(photos.concat([e.target.files[0]]));
-    setPreviews(previews.concat(URL.createObjectURL(e.target.files[0])));
+    // setPreviews(previews.concat(URL.createObjectURL(e.target.files[0])));
   };
 
   return (
