@@ -3,13 +3,22 @@
   src: url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap')
 }
 
+.photoapp-upload {
+  position: absolute; 
+  top: 1%;
+  right: 51%;
+  z-index: 999;
+  
+
+}
+
 .carousel-test {
   /* height: 100% */
   /* height: 50% */
 }
 
 .picture-carousel {
-  height: 55%;
+  height: 55vh;
   
   width: 100%;
     
@@ -119,11 +128,15 @@
   cursor: pointer;
   border: none;
   border-radius: 5px;
-
+  margin-right: 10px
 }
 
 .write-comment-button:hover {
-  background: #107cff;
+  background:  #4186c7;
+}
+
+.show-delete-button:hover {
+  background: rgb(142, 20, 20);
 }
 
 .write-comment-button:active {
@@ -145,6 +158,8 @@
   /* text-align: center; */
   /* margin-left: -325px; */
   margin-top: 0px;
+  padding-bottom: 5px;
+
 }
 
 .delete-comment-button {
@@ -167,13 +182,13 @@
   font-weight: 300;
   cursor: pointer;
   border: none;
-  width: 120px;
+  width: 125px;
 }
 
 .write-comment-submit:hover {
   color: white;
   cursor: pointer;
-  background: #107cff;
+  background: # #4186c7;
 }
 
 
