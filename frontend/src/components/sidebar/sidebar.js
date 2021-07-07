@@ -109,8 +109,7 @@ class Sidebar extends React.Component {
               )}
 
             {isAuthenticated && (
-              <button
-                className="upload-photo"
+              <button className="upload-photo"
                 onClick={this.handleUploadModal}
               >
                 Upload Photo
