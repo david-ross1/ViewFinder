@@ -24,15 +24,10 @@ const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
     uploadRef.current.click();
   };
   return !loggedIn ? "" : (
-    <div className="photo-upload-wrapper">
-      <div className="photo-upload-container">
-        <div className="photo-upload">
-          <h3 className="photo-text">Upload photo</h3>
-        </div>
-        <input type="file" onChange={processFile} accept="image" ref={uploadRef} style={{display: "none"}}/>
-        <button onClick={handleSubmit}>Upload a new photo</button>
-      </div>
-    </div>
+    <>
+      <input type="file" onChange={processFile} accept="image" ref={uploadRef} style={{display: "none"}}/>
+      <button onClick={handleSubmit}>Upload a new photo</button>
+    </>
   );
 }
 
