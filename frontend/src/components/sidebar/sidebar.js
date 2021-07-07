@@ -54,9 +54,11 @@ class Sidebar extends React.Component {
         <div className="csarousel-tet">
           <div className="picture-carousel">
             <Carousel photos={focusView.photos} />
+            {/* {!focusView.photos ? "" : focusView.photos.map((photo,idx) => (
+              <figure key={idx} className={classNames({"focused": idx === splashIdx})} onClick={() => setSplashIdx(idx)}><img src={photo.s3Link}/></figure>
+            ))} */}
+            <div className='photoapp-upload'>{!isAuthenticated ? "" : <PhotoAppContainer />}</div>
 
-
-            {!isAuthenticated ? "" : <PhotoAppContainer/>}
 
             <h2 className="view-name">{focusView.locationName}</h2>
             <p className="view-desc">{focusView.description}</p>
