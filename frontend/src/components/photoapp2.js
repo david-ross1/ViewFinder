@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react';
 import './photo.css';
 
 const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
-  const [errors, setErrors] = useState([]);
+  // const [errors, setErrors] = useState([]);
   const uploadRef = useRef(null);
   const processFile = (e) => {
     const _errors = [];
@@ -17,7 +17,7 @@ const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
     }
     else {
       alert(_errors.join(", "));
-      setErrors(_errors);
+      // setErrors(_errors);
     }
   };
   const handleSubmit = () => {
