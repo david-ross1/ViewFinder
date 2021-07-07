@@ -57,9 +57,7 @@ class Sidebar extends React.Component {
             {/* {!focusView.photos ? "" : focusView.photos.map((photo,idx) => (
               <figure key={idx} className={classNames({"focused": idx === splashIdx})} onClick={() => setSplashIdx(idx)}><img src={photo.s3Link}/></figure>
             ))} */}
-            <div className='photoapp-upload'>{!isAuthenticated ? "" : <PhotoAppContainer />}</div>
-
-
+            <div className='photoapp-upload'>{!isAuthenticated ? "" : <PhotoAppContainer/>}</div>
             <h2 className="view-name">{focusView.locationName}</h2>
             <p className="view-desc">{focusView.description}</p>
           </div>
