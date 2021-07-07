@@ -13,7 +13,7 @@ const mapboxApiAccessToken = "pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0NmFoMzIxNWV
 
 const MAX_ZOOM = 16;
 const MIN_ZOOM = 7;
-const [locLng,locLat] = [-122.250,37.807];
+const [locLng,locLat] = [-122.400,37.757];
 // const maxBounds = [
 //   [-123.956,38.999],
 
@@ -47,7 +47,8 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
   const [viewport, setViewport] = useState({
     latitude: locLat,
     longitude: locLng,
-    zoom: 8,
+    zoom: 11,
+    pitch: 90
   });
   const [readyToPlace, setReadyToPlace] = useState(false);
   useEffect(() => {
@@ -95,7 +96,7 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
       <button className={"new-location-button"} onClick={() => {
         setNewPinLocation(null);
         setReadyToPlace(!readyToPlace); 
-      }}>Place New Location</button>
+      }}>Click here, then click on the map to upload your photos</button>
     </div> 
   </div>
   );
