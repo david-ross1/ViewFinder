@@ -54,10 +54,16 @@ class Sidebar extends React.Component {
         <div className="csarousel-tet">
           <div className="picture-carousel">
             <Carousel photos={focusView.photos} />
-            {/* {!focusView.photos ? "" : focusView.photos.map((photo,idx) => (
-              <figure key={idx} className={classNames({"focused": idx === splashIdx})} onClick={() => setSplashIdx(idx)}><img src={photo.s3Link}/></figure>
-            ))} */}
             <div className='photoapp-upload'>{!isAuthenticated ? "" : <PhotoAppContainer />}</div>
+            <div className="directions-action">
+              <a
+                target="_blank"
+                href={`https://www.google.com/maps/dir/Current+Location/${trail.lat},${trail.lon}`}
+              >
+                <FontAwesomeIcon icon={faArrowsAlt} />
+                <p>Directions</p>
+              </a>
+            </div>
 
 
             <h2 className="view-name">{focusView.locationName}</h2>
