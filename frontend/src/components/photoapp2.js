@@ -13,7 +13,6 @@ const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
     if(e.target.files[0].size/(1024**2) > 5) {_errors.push("File too large")}
     if(e.target.files[0].type.split("/")[0] !== "image") {_errors.push("Not an image")}
     if(_errors.length === 0) {
-      debugger
       uploadPhoto({photo: e.target.files[0], viewId});
     }
     else {

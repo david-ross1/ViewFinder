@@ -15,7 +15,6 @@ function randomURLSafeBase64Key() {
 }
 
 function imageFileFilter(req,file,cb) {
-  debugger
   if(file.mimetype.split("/")[0] !== "image") {
     return cb(new Error("Invalid filetype"));
   }
