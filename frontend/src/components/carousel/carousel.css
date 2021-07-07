@@ -234,9 +234,6 @@
     padding: 5px; 
 }
 
-.thumbs:hover {
-    cursor: pointer;
-}
 
 .thumb-bar {
     display: flex;

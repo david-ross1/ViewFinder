@@ -8,7 +8,7 @@ class Carousel extends React.Component {
       super();
 
       this.state = {
-        currentIndex: 0,
+        currentIndex: 0
         
       }
       // this.slideTo=this.slideTo.bind(this)
@@ -16,14 +16,10 @@ class Carousel extends React.Component {
       this.renderGallery=this.renderGallery.bind(this)
     }
 
-    slideTo = (i) => this.setState({ currentIndex: i })
+    // slideTo = (i) => this.setState({ currentIndex: i })
     
 
     onSlideChanged = (e) => this.setState({ currentIndex: e.item });
-
-    slideNext = () => this.setState({ currentIndex: this.state.currentIndex + 1 });
-
-    slidePrev = () => this.setState({ currentIndex: this.state.currentIndex - 1 });
 
     renderThumbs() {
       if (!this.props.photos) {
@@ -32,7 +28,7 @@ class Carousel extends React.Component {
         // debugger
         return (
           <ul className='thumb-bar'>{this.props.photos.map((item, i) => (
-            <li className='thumbs' key={i} onClick={() => this.slideTo(i)}><img src={item.s3Link} /></li>))}
+            <li className='thumbs' key={i}><img src={item.s3Link} /></li>))}
           </ul>
           )
       }
@@ -44,9 +40,8 @@ class Carousel extends React.Component {
 
       return (
         <AliceCarousel
-          dotsDisabled={false}
-          buttonsDisabled={false}
-          slideToIndex={currentIndex}
+          dotsDisabled={true}
+          buttonsDisabled={true}
           onSlideChanged={this.onSlideChanged}
         >
           {!photos
