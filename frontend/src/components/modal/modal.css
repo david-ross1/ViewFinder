@@ -7,6 +7,12 @@
     background: rgba(0, 0, 0, 0.7);
     z-index: 10;
     
+  		/* background-attachment: fixed,							fixed,							fixed;
+		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-position: top left,						center center,					center center;
+		background-size: cover;
+		overflow: hidden; */
+    
 }
 
 .modal-child {
@@ -30,6 +36,14 @@
     border-radius: 8%;
     background: blue; 
 
+
+      		background-attachment: fixed,							fixed,							fixed;
+		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
+		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-position: top left,						center center,					center center;
+		background-size: cover;
+		overflow: hidden;
+/* 
     background:
 	linear-gradient(
 		limegreen,
@@ -46,7 +60,11 @@
 		transparent
 	);
 	
-background-blend-mode: screen; 
+background-blend-mode: screen;  */
+/* 
+background: rgb(26,138,139);
+background: linear-gradient(0deg, rgba(26,138,139,1) 0%, rgba(38,75,156,1) 100%); */
+
  } 
 
 

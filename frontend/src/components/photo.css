@@ -5,24 +5,34 @@
 
 
 .photo-upload-container {
-  width: 200px;
-  height: 100px;  
-  border: 2px solid rgb(168, 187, 104);
-  border-radius: 20px;
+  width: 170px;
+  height: 72px;  
+  border-radius: 10px;
   padding: 10px;
+  padding-top: 0;
   background: #008FB8; 
-  opacity: 70%;
+  opacity: 100%;
+  color: white;
+
+    background-color: rgb(40, 137, 175); /* Needed for IEs */
+
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .photo-upload {
   border-bottom: 2px solid black; 
-  padding: 10px; 
+  padding: 7px; 
 }
 
 .photo-text {
   font-weight: bold; 
   font-family: 'Offside', cursive;
-  margin-bottom: 3px; 
 }
 
 .photo-upload-wrapper {

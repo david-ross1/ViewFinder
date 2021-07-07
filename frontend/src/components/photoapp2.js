@@ -1,49 +1,36 @@
-import React , { Component } from 'react'; 
-// import S3FileUpload from 'react-s3'
-import S3 from "react-aws-s3";
-import { awsAccessKeyId, awsSecretAccessKey } from "../config1/keys";
+import React, { useState } from 'react';
+import './photo.css';
 
-import './photo.css'
-
-const config = {
-  bucketName: "view-finder",
-  //dirName: "media" /* optional */,
-  region: "us-west-1",
-  accessKeyId: awsAccessKeyId,
-  secretAccessKey: awsSecretAccessKey,
-  //s3Url: "https:/your-custom-s3-url.com/" /* optional */,
-};
-
-const ReactS3Client = new S3(config);
-class Photoapp2 extends Component {
-  constructor() {
-    super(); 
-    this.upload = this.upload.bind(this)
+const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
+  const [file, setFile] = useState(null);
+  const [errors, setErrors] = useState([]);
+  const upload = (e) => {
+    setErrors([]);
+    if(e.target.files[0] === undefined) {
+      setFile(null);
+      return;
+    }
+    if(!e.target.files[0]) {setErrors(errors.concat(["No image found"]));}
+    if(e.target.files[0].size/(1024**2) > 5) {setErrors(errors.concat(["Image too large"]));}
+    if(e.target.files[0].type.split("/")[0] !== "image") {setErrors(errors.concat(["File not an image"]))}
+    if(errors.length === 0) {setFile(e.target.files[0]);}
+    else {alert(errors.join(", "))}
+  };
+  const handleSubmit = () => {
+    if (file === null || errors.length > 0) {return;} 
+    uploadPhoto({photo: file, viewId});
   }
-
-  upload(e) {
-    console.log(e.target.files[0]);
-    ReactS3Client.uploadFile( e.target.files[0] , e.target.files.name)
-      .then( (data) => {
-        console.log(data)
-      })
-      .catch( (err)=>{
-        alert(err)
-      })
-  }
-
-  render() {
-    return (
-      <div className="photo-upload-wrapper">
-        <div className="photo-upload-container">
-          <div className="photo-upload">
-            <h3 className="photo-text">Upload photo</h3>
-          </div>
-          <input type="file" onChange={this.upload} />
+  return !loggedIn ? "" : (
+    <div className="photo-upload-wrapper">
+      <div className="photo-upload-container">
+        <div className="photo-upload">
+          <h3 className="photo-text">Upload photo</h3>
         </div>
+        <input type="file" onChange={upload} accept="image"/>
+        <button onClick={handleSubmit}>Submit</button>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-export default Photoapp2; 
+export default PhotoApp; 

@@ -53,6 +53,7 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "seedgoose": "^2.0.2",
+    "urlsafe-base64": "^1.0.0",
     "validator": "^13.6.0"
   },
   "devDependencies": {

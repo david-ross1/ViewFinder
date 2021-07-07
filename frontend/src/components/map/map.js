@@ -1,6 +1,5 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from 'mapbox-gl';
 import ReactMapGL, {Marker, NavigationControl, Popup} from 'react-map-gl';
 import classNames from 'classnames';
 import NewLocationFormContainer from './new_location_form_container';
@@ -10,10 +9,7 @@ import './map.css'
 // const mapboxApiAccessToken = 'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0YXp4c2kxNmVrMndxcHhiaWRyb2E3In0.ZKUo8tHMWew87KIhnHHYLA'
 const mapboxApiAccessToken = "pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0NmFoMzIxNWV1MnBxbDM4bmZiMDF5In0.cQDPdpCOUYsBq5q4nm1i7A";
 
-
-const MAX_ZOOM = 16;
-const MIN_ZOOM = 7;
-const [locLng,locLat] = [-122.250,37.807];
+const [locLng,locLat] = [-122.400,37.757];
 // const maxBounds = [
 //   [-123.956,38.999],
 
@@ -47,7 +43,8 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
   const [viewport, setViewport] = useState({
     latitude: locLat,
     longitude: locLng,
-    zoom: 8,
+    zoom: 11,
+    pitch: 90
   });
   const [readyToPlace, setReadyToPlace] = useState(false);
   useEffect(() => {
@@ -95,7 +92,7 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView}) => {
       <button className={"new-location-button"} onClick={() => {
         setNewPinLocation(null);
         setReadyToPlace(!readyToPlace); 
-      }}>Place New Location</button>
+      }}>Click here, then click on the map to upload your photos</button>
     </div> 
   </div>
   );
