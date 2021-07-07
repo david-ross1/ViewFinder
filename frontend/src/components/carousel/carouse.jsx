@@ -30,7 +30,7 @@ class Carousel extends React.Component {
       } else {
       return (
         <ul className='thumb-bar'>{this.props.photos.map((item, i) => (
-          <li className='thumbs' key={i} onClick={(i) => this.slideTo(i)}><img src={item.s3Link} alt={i}/></li>))}
+          <li className='thumbs' key={i} onClick={() => this.slideTo(i)}><img src={item.s3Link} alt={i}/></li>))}
         </ul>
         )
       }
@@ -38,7 +38,6 @@ class Carousel extends React.Component {
 
     renderGallery() {
       const { currentIndex } = this.state;
-
       return (
         <AliceCarousel
           dotsDisabled={true}
