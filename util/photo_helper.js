@@ -18,11 +18,8 @@ function imageFileFilter(req,file,cb) {
   if(file.mimetype.split("/")[0] !== "image") {
     return cb(new Error("Invalid filetype"));
   }
-  else if(file.size/1024**2 > 5) {
-    return cb(new Error("File too big"));
-  }
   else {
-    cb(null, true)
+    cb(null, true);
   }
 }
 
