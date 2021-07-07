@@ -3,11 +3,27 @@
   src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 }
 
-.photoapp-upload {
+/* .photoapp-upload {
   position: absolute;
   top: 1%;
   right: 51%;
   z-index: 999;
+} */
+
+.photoapp-upload {
+  position: absolute;
+  top: 12%;
+  right: 3vw;
+  z-index: 999;
+}
+
+.car-icon {
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+}
+
+.car-icon:hover {
+  color: rgb(5, 237, 5);
 }
 
 .carousel-test {
@@ -15,7 +31,12 @@
   /* height: 50% */
 }
 
-
+.directions-action {
+  position: absolute;
+  z-index: 999;
+  top: 80px;
+  right: 40vw;
+}
 
 .picture-carousel {
   height: 55vh;
@@ -36,10 +57,11 @@
   position: fixed;
   top: 155px;
   z-index: 999;
-  margin-left: 28%;
+  /* margin-left: 28%; */
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   width: 250px;
+  right: 5vw;
 }
 
 .view-desc {
@@ -87,8 +109,6 @@
   padding-top: 10px;
   position: fixed;
   bottom: 67px;
-
-
 }
 
 .wc-contain {
