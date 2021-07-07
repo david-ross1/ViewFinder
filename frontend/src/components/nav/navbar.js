@@ -26,19 +26,23 @@ class NavBar extends React.Component {
     let {openModal} = this.props
     if (this.props.loggedIn) {
       return (
-        <div className="NavBar">
-          <div className="comment-links">
-            <div className="t-link">
-              {/* <Link className="link" to={"/"}>
+        <div className="maincontain">
+          <div className="NavBar">
+            <div className="comment-links">
+              <div className="t-link">
+                {/* <Link className="link" to={"/"}>
                 All Comments
               </Link>
               <Link className="link" to={"/"}>
                 Write a Comment
               </Link> */}
-              <div className="logout-button">
-                <button className="logout" onClick={this.logoutUser}>
-                <FaUserLock/>
-                </button>
+                <div className="logout-button">
+                  <button className="logout" onClick={this.logoutUser}>
+                    <div className="logout-lock">
+                      <FaUserLock />
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -46,15 +50,17 @@ class NavBar extends React.Component {
       );
     } else {
       return (
-        <div className="session-container">
-          <div className="NavBar Links2">
-            <div className="profile-container">
-              <button
-                onClick={() => openModal("login")}
-                className="nav-button-login"
-              >
-                <FaUserCircle />
-              </button>
+        <div className="mainconatain">
+          <div className="session-container">
+            <div className="NavBar Links2">
+              <div className="profile-container">
+                <button
+                  onClick={() => openModal("login")}
+                  className="nav-button-login"
+                >
+                  <FaUserCircle />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -64,11 +70,15 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div className="logotainer">
-        <div className="main-logo">
-          <div className="loogo">
-            <Link to='/' className='logo-link'>ViewFinder</Link>
-            {this.getLinks()}
+      <div className="maincontain">
+        <div className="logotainer">
+          <div className="main-logo">
+            <div className="loogo">
+              <Link to="/" className="logo-link">
+                ViewFinder
+              </Link>
+              {this.getLinks()}
+            </div>
           </div>
         </div>
       </div>

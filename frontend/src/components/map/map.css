@@ -45,10 +45,11 @@
 
 .place-marker-text {
   background-color: rgb(128, 64, 0); 
-  padding: 10px; 
-  width: 162px; 
+  padding: 5px; 
+  width: 472px; 
   border-radius: 10px; 
-  font-size: 16px; 
+  font-size: 14px; 
+  font-weight: bold;
   /* margin: 10px;
   margin-left: 55px;  */
   background-color: rgb(175, 40, 40); /* Needed for IEs */
@@ -61,7 +62,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
 
-  border-radius: 10px;  
+  border-radius: 5px;  
   font-family: 'Offside', cursive;
   font-weight: bold; 
   position: absolute;
