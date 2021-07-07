@@ -3,7 +3,7 @@ import "./sidebar.css";
 import Carousel from '../carousel/carouse'
 import CommentComposeContainer from '../comments/comment_compose_container';
 import CommentsShowContainer from '../comments/comments_show_container';
-
+import PhotoAppContainer from '../photo_app_container';
 
 
 class Sidebar extends React.Component {
@@ -38,8 +38,6 @@ class Sidebar extends React.Component {
     } else { this.setState({ showPage: true, buttonText: "Write a Comment", 
                              showDeleteIcon: false, deleteButtonText: "Delete Comment"})};
   }
-
-  // const [splashIdx, setSplashIdx] = useState(0);
   	render() {
     	const { focusView } = this.props;
 	  	const { isAuthenticated } = this.props;

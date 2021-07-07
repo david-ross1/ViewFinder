@@ -1,27 +1,17 @@
-import React, {useState} from 'react';
-import S3 from "react-aws-s3";
-import { awsAccessKeyId, awsSecretAccessKey } from "../../config1/keys";
+import React, {useState, useRef} from 'react';
 import './NewLocationForm.css';
-
-const config = {
-  bucketName: "view-finder",
-  //dirName: "media" /* optional */,
-  region: "us-west-1",
-  accessKeyId: awsAccessKeyId,
-  secretAccessKey: awsSecretAccessKey,
-  //s3Url: "https:/your-custom-s3-url.com/" /* optional */,
-};
-
-const ReactS3Client = new S3(config);
 
 const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLocationForm}) => {
   const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
+  const imageInput = useRef(null);
+  // const [description, setDescription] = useState("");
   const [photos, setPhotos] = useState([]);
-  const handleSubmit = () => createView({longitude, latitude, locationName: name, description, photos});
+  // const [previews, setPreviews] = useState([]);
+  const handleSubmit = () => createView({longitude, latitude, locationName: name, photos});
   const upload = (e) => {
     e.stopPropagation();
     setPhotos(photos.concat([e.target.files[0]]));
+    // setPreviews(previews.concat(URL.createObjectURL(e.target.files[0])));
   };
 
   return (
@@ -33,13 +23,24 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       <label><h2>Name:</h2>
         <input value={name} onChange={(e) => setName(e.target.value)}/>
       </label>
-      <label><h2>Description:</h2>
+      {/* <label><h2>Description:</h2>
         <input value={description} onChange={(e) => setDescription(e.target.value)}/>
-      </label>
+      </label> */}
       <br/>
       <label>Images:
-        <input type="file" onChange={upload}/>
+        <button onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          imageInput.current.click();}}>Add Image</button>
+        <input type="file" id="new-location-images" onChange={upload} style={{display: "none"}} ref={imageInput}/>
       </label>
+      {/* {previews.length === 0 ? "" : (
+        <nav className="thumbnail-display">
+          {previews.map(preview => (
+            <img src={preview} width={"100px"} height={"100px"}/>
+          ))}
+        </nav>
+      )} */}
       <button className="create-view-button">Create View</button>
     </form>
   );

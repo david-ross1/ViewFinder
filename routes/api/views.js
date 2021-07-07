@@ -8,26 +8,17 @@ const Photo = require("../../models/Photo");
 const multer = require("multer");
 const AWS = require("aws-sdk");
 const keys = require("../../config/keys");
+const {uploadParams, imageFileFilter} = require("../../util/photo_helper");
 const AWSS3RootPath = keys.awsRootPath;
+const storage = multer.memoryStorage();
+const upload = multer({storage: storage, fileFilter: imageFileFilter});
 
-function appendToFilename(filename, string) {
-  const lastDot = filename.lastIndexOf(".");
-  if (lastDot === -1) { return filename + string;}
-  else {
-    return filename.slice(0,lastDot) + string + filename.slice(lastDot);
-  }
-}
 
 const s3bucket = new AWS.S3({
   accessKeyId: keys.awsAccessKeyId,
   secretAccessKey: keys.awsSecretAccessKey,
   region: keys.awsRegion,
 });
-
-
-
-const storage = multer.memoryStorage();
-const upload = multer({storage: storage});
 
 const toGeoJSON = (viewData) => ({
   "type": "FeatureCollection",
@@ -48,7 +39,7 @@ const toGeoJSON = (viewData) => ({
     }))
 });
 
-router.get("/" , (req,res) => {
+router.get("/", (req,res) => {
   View.find().then(views => res.json(toGeoJSON(views)))
 });
 
@@ -60,25 +51,20 @@ router.get("/:viewId", (req, res) => {
       .catch((err) => console.log(err))
 });
 
-//.populate('photo','s3Link').populate('comments')
-
 router.post("/", 
   passport.authenticate("jwt", {session: false}),
   upload.array("photos",10),
   (req,res) => {
     Promise.all(req.files.map((photo) => {
-        const uploadParams = {
-          Bucket: keys.awsBucketName,
-          Key: appendToFilename(photo.originalname,Math.floor(1000*Math.random())),
-          Body: photo.buffer,
-          ContentType: photo.mimetype,
-          ACL: "public-read",
-        };
-        return s3bucket.upload(uploadParams)
+        const params = uploadParams(photo);
+        return s3bucket.upload(params)
         .promise()
-        .then(() => new Photo({ s3Link: AWSS3RootPath+"/"+uploadParams.Key, user: req.user.id}).save())
-        .catch(err => console.log(err));
+        .then(() => new Photo({ s3Link: AWSS3RootPath+"/"+params.Key, user: req.user.id}).save())
       }))
+      .catch(err => {
+        res.status(422);
+        return res.json({errors: err});
+      })
       .then(values => values.map(v => v._id))
       .then(photoIds => {
         const newView = new View({
@@ -89,7 +75,13 @@ router.post("/",
           photos: photoIds,
           comments: [],
         });
-    return newView.save().then(view => res.json(view));
+    return newView.save()
+      .then(view => view.populate({path: 'photos', model: 'photo'}).execPopulate())
+      .then(view => res.json(view))
+      .catch(err => {
+        res.status(422);
+        return res.json({errors: err});
+      });
     });
 });
 
