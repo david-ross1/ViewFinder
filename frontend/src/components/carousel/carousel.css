@@ -142,6 +142,7 @@
     border: grey;
     border-radius: 50%;
     background-color: gray;
+    
      
 }
 
@@ -194,6 +195,9 @@
   padding: 0;
   list-style: none;
   text-align: center; 
+  /* position: fixed;
+  top: 60%;
+  left: 72% */
 }
 
 .alice-carousel__dots > li {
@@ -271,7 +275,8 @@
  .photos-tainer {
    /* align-content: center; */
    margin: 0 auto;
-   max-width: 600px; 
-   max-height: 300px; 
+   /* max-width: 600px;  */
+   max-width: 45vw; 
+   max-height: 50vh; 
    /* margin-left: 70px;  */
  }
