@@ -3,7 +3,7 @@ import "./sidebar.css";
 import Carousel from '../carousel/carouse'
 import CommentComposeContainer from '../comments/comment_compose_container';
 import CommentsShowContainer from '../comments/comments_show_container';
-
+import PhotoAppContainer from '../photo_app_container';
 
 
 class Sidebar extends React.Component {
@@ -43,7 +43,7 @@ class Sidebar extends React.Component {
                              showDeleteIcon: false, deleteButtonText: "Delete Comment"})};
   }
 
-  	render() {
+  render() {
     	const { focusView, isAuthenticated, comments, currentUser } = this.props;
         const currentUserEmail = currentUser ? currentUser.email : undefined;
         const userCommentExist = !!comments ? 
@@ -54,6 +54,10 @@ class Sidebar extends React.Component {
         <div className="csarousel-tet">
           <div className="picture-carousel">
             <Carousel photos={focusView.photos} />
+
+
+            {!isAuthenticated ? "" : <PhotoAppContainer/>}
+
             <h2 className="view-name">{focusView.locationName}</h2>
             <p className="view-desc">{focusView.description}</p>
           </div>

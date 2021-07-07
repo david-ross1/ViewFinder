@@ -21,7 +21,7 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                         <div className="footer-column">
-                            <h3 className="footer-header">David Ross</h3>
+                            <h3 className="footer-header">David A. Ross</h3>
                             <ul className="footer-list">
                                 <p><a href={"https://github.com/david-ross1"} className='footer-links'><img className="footer-logo"src={github} alt='' /></a></p>
                                 <p><a href={"https://www.linkedin.com/in/david-ross-988426216/"} className='footer-links'><img className="footer-logo" src={linkedin} alt='' /></a></p>

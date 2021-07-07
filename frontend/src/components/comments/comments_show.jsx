@@ -46,7 +46,7 @@ class CommentsShow extends React.Component {
                 {this.state.deleteModalShow && <DeleteModalContainer comment = {this.state.commentToDelete}
                                                                      trigerFunction = {this.toggleModalShow}/>}
                 <div className="show-comment-container">
-                    {!commentsArrayCopy.length && <div className="comment-place-holder">There is no comments for this view</div>}
+                    {!commentsArrayCopy.length && <div className="comment-place-holder">There are no comments for this view</div>}
                     <ul>
                         {
                         commentsArrayCopy.map((comment, idx) => (

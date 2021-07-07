@@ -26,11 +26,12 @@
   text-align: center;
   padding-top: 0px;
   position: fixed;
-  top: 240px; 
+  top: 155px; 
   z-index: 999;
   margin-left: 28%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
+  width: 250px
 }
 
 .view-desc {
@@ -69,7 +70,7 @@
   background: #EEE;
   border-radius: 5px;
   width: 580px;
-  height: 100px;
+  height: 90px;
   margin: 0 auto;
   padding: 10px;
   line-height: 18px;
@@ -77,7 +78,7 @@
   /* position: fixed; 
   top: 75vh;
   left: 55%; */
-  padding-top: 30px; 
+  padding-top: 0px; 
 
 }
 
@@ -86,12 +87,11 @@
   background: #EEE;
   border-radius: 5px;
   width: 580px;
-  height: 100px;
+  height: 90px;
   margin: 0 auto;
   padding: 10px;
   line-height: 18px;
   overflow-y: auto;
-  padding-top: 30px 
   /* position: fixed; 
   top: 75vh;
   left: 55%; */
@@ -112,12 +112,13 @@
   width: 135px;
   height: 25px;
   text-align: center;
-  border-style: outset;
   -webkit-text-fill-color: white;
   background: #1D60E0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
 
 }
 
@@ -126,7 +127,7 @@
 }
 
 .write-comment-button:active {
-  border-style: inset;
+ 
 }
 
 .sidebar-comment-section {
@@ -138,7 +139,7 @@
   display: flex;
   position: relative;
   /* padding-top: 20px; */
-  width: 580px;
+  width: 600px;
   /* top: 30px; */
   margin: 0 auto;
   /* text-align: center; */
@@ -157,14 +158,16 @@
 }
 
 .write-comment-submit {
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  background: #1d60e0;
+  background: #1D60E0;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   cursor: pointer;
+  border: none;
+  width: 120px;
 }
 
 .write-comment-submit:hover {

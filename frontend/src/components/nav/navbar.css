@@ -17,7 +17,8 @@ font-family: 'Bigshot One', cursive;
 }
 
 @fontface {
-font-family: 'Warnes', cursive;  src: url("https://fonts.googleapis.com/css2?family=Warnes&display=swap")
+font-family: 'Offside', cursive;
+src: url("https://fonts.googleapis.com/css2?family=Offside&display=swap")
 }
 
 
@@ -25,17 +26,17 @@ font-family: 'Warnes', cursive;  src: url("https://fonts.googleapis.com/css2?fam
 /* https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap */
 
 .logo-link {
-font-family: 'Warnes', cursive;
-font-weight: 700;
+font-family: 'Offside', cursive;
+  font-weight: 700;
 
   color: rgb(255, 255, 255); 
-  font-size: 1.5em;
-  /* background: -webkit-linear-gradient(rgb(236, 156, 8), rgb(150, 11, 168)); */
-   /* background: red;
+  font-size: 1em;
+  /* background: -webkit-linear-gradient(rgb(5, 5, 5), rgb(0, 0, 0));
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black; */
+	-webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); */
 
 
  
@@ -52,6 +53,11 @@ font-weight: 700;
   justify-content: space-between;
   height: 50px;
   background: #ecd49c;
+  position: absolute; 
+  top: 20px;
+  right: 30px;
+  
+
 }
 
 .NavBar button {
@@ -68,7 +74,7 @@ font-weight: 700;
 .Links2 {
   margin: 0px;
   display: flex;
-  padding-right: 25px;
+  padding-right: 0;
   /* margin-bottom: 5px; */
   justify-content: flex-end;
 
@@ -161,13 +167,13 @@ background: linear-gradient(to right, #FFFDE4, #005AA7);  */
 
 
 .logout-button {
-  padding-left: 73%;
-  font-size: 40px;
+  padding-left: 75%;
+  font-size: 30px;
 
 }
 
 .logout-lock {
-  font-size: 40px; 
+  font-size: 30px; 
 }
 
 /* button {
@@ -220,6 +226,7 @@ a.link {
   color: white;
   -webkit-text-fill-color: white;
   cursor: pointer;
+  font-size: 30px;
 }
 
 .profile-container {
@@ -230,6 +237,7 @@ a.link {
 
 .main-logo {
 background: transparent;
+padding: 10px;
 
 }
 

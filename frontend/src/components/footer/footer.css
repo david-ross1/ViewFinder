@@ -30,6 +30,7 @@
     justify-content: space-between;
     line-height: 1.5;
     margin-bottom: 5px;
+    
 }
 
 .footer-column {
@@ -40,13 +41,16 @@
 
 .footer-header {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 10px; /*was 40*/
+    /* width: 190px; */
+    text-align: center;
+    width: 100%;
 }
 
 .footer-logo {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     background-color: white;
     border-radius: 50%;
     border: none;
@@ -54,6 +58,7 @@
 
 a .footer-logo {
     margin: 0px 15px;
+    margin-right: 0px;
 }
 
 .footer {

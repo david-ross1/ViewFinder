@@ -6,7 +6,6 @@ import MainPage from "./main/main_page";
 import Footer from "./footer/footer"
 import Modal from "./modal/modal"
 
-
 const App = () => (
   <div>
     <Modal/>
