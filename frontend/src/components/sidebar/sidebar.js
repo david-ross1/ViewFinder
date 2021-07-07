@@ -3,7 +3,6 @@ import "./sidebar.css";
 import Carousel from '../carousel/carouse'
 import CommentComposeContainer from '../comments/comment_compose_container';
 import CommentsShowContainer from '../comments/comments_show_container';
-import { fetchView } from '../../actions/view_actions';
 
 
 
@@ -55,9 +54,6 @@ class Sidebar extends React.Component {
         <div className="csarousel-tet">
           <div className="picture-carousel">
             <Carousel photos={focusView.photos} />
-            {/* {!focusView.photos ? "" : focusView.photos.map((photo,idx) => (
-              <figure key={idx} className={classNames({"focused": idx === splashIdx})} onClick={() => setSplashIdx(idx)}><img src={photo.s3Link}/></figure>
-            ))} */}
             <h2 className="view-name">{focusView.locationName}</h2>
             <p className="view-desc">{focusView.description}</p>
           </div>
