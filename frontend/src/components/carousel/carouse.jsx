@@ -1,7 +1,6 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import './carousel.css'
-import { connect } from 'react-redux';
 
 class Carousel extends React.Component {
     constructor() {
@@ -31,7 +30,7 @@ class Carousel extends React.Component {
       } else {
       return (
         <ul className='thumb-bar'>{this.props.photos.map((item, i) => (
-          <li className='thumbs' key={i} onClick={(i) => this.slideTo(i)}><img src={item.s3Link} /></li>))}
+          <li className='thumbs' key={i} onClick={(i) => this.slideTo(i)}><img src={item.s3Link} alt={i}/></li>))}
         </ul>
         )
       }
@@ -49,11 +48,11 @@ class Carousel extends React.Component {
         >
           {!this.props.photos
             ? ""
-            : this.props.photos.map((item, i) => (
+            : this.props.photos.map((item, idx) => (
                 <div className="photos-tainer">
-                  <div key={i} className="photos">
+                  <div key={idx} className="photos">
                     <h2>
-                      <img className="photo" src={item.s3Link} />
+                      <img className="photo" src={item.s3Link} alt={idx}/>
                     </h2>
                   </div>
                 </div>

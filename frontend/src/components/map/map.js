@@ -1,6 +1,5 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from 'mapbox-gl';
 import ReactMapGL, {Marker, NavigationControl, Popup} from 'react-map-gl';
 import classNames from 'classnames';
 import NewLocationFormContainer from './new_location_form_container';
@@ -10,9 +9,6 @@ import './map.css'
 // const mapboxApiAccessToken = 'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0YXp4c2kxNmVrMndxcHhiaWRyb2E3In0.ZKUo8tHMWew87KIhnHHYLA'
 const mapboxApiAccessToken = "pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0NmFoMzIxNWV1MnBxbDM4bmZiMDF5In0.cQDPdpCOUYsBq5q4nm1i7A";
 
-
-const MAX_ZOOM = 16;
-const MIN_ZOOM = 7;
 const [locLng,locLat] = [-122.400,37.757];
 // const maxBounds = [
 //   [-123.956,38.999],
