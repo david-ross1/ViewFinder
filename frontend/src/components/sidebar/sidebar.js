@@ -77,7 +77,7 @@ class Sidebar extends React.Component {
                 <div class="car-icon">
                   <FaCar />
                 </div>
-              </a>
+              </a> 
             </div>
             ;<h2 className="view-name">{focusView.locationName}</h2>
             <p className="view-desc">{focusView.description}</p>
