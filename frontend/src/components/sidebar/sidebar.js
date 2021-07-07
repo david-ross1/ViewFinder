@@ -107,17 +107,17 @@ class Sidebar extends React.Component {
                 </button>
               )}
 
-            {isAuthenticated && (
+            {/* {isAuthenticated && (
               <button className="upload-photo"
                 onClick={this.handleUploadModal}
               >
                 Upload Photo
               </button>
-            )}
+            )} */}
 
             
 
-              )}            
+
               {isAuthenticated ? <PhotoAppContainer /> : ""}
 
           </div>

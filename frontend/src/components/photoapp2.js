@@ -26,7 +26,7 @@ const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
   return !loggedIn ? "" : (
     <>
       <input type="file" onChange={processFile} accept="image" ref={uploadRef} style={{display: "none"}}/>
-      <button onClick={handleSubmit}>Upload a new photo</button>
+      <button className='upload-photo' onClick={handleSubmit}>Upload Photo</button>
     </>
   );
 }
