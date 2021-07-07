@@ -68,7 +68,6 @@ class Sidebar extends React.Component {
             ))} */}
 
             <div className="photoapp-upload">
-              {(isAuthenticated && this.state.showUploadModal) ? <PhotoAppContainer /> : "" }
             </div>
             <div className="directions-action">
               <a
@@ -117,6 +116,10 @@ class Sidebar extends React.Component {
             )}
 
             
+
+              )}            
+              {isAuthenticated ? <PhotoAppContainer /> : ""}
+
           </div>
           {isAuthenticated && !this.state.showPage && (
             <CommentComposeContainer trigerFunction={this.handleWriteComment} />

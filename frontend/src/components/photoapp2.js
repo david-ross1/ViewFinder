@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react';
 import './photo.css';
 
 const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
-  const [errors, setErrors] = useState([]);
+  // const [errors, setErrors] = useState([]);
   const uploadRef = useRef(null);
   const processFile = (e) => {
     const _errors = [];
@@ -17,22 +17,17 @@ const PhotoApp = ({uploadPhoto, viewId, loggedIn}) => {
     }
     else {
       alert(_errors.join(", "));
-      setErrors(_errors);
+      // setErrors(_errors);
     }
   };
   const handleSubmit = () => {
     uploadRef.current.click();
   };
   return !loggedIn ? "" : (
-    <div className="photo-upload-wrapper">
-      <div className="photo-upload-container">
-        <div className="photo-upload">
-          <h3 className="photo-text">Upload photo</h3>
-        </div>
-        <input type="file" onChange={processFile} accept="image" ref={uploadRef} style={{display: "none"}}/>
-        <button onClick={handleSubmit}>Upload a new photo</button>
-      </div>
-    </div>
+    <>
+      <input type="file" onChange={processFile} accept="image" ref={uploadRef} style={{display: "none"}}/>
+      <button onClick={handleSubmit}>Upload a new photo</button>
+    </>
   );
 }
 

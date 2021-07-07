@@ -11,7 +11,13 @@ const keys = require("../../config/keys");
 const {uploadParams, imageFileFilter} = require("../../util/photo_helper");
 const AWSS3RootPath = keys.awsRootPath;
 const storage = multer.memoryStorage();
-const upload = multer({storage: storage, fileFilter: imageFileFilter});
+const upload = multer({
+  storage: storage,
+  fileFilter: imageFileFilter,
+  limits: {
+    fileSize: 5*1024*1024,
+  },
+});
 
 
 const s3bucket = new AWS.S3({
