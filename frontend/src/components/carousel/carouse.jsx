@@ -7,22 +7,18 @@ class Carousel extends React.Component {
       super();
 
       this.state = {
-        currentIndex: 0,
+        currActiveIndex: 0
         
       }
-      this.slideTo=this.slideTo.bind(this)
       
+      this.renderThumbs=this.renderThumbs.bind(this)
+      this.renderGallery=this.renderGallery.bind(this)
     }
 
-    slideTo(i) {
-      this.setState({ currentIndex: i })
-    } 
+    // slideTo = (i) => this.setState({ currActiveIndex: i })
+    
 
-    onSlideChanged = (e) => this.setState({ currentIndex: e.item });
-
-    slideNext = () => this.setState({ currentIndex: this.state.currentIndex + 1 });
-
-    slidePrev = () => this.setState({ currentIndex: this.state.currentIndex - 1 });
+    onSlideChanged = (e) => this.setState({ currActiveIndex: e.item });
 
     renderThumbs() {
       if (!this.props.photos) {
@@ -37,23 +33,25 @@ class Carousel extends React.Component {
     }
 
     renderGallery() {
-      const { currentIndex } = this.state;
+      const { currActiveIndex } = this.state;
+     
+
       return (
         <AliceCarousel
-          dotsDisabled={true}
-          buttonsDisabled={false}
-          slideToIndex={currentIndex}
+          disableDotsControls={false}
+          disableButtonsControls={false}
+          isActiveItem={currActiveIndex}
           onSlideChanged={this.onSlideChanged}
           autoWidth={false}
           autoHeight={false}
         >
           {!this.props.photos
             ? ""
-            : this.props.photos.map((item, idx) => (
+            : this.props.photos.map((photo, i) => (
                 <div className="photos-tainer">
-                  <div key={idx} className="photos">
+                  <div key={i} className="photos">
                     <h2>
-                      <img className="photo" src={item.s3Link} alt={idx}/>
+                      <img className="photo" src={photo.s3Link} />
                     </h2>
                   </div>
                 </div>
@@ -66,7 +64,6 @@ class Carousel extends React.Component {
       return (
         <div>
             { this.renderThumbs() }
-
             { this.renderGallery() }
         </div>
       );

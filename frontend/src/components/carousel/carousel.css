@@ -243,9 +243,6 @@
     padding-top: 0; 
 }
 
-.thumbs:hover {
-    cursor: pointer;
-}
 
 .thumb-bar {
     display: flex;
@@ -277,6 +274,6 @@
    margin: 0 auto;
    /* max-width: 600px;  */
    max-width: 45vw; 
-   max-height: 50vh; 
+   max-height: 45vh; 
    /* margin-left: 70px;  */
  }

@@ -18,7 +18,9 @@
 }
 
 svg.pin.selected {
-  fill: green;
+  fill: rgba(3, 23, 241, 0.966);
+  height: 40px;
+  width: 30px;
 }
 
 .offset {
