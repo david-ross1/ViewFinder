@@ -15,25 +15,16 @@ class Sidebar extends React.Component {
       buttonText: "Write a Comment",
       showDeleteIcon: false,
       deleteButtonText: "Delete Comment",
-      showUploadModal: false
       }
 
-    this.handleUploadModal = this.handleUploadModal.bind(this);
     this.handleWriteComment = this.handleWriteComment.bind(this);
     this.handleDeleteIcon = this.handleDeleteIcon.bind(this);
   }
   componentDidMount() {
-    console.log("I am here in sidebar")
     const initialViewId = "60ccfe961fca6f6304f7710a"
     this.props.fetchView(initialViewId);
   }
 
-  handleUploadModal = (e) => {
-    e.preventDefault();
-    console.log(this.state.showUploadModal)
-    this.setState({ showUploadModal: !this.state.showUploadModal })
-  }
-        
   handleWriteComment = (e) => {
     e.preventDefault();
     if (this.state.showPage === true) {
@@ -102,17 +93,6 @@ class Sidebar extends React.Component {
                   {this.state.deleteButtonText}
                 </button>
               )}
-
-            {/* {isAuthenticated && (
-              <button className="upload-photo"
-                onClick={this.handleUploadModal}
-              >
-                Upload Photo
-              </button>
-            )} */}
-
-            
-
 
               {isAuthenticated ? <PhotoAppContainer /> : ""}
 
