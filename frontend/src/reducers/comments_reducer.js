@@ -1,11 +1,6 @@
-import {
-  RECEIVE_NEW_COMMENT,
-} from "../actions/comment_actions";
+import { RECEIVE_NEW_COMMENT } from "../actions/comment_actions";
 
-const CommentsReducer = (
-  state = { user: {}, new: undefined },
-  action
-) => {
+const CommentsReducer = (state = { user: {}, new: undefined }, action) => {
   Object.freeze(state);
   let newState = Object.assign({}, state);
   switch (action.type) {

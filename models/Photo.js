@@ -8,8 +8,8 @@ const PhotoSchema = new Schema({
   },
   user: {
     type: Schema.Types.ObjectId,
-    ref: 'user'
-  }
+    ref: "user",
+  },
 });
 
-module.exports = Photo = mongoose.model('photo', PhotoSchema);
+module.exports = Photo = mongoose.model("photo", PhotoSchema);

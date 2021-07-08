@@ -1,27 +1,36 @@
+@fontface {
+  font-family: "Ubuntu", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+}
+
 .mapboxgl-popup-content {
-  background-color: #D0E4B0;
-  border-color: #D0E4B0;
+  background-color: #d0e4b0;
+  border-color: #d0e4b0;
   border-radius: 5px;
   width: 200px;
+}
+
+.mapboxgl-popup-content input {
+  margin-bottom: 5px;
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-    border-bottom-color: #D0E4B0;
-    }
+  border-bottom-color: #d0e4b0;
+}
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-    border-top-color: #D0E4B0;
-    }
+  border-top-color: #d0e4b0;
+}
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-    border-right-color: #D0E4B0;
-    }
+  border-right-color: #d0e4b0;
+}
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-    border-left-color: #D0E4B0;
-    }
+  border-left-color: #d0e4b0;
+}
 
 .new-location-form {
-  background-color: #D0E4B0;
+  background-color: #d0e4b0;
 }

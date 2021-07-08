@@ -10,7 +10,7 @@ const RootReducer = combineReducers({
   session,
   comments,
   views,
-  ui
+  ui,
 });
 
 export default RootReducer;

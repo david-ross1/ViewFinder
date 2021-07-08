@@ -1,154 +1,95 @@
-/* @fontface {
-    font-family: 'Oleo Script', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@700&display=swap')
-} */
 @fontface {
-    font-family: 'Oleo Script', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap')
-  }
+  font-family: "Oleo Script", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
+}
 
 .footer-component-block {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 15%;
-    width: 100%;
-    padding: 0;
-    
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  width: 100%;
+  padding: 0;
 }
 
 .footer-component {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    color: white;
-    font-size: 12px;
-    /* font-family: 'Oleo Script', cursive; */
-    font-family: 'Nova Flat', cursive;
-    margin: 0px 0px;
-    justify-content: space-between;
-    line-height: 1.5;
-    margin-bottom: 5px;
-    
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  color: white;
+  font-size: 12px;
+  font-family: "Nova Flat", cursive;
+  margin: 0px 0px;
+  justify-content: space-between;
+  line-height: 1.5;
+  margin-bottom: 5px;
 }
 
 .footer-column {
-    margin: 0px 70px;
-    align-items: center;
-    align-content: center;
+  margin: 0px 70px;
+  align-items: center;
+  align-content: center;
 }
 
 .footer-header {
-    font-weight: bold;
-    font-size: 16px;
-    padding-left: 10px; /*was 40*/
-    /* width: 190px; */
-    text-align: center;
-    width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .footer-logo {
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border-radius: 50%;
-    border: none;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
 }
 
 a .footer-logo {
-    margin: 0px 15px;
-    margin-right: 0px;
+  margin: 0px 15px;
+  margin-right: 0px;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    /* height: 240px; */
-
-    color: white;
-    text-decoration: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-component-block {
-
- 
-		background-attachment: fixed,							fixed,							fixed;
-		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
-		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-		background-position: top left,						center center,					center center;
-		background-size: cover;
-		overflow: hidden;
-
-
-
-
-/* 
-
-  background: rgb(2,26,191);
-background: linear-gradient(90deg, rgba(2,26,191,1) 0%, rgba(0,65,162,1) 12%, rgba(40,182,160,1) 34%, rgba(111,198,205,1) 70%, rgba(37,76,130,1) 87%, rgba(22,35,133,1) 100%); */
-/* 
-background: rgb(189,187,28);
-background: linear-gradient(90deg, rgba(189,187,28,1) 0%, rgba(167,52,11,1) 50%, rgba(9,141,180,1) 100%);
-
-background: rgb(28,189,49);
-background: linear-gradient(90deg, rgba(28,189,49,1) 0%, rgba(98,121,30,1) 25%, rgba(167,52,11,1) 50%, rgba(120,79,62,1) 65%, rgba(66,109,119,1) 82%, rgba(9,141,180,1) 100%); */
-    /* background:
-	repeating-linear-gradient(
-		50deg,
-		#F7A37B,
-		#F7A37B 1em,
-		#FFDEA8 1em,
-		#FFDEA8 2em,
-		#D0E4B0 2em,
-		#D0E4B0 3em,
-		#7CC5D0 3em,
-		#7CC5D0 4em,
-		#00A2E1 4em,
-		#00A2E1 5em,
-		#0085C8 5em,
-		#0085C8 6em
-	),
-	repeating-linear-gradient(
-		-50deg,
-		#F7A37B,
-		#F7A37B 1em,
-		#FFDEA8 1em,
-		#FFDEA8 2em,
-		#D0E4B0 2em,
-		#D0E4B0 3em,
-		#7CC5D0 3em,
-		#7CC5D0 4em,
-		#00A2E1 4em,
-		#00A2E1 5em,
-		#0085C8 5em,
-		#0085C8 6em
-	);
-	
-background-blend-mode: multiply; */
+  background-attachment: fixed, fixed, fixed;
+  background-image: url(../../assets/images/sf1.jpg),
+  linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-position: top left, center center, center center;
+  background-size: cover;
+  overflow: hidden;
 }
+
 * {
-    font-family: 'Oleo Script', cursive;
-    text-decoration: none;
-    font-weight: bold;
+  font-family: "Oleo Script", cursive;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-list {
-    color: white;
-    text-decoration: none;
-    align-items: flex-start;
-    align-content: flex-start;
-    display: flex;
-    justify-content: space-evenly;
+  color: white;
+  text-decoration: none;
+  align-items: flex-start;
+  align-content: flex-start;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer-links {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .text-block {
-    margin-left: 14px;
-
+  margin-left: 14px;
 }
