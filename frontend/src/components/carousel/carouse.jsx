@@ -35,7 +35,7 @@ class Carousel extends React.Component {
     renderGallery() {
       const { currActiveIndex } = this.state;
      
-      debugger
+
       return (
         <AliceCarousel
           disableDotsControls={false}
