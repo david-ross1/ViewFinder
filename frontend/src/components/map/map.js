@@ -9,7 +9,7 @@ import './map.css'
 // const mapboxApiAccessToken = 'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0YXp4c2kxNmVrMndxcHhiaWRyb2E3In0.ZKUo8tHMWew87KIhnHHYLA'
 const mapboxApiAccessToken = "pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0NmFoMzIxNWV1MnBxbDM4bmZiMDF5In0.cQDPdpCOUYsBq5q4nm1i7A";
 
-const [locLng,locLat] = [-122.400,37.757];
+const [locLng,locLat] = [-122.300,37.557];
 // const maxBounds = [
 //   [-123.956,38.999],
 
@@ -43,7 +43,7 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView, loggedIn}) => {
   const [viewport, setViewport] = useState({
     latitude: locLat,
     longitude: locLng,
-    zoom: 11,
+    zoom: 10,
     pitch: 90
   });
   const [readyToPlace, setReadyToPlace] = useState(false);
@@ -51,6 +51,7 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView, loggedIn}) => {
     fetchViews()
   },[fetchViews]);
     return (
+      <div className='map-side'>
   <div className="map">
     <ReactMapGL
       mapStyle={"mapbox://styles/kerapace/ckpwz1oel3dqt17mvkiquuo75"}
@@ -97,6 +98,7 @@ const Map = ({geoJSON,focusId,fetchViews,fetchView, loggedIn}) => {
         </div> 
       )
     }
+  </div>
   </div>
   );
   // const zoomIn = () => {
