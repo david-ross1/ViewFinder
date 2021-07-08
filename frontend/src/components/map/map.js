@@ -10,18 +10,6 @@ import './map.css'
 const mapboxApiAccessToken = "pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3E0NmFoMzIxNWV1MnBxbDM4bmZiMDF5In0.cQDPdpCOUYsBq5q4nm1i7A";
 
 const [locLng,locLat] = [-122.400,37.757];
-// const maxBounds = [
-//   [-123.956,38.999],
-
-//   [-120.679,36.474]
-// ];
-
-// const randomColor = () => {
-//   return ['one','two','three', 'four', 'zero'][Math.floor(Math.random() * 5)]
-// }
-
-
-
 
 const Pin = ({isSelected}) => (
   <svg className={classNames('pin','offset',{'selected': isSelected})}  xmlns="http://www.w3.org/2000/svg"
