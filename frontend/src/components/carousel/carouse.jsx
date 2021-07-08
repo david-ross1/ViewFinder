@@ -13,13 +13,16 @@ class Carousel extends React.Component {
       
       this.renderThumbs=this.renderThumbs.bind(this)
       this.renderGallery=this.renderGallery.bind(this)
+      this.slideTo = this.slideTo.bind(this)
+      this.onSlideChanged = this.onSlideChanged.bind(this)
     }
 
     slideTo = (i) => this.setState({ currActiveIndex: i })
     
 
-    onSlideChanged = (e) => this.setState({ currActiveIndex: e.item });
-
+    onSlideChanged(e) {
+      this.setState({ currActiveIndex: e.item });
+    }
     renderThumbs() {
       if (!this.props.photos) {
         return <div> </div>
@@ -34,29 +37,28 @@ class Carousel extends React.Component {
 
     renderGallery() {
       const { currActiveIndex } = this.state;
-     
+      const { photos } = this.props;
+      this.mainItems = !photos ? ""
+        : photos.map((photo, i) => (
+            <div className="photos-tainer">
+              <div key={i} className="photos">
+                <h2>
+                  <img className="photo" src={photo.s3Link} alt={i}/>
+                </h2>
+              </div>
+            </div>
+          ))
 
       return (
         <AliceCarousel
           disableDotsControls={false}
           disableButtonsControls={false}
-          isActiveItem={currActiveIndex}
+          activeIndex={currActiveIndex}
           onSlideChanged={this.onSlideChanged}
           autoWidth={false}
           autoHeight={false}
-        >
-          {!this.props.photos
-            ? ""
-            : this.props.photos.map((photo, i) => (
-                <div className="photos-tainer">
-                  <div key={i} className="photos">
-                    <h2>
-                      <img className="photo" src={photo.s3Link} />
-                    </h2>
-                  </div>
-                </div>
-              ))}
-        </AliceCarousel>
+          items={this.mainItems}
+        />
       );
     }
 
