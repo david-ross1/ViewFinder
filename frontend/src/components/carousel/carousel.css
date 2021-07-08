@@ -243,6 +243,10 @@
     padding-top: 0; 
 }
 
+.thumbs > img:hover {
+  cursor: pointer;
+}
+
 
 .thumb-bar {
     display: flex;
