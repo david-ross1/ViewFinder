@@ -5,6 +5,7 @@ import CommentComposeContainer from '../comments/comment_compose_container';
 import CommentsShowContainer from '../comments/comments_show_container';
 import PhotoAppContainer from '../photo_app_container';
 
+import { FaCar } from "react-icons/fa";
 
 class Sidebar extends React.Component {
   constructor (props) {
@@ -14,8 +15,10 @@ class Sidebar extends React.Component {
       buttonText: "Write a Comment",
       showDeleteIcon: false,
       deleteButtonText: "Delete Comment",
+      showUploadModal: false
       }
 
+    this.handleUploadModal = this.handleUploadModal.bind(this);
     this.handleWriteComment = this.handleWriteComment.bind(this);
     this.handleDeleteIcon = this.handleDeleteIcon.bind(this);
   }
@@ -23,6 +26,12 @@ class Sidebar extends React.Component {
     console.log("I am here in sidebar")
     const initialViewId = "60ccfe961fca6f6304f7710a"
     this.props.fetchView(initialViewId);
+  }
+
+  handleUploadModal = (e) => {
+    e.preventDefault();
+    console.log(this.state.showUploadModal)
+    this.setState({ showUploadModal: !this.state.showUploadModal })
   }
         
   handleWriteComment = (e) => {
@@ -54,19 +63,22 @@ class Sidebar extends React.Component {
         <div className="csarousel-tet">
           <div className="picture-carousel">
             <Carousel photos={focusView.photos} />
-            <div className='photoapp-upload'>{!isAuthenticated ? "" : <PhotoAppContainer />}</div>
+            <div className="photoapp-upload">
+            </div>
             <div className="directions-action">
               <a
                 target="_blank"
-                href={`https://www.google.com/maps/dir/Current+Location/${trail.lat},${trail.lon}`}
+                href={`https://www.google.com/maps/dir/Current+Location/${focusView.latitude},${focusView.longitude}`}
               >
-                <FontAwesomeIcon icon={faArrowsAlt} />
-                <p>Directions</p>
-              </a>
+                <div class="car-icon">
+                  <FaCar />
+                </div>
+              </a> 
             </div>
-
+            ;<h2 className="view-name">{focusView.locationName}</h2>
 
             <h2 className="view-name">{focusView.locationName}</h2>
+
             <p className="view-desc">{focusView.description}</p>
           </div>
         </div>
@@ -90,6 +102,20 @@ class Sidebar extends React.Component {
                   {this.state.deleteButtonText}
                 </button>
               )}
+
+            {/* {isAuthenticated && (
+              <button className="upload-photo"
+                onClick={this.handleUploadModal}
+              >
+                Upload Photo
+              </button>
+            )} */}
+
+            
+
+
+              {isAuthenticated ? <PhotoAppContainer /> : ""}
+
           </div>
           {isAuthenticated && !this.state.showPage && (
             <CommentComposeContainer trigerFunction={this.handleWriteComment} />
@@ -104,3 +130,5 @@ class Sidebar extends React.Component {
 };
 
 export default Sidebar;
+
+

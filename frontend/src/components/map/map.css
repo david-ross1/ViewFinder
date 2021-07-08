@@ -1,6 +1,6 @@
 @fontface {
   font-family: 'Offside', cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
 }
 
 .map {
@@ -12,24 +12,13 @@
     src: url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@700&display=swap')
 } */
 
-.zero {
+.pin {
   fill: rgb(177, 1, 1);
+  cursor: pointer;
 }
 
-.one {
-   fill: rgb(177, 1, 1);
-}
-
-.two {
-    fill: rgb(177, 1, 1);
-}
-
-.three {
-  fill: rgb(177, 1, 1);
-}
-
-.four {
-  fill: rgb(177, 1, 1);
+svg.pin.selected {
+  fill: green;
 }
 
 .offset {
@@ -37,8 +26,9 @@
   transform:translate(-50%, -50%);
 }
 
-.view-location.selected pin  {
-  color: white;
+div.mapbox-marker.view-location.selected > svg.offset {
+  stroke: green;
+  fill: green;
 }
 
 
