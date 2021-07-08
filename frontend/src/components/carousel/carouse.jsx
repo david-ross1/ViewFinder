@@ -15,7 +15,7 @@ class Carousel extends React.Component {
       this.renderGallery=this.renderGallery.bind(this)
     }
 
-    // slideTo = (i) => this.setState({ currActiveIndex: i })
+    slideTo = (i) => this.setState({ currActiveIndex: i })
     
 
     onSlideChanged = (e) => this.setState({ currActiveIndex: e.item });
