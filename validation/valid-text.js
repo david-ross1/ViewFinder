@@ -1,4 +1,3 @@
-const validText = (str) => typeof str === "string" && str.trim().length > 0;
+const validText = str => typeof str === "string" && str.trim().length > 0;
 
-module.exports = validText; 
-
+module.exports = validText;

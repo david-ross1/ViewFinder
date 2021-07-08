@@ -13,9 +13,6 @@ class MainPage extends React.Component {
           </div>
           <div className='side-section'>
             <SidebarContainer/>
-
-            {/* <div className='comments'></div> */}
-                   
           </div>
         </div>
         <footer className="body-footer">Copyright &copy; 2021 ViewFinder</footer>

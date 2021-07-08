@@ -21,23 +21,20 @@ if (process.env.NODE_ENV === "production") {
 }
 
 mongoose
-  .set('useFindAndModify', false)
+  .set("useFindAndModify", false)
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB successfully"))
-  .catch((err) => console.log(err));
+  .catch(err => console.log(err));
 
-  app.use(bodyParser.urlencoded({ extended: false }));
-  app.use(bodyParser.json());
-// app.get("/", (req, res) => res.send("Hello World!!"));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use("/api/users", users);
 app.use("/api/comments", comments);
-app.use("/api/views",views);
+app.use("/api/views", views);
 app.use("/api/photos", photos);
 
 app.use(passport.initialize());
 require("./config/passport")(passport);
 
-
 app.listen(port, () => console.log(`Server is running on port ${port}`));
-

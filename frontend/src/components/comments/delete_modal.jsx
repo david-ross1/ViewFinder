@@ -38,16 +38,8 @@ class DeleteModal extends React.Component {
                 </div>
 
             </div>
-
-
         )
     }
-
-
-
-
-
-
 };
 
 export default DeleteModal
