@@ -21,23 +21,37 @@ font-family: 'Offside', cursive;
 src: url("https://fonts.googleapis.com/css2?family=Offside&display=swap")
 }
 
+@fontface {
+font-family: 'Orbitron', sans-serif;
+src: url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap")
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap */
 
 .logo-link {
-font-family: 'Offside', cursive;
-  font-weight: 700;
+font-family: 'Orbitron', sans-serif;
+  /* font-weight: 700; */
 
   color: rgb(255, 255, 255); 
-  font-size: 1em;
-  /* background: -webkit-linear-gradient(rgb(5, 5, 5), rgb(0, 0, 0));
+  font-size: 0.7em;
+  /* background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(83, 254, 15));
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0); */
-
+    -webkit-text-stroke-color: rgb(253, 253, 253);
+ */
 
  
 
@@ -239,6 +253,7 @@ a.link {
 .main-logo {
 background: transparent;
 padding: 10px;
+padding-top: 1px; 
 
 }
 
