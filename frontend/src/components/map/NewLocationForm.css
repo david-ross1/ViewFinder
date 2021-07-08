@@ -1,8 +1,17 @@
+@fontface {
+  font-family: "Ubuntu", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+}
+
 .mapboxgl-popup-content {
   background-color: #d0e4b0;
   border-color: #d0e4b0;
   border-radius: 5px;
   width: 200px;
+}
+
+.mapboxgl-popup-content input {
+  margin-bottom: 5px;
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,

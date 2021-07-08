@@ -1,5 +1,4 @@
 # ViewFinder
-
 ViewFinder is an app in which users can discover curated community chosen locations where great views can be found, see snapshots of the views taken from the ViewFinder community, read contributed comments, write their own, as well as upload their own photos.  
 
 
@@ -42,3 +41,4 @@ Allowing users to upload multiple files to S3 while at the same time saving the 
 * Jonathan Hill - Backend lead 
 * Alfredo Ramirez-Mendez - Frontend lead 
 * Mohammad Ali Taghva - Flex lead 
+
