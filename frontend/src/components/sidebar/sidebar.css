@@ -18,7 +18,7 @@
 
 
 .upload-photo {
-  min-width: 120px;
+  min-width: 100px;
   height: 30px;
   text-align: center;
   -webkit-text-fill-color: white;
@@ -44,7 +44,7 @@
 
 .car-icon {
   color: rgb(255, 255, 255);
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .car-icon:hover {
@@ -59,8 +59,8 @@
 .directions-action {
   position: absolute;
   z-index: 999;
-  top: 80px;
-  right: 40vw;
+  top: 57px;
+  right: 42vw;
 }
 
 .picture-carousel {
@@ -74,18 +74,18 @@
 }
 
 .view-name {
-  font-size: 24px;
-  color: white;
+  font-size: 1.1vw;
+  color: rgb(254, 248, 248);
   font-weight: 600;
-  text-align: center;
+  text-align: right;
+  padding-right: 10px;
   padding-top: 0px;
   position: fixed;
-  top: 155px;
+  top: 132px;
   z-index: 999;
   /* margin-left: 28%; */
   font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
-  width: 250px;
+  width: 400px;
   right: 5vw;
 }
 
@@ -123,7 +123,7 @@
   background: #eee;
   border-radius: 5px;
   width: 580px;
-  height: 15vh;
+  height: 11vh;
   margin: 0 auto;
   padding: 10px;
   line-height: 18px;
@@ -147,7 +147,7 @@
   background: #eee;
   border-radius: 5px;
   width: 580px;
-  height: 15vh;
+  height: 12vh;
   margin: 0 auto;
   padding: 10px;
   line-height: 18px;
@@ -168,7 +168,7 @@
 
 .write-comment-input {
   width: 580px;
-  height: 12vh;
+  height: 9vh;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
@@ -177,7 +177,7 @@
 
 
 .show-delete-button {
-  min-width: 120px;
+  min-width: 100px;
   height: 30px;
   text-align: center;
   -webkit-text-fill-color: white;
@@ -239,7 +239,7 @@
   /* width: 650px; */
   /* text-align: center; */
   /* margin-left: -325px; */
-  margin-top: 0px;
+  margin-top: 2px;
   padding-bottom: 5px;
 }
 

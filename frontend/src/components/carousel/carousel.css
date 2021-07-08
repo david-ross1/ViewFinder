@@ -191,7 +191,7 @@
 }
 
 .alice-carousel__dots {
-  margin: 5px 3px 5px;
+  margin: 0;
   padding: 0;
   list-style: none;
   text-align: center; 
@@ -237,13 +237,13 @@
 }
 
 .thumbs > img {
-    width: 115px;
-    height: 70px;
-    padding: 5px; 
+    width: 70px;
+    height: 50px;
+    padding: 3px; 
     padding-top: 0; 
 }
 
-.thumbs > img:hover {
+.thumbs > img {
   cursor: pointer;
 }
 
@@ -271,13 +271,16 @@
 
  .photo {
    align-content: center;
- }
+   object-fit:cover; 
+  width: 40vw;
+  height: 48vh
+  }
 
  .photos-tainer {
    /* align-content: center; */
    margin: 0 auto;
    /* max-width: 600px;  */
-   max-width: 45vw; 
-   max-height: 45vh; 
+   /* max-width: 45vw; 
+   max-height: 45vh;  */
    /* margin-left: 70px;  */
  }
