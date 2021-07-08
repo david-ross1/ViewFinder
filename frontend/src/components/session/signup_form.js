@@ -17,7 +17,6 @@ class SignupForm extends React.Component {
     this.clearedErrors = false;
     this.otherForm = this.otherForm.bind(this);
     this.alert = this.alert.bind(this);
-    // this.login = this.login.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -30,7 +29,7 @@ class SignupForm extends React.Component {
   }
 
   update(field) {
-    return (e) =>
+    return e =>
       this.setState({
         [field]: e.currentTarget.value,
       });

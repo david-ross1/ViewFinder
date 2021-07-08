@@ -1,11 +1,11 @@
-import axios from 'axios';
+import axios from "axios";
 
-export const addPhoto = (photoData) => {
+export const addPhoto = photoData => {
   const fd = new FormData();
-  Object.keys(photoData).forEach(key => fd.append(key,photoData[key]));
-  return axios.post('/api/photos/',fd);
+  Object.keys(photoData).forEach(key => fd.append(key, photoData[key]));
+  return axios.post("/api/photos/", fd);
 };
 
-export const deletePhoto = (photoData) => {
-  return axios.delete(`/api/photos/${photoData.id}`,photoData);
-}
+export const deletePhoto = photoData => {
+  return axios.delete(`/api/photos/${photoData.id}`, photoData);
+};

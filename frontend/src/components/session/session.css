@@ -1,126 +1,80 @@
 @fontface {
-  font-family: 'Oleo Script', cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+  font-family: "Oleo Script", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Offside&display=swap");
 }
 
 @fontface {
-  font-family: 'Offside', cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+  font-family: "Offside", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Offside&display=swap");
 }
 
-
-
-
-
 .login-form {
-  margin: 0px; 
+  margin: 0px;
   align-content: center;
   align-items: center;
-
 }
 
 .submit {
-  border-radius: 10px; 
-  margin-top: 20px; 
-  /* background: #17ab6e; */
-  height: 30px; 
-  width: 75px; 
-  margin-bottom: 15px; 
-    margin: 40px;
-
-background: rgb(37,193,195);
-background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%);
-
-
-   /* background-color: rgb(49, 183, 170); 
-
-  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-
-  background: rgb(26,138,139);
-background: linear-gradient(0deg, rgba(26,138,139,1) 0%, rgba(38,75,156,1) 100%);
-
-
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1;  */
- } 
-
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 30px;
+  width: 75px;
+  margin-bottom: 15px;
+  margin: 40px;
+  background: rgb(37, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(37, 193, 195, 1) 0%,
+    rgba(51, 99, 203, 1) 100%
+  );
+}
 
 .submit:hover {
-  cursor: pointer 
+  cursor: pointer;
 }
 
 .forn-input {
-  font-size: 30px 
-
+  font-size: 30px;
 }
 
 .login-forn-container-container {
-  position: relative; 
-  z-index: 550; 
+  position: relative;
+  z-index: 550;
 }
 
 .login-form-container {
-  z-index: 600; 
-  position: absolute; 
+  z-index: 600;
+  position: absolute;
   width: auto;
   width: 100%;
-  left: 0px; 
-}
-
-
-
-/* .login-form-container {
-  opacity: 100%;
-  width: auto;
-  width: 100%;
-}  */
-
-.session-container {
-  /* border: 20px solid gray; */
+  left: 0px;
 }
 
 .login-form input {
-  margin: 5px; 
-  padding: 5px; 
+  margin: 5px;
+  padding: 5px;
   border-radius: 5px;
   align-content: center;
-	border: none;
-	padding: 4px;
-	font: 10px;
-	cursor: pointer;
-	outline: inherit;
-  width: 170px;
-  /* opacity: 100% */
-
-
-  
-
+  border: none;
+  padding: 4px;
+  font: 10px;
+  cursor: pointer;
+  outline: inherit;
+  width: 185px;
 }
 
+.login-form input:hover {
+  cursor: text;
+}
 
-.close-button, 
-.sign-button, 
+.close-button,
+.sign-button,
 .demo-submit {
   all: unset;
   color: white;
   -webkit-text-fill-color: white;
   cursor: pointer;
-} 
-
-button:focus {
-  /* outline: orange 5px auto; */
 }
-
-/* button:hover {
-  color: #00a336;
-}
-
-p.button-text:hover {
-  color: #00a336;
-} */
 
 .submit {
   width: 170px;
@@ -132,257 +86,125 @@ p.button-text:hover {
   margin-top: 8px;
   margin-left: 20px;
   margin-right: 17px;
-  
 }
 
 .session-form {
   padding-left: 10%;
 }
 
-.session-form-sign{
-  padding-left: 15%;
-  /* opacity: 100%; */
+.session-form-sign {
+  justify-content: center;
+  display: flex;
 }
 
 .sign-button {
   margin-top: 15px;
-  border-radius: 10px; 
-  /* background-color: #17ab6e; */
-  height: 30px; 
-  width: auto;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-bottom: 0px; 
-  align-items: center; 
-background: rgb(37,193,195);
-background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%);
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  align-items: center;
 
-
-    /* background-color: rgb(49, 183, 170); 
-
-  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1;  */
-  
-} 
+  background: rgb(37, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(37, 193, 195, 1) 0%,
+    rgba(51, 99, 203, 1) 100%
+  );
+}
 
 .button-text {
-  color: white
+  color: white;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .close-button {
-  height: 30px; 
+  height: 20px;
   width: auto;
   padding-right: 5px;
   padding-left: 5px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   align-items: center;
   font-weight: 600;
-  font-size: 20px; 
-  margin-top: 20px;
+  font-size: 20px;
+  margin-top: 17px;
 
-background: rgb(37,193,195);
-background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%);
-
-/* 
-  background-color: rgb(49, 183, 170); 
-
-  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1;  */
-  
-}
-
-.demo-button {
-  border-radius: 5px; 
-  background-color: #17ab6e;
-  margin-bottom: 15px; 
-  align-items: center;
-  width: 170px;
-  height: 24px;
-  padding-top: 6px;
-  padding-right: 4px;
-  padding-left: 6px;
-  font-family: 'Offside', cursive;
-  text-align: center;
-
-
-  background: rgb(37,193,195);
-background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%);
-
- /* background-color: rgb(49, 183, 170); 
-
-  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  zoom: 1;  */
-
-}
-
-.login-text {
-  font-size: 16px; 
-  font-family: 'Offside', cursive;
-}
-
-p.button-text {
-    font-family: 'Offside', cursive;
-}
-
-.demo-button .submit {
-    font-family: 'Offside', cursive;
-}
-
-input.submit.button {
-  font-family: 'Offside', cursive;
-  font-size: 16px;
-  width: 175px;
-  font-weight: 400; 
+  background: rgb(37, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(37, 193, 195, 1) 0%,
+    rgba(51, 99, 203, 1) 100%
+  );
 }
 
 .demo-submit {
-  width: 170px;
-  height: 24px;
-}
- 
+  text-align: center;
 
-.close-button {
-  border-radius: 5px; 
-  margin-right: 15px;
-  font-family: 'Offside', cursive;
-  width: 15px;
-}
-
-
-
-
-
-/* 
-
-
-
-
-
- .login-form {
-  margin: 20px; 
-  align-content: center;
-  align-items: center;
-
-}
-
-.submit {
-  border-radius: 10px; 
-  margin-top: 20px; 
-  background: 008FB8;
-  height: 30px; 
-  width: 70px; 
-  margin-bottom: 15px; 
-}
-
-.submit:hover {
-  background: #1D60E0;
-  cursor: pointer 
-}
-
-.login-forn-container-container {
-  position: relative; 
-  z-index: 550; 
-}
-
-.login-form-container {
-  z-index: 600; 
-  position: absolute; 
-  width: auto;
-  width: 100%;
-  left: 0px; 
-}
-
-
-
-.login-form input {
-  margin: 5px; 
-  padding: 5px; 
   border-radius: 5px;
-  align-content: center;
-	border: none;
-	padding: 4px;
-	font: 14px;
-	cursor: pointer;
-	outline: inherit;
-}
-
-
-button {
-  all: unset;
-  color: white;
-  -webkit-text-fill-color: white;
-  cursor: pointer;
-}
-
-
-
-
-.login-head {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  margin-left: 17px;
-  margin-right: 17px;
-  
-}
-
-.session-form {
-  padding-left: 30%;
-}
-
-.session-form-sign{
-  padding-left: 26%;
-}
-
-.sign-button {
-  border-radius: 10px; 
-  background-color: #1d60e0;
-  height: 30px; 
-  width: auto;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   align-items: center;
-  
-}
+  width: 190px;
+  height: 5px;
+  font-family: "Offside", cursive;
+  text-align: center;
+  vertical-align: center;
 
-.button-text {
-  color: white
-}
-
-.close-button {
-  height: 30px; 
-  width: auto;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-bottom: 15px; 
-  align-items: center;
-  font-weight: 600;
+  font-family: "Offside", cursive;
+  font-size: 16px;
+  width: 195px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 .demo-button {
-  border-radius: 5px; 
-  background-color: #1d60e0;
-  margin-bottom: 15px; 
-  align-items: center;
-  width: 85px;
-  height: 24px;
-  padding-top: 6px;
-  padding-right: 4px;
-  padding-left: 6px;
-} */
+  border-radius: 5px;
+  width: 195px;
+  margin-left: 5px;
+  margin-top: 20px;
+
+  background: rgb(37, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(37, 193, 195, 1) 0%,
+    rgba(51, 99, 203, 1) 100%
+  );
+}
+
+.login-text {
+  font-size: 16px;
+  font-family: "Offside", cursive;
+}
+
+p.button-text {
+  font-family: "Offside", cursive;
+}
+
+.demo-button .submit {
+  font-family: "Offside", cursive;
+}
+
+input.submit.button {
+  font-family: "Offside", cursive;
+  font-size: 16px;
+  width: 195px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+input.submit.button:hover {
+  cursor: pointer;
+}
+
+.close-button {
+  border-radius: 5px;
+  margin-right: 15px;
+  font-family: "Offside", cursive;
+  width: 15px;
+  background: transparent;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  font-family: arial;
+}
+
+.close-button:hover {
+  -webkit-text-fill-color: red;
+}

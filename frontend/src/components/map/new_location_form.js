@@ -4,7 +4,6 @@ import './NewLocationForm.css';
 const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLocationForm}) => {
   const [name, setName] = useState("");
   const imageInput = useRef(null);
-  // const [description, setDescription] = useState("");
   const [photos, setPhotos] = useState([]);
   const [previews, setPreviews] = useState([]);
   const handleSubmit = () => {
@@ -45,9 +44,6 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       <label><h2>Name:</h2>
         <input value={name} onChange={(e) => setName(e.target.value)}/>
       </label>
-      {/* <label><h2>Description:</h2>
-        <input value={description} onChange={(e) => setDescription(e.target.value)}/>
-      </label> */}
       <br/>
       <label>Images:
         <button onClick={(e) => {
