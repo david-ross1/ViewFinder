@@ -1,16 +1,11 @@
 @fontface {
-  font-family: 'Offside', cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+  font-family: "Offside", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Offside&display=swap");
 }
 
 .map {
   position: relative;
 }
-
-/* @fontface {
-    font-family: 'Oleo Script', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@700&display=swap')
-} */
 
 .pin {
   fill: rgb(177, 1, 1);
@@ -24,8 +19,7 @@ svg.pin.selected {
 }
 
 .offset {
-  /* offset: 30px; */
-  transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 div.mapbox-marker.view-location.selected > svg.offset {
@@ -33,19 +27,14 @@ div.mapbox-marker.view-location.selected > svg.offset {
   fill: green;
 }
 
-
-
 .place-marker-text {
-  background-color: rgb(128, 64, 0); 
-  padding: 5px; 
-  width: 182px; 
-  border-radius: 10px; 
-  font-size: 12px; 
+  background-color: rgb(128, 64, 0);
+  padding: 5px;
+  width: 182px;
+  border-radius: 10px;
+  font-size: 12px;
   font-weight: bold;
-  /* margin: 10px;
-  margin-left: 55px;  */
-  background-color: rgb(175, 40, 40); /* Needed for IEs */
-
+  background-color: rgb(175, 40, 40);
   -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
@@ -54,9 +43,9 @@ div.mapbox-marker.view-location.selected > svg.offset {
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
 
-  border-radius: 5px;  
-  font-family: 'Offside', cursive;
-  font-weight: bold; 
+  border-radius: 5px;
+  font-family: "Offside", cursive;
+  font-weight: bold;
   position: absolute;
   top: 10px;
   left: 55px;

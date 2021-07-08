@@ -1,20 +1,19 @@
 @fontface {
-  font-family: 'Offside', cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Offside&display=swap')
+  font-family: "Offside", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Offside&display=swap");
 }
-
 
 .photo-upload-container {
   width: 170px;
-  height: 72px;  
+  height: 72px;
   border-radius: 10px;
   padding: 10px;
   padding-top: 0;
-  background: #008FB8; 
+  background: #008fb8;
   opacity: 100%;
   color: white;
 
-    background-color: rgb(40, 137, 175); /* Needed for IEs */
+  background-color: rgb(40, 137, 175);
 
   -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
@@ -26,13 +25,13 @@
 }
 
 .photo-upload {
-  border-bottom: 2px solid black; 
-  padding: 7px; 
+  border-bottom: 2px solid black;
+  padding: 7px;
 }
 
 .photo-text {
-  font-weight: bold; 
-  font-family: 'Offside', cursive;
+  font-weight: bold;
+  font-family: "Offside", cursive;
 }
 
 .photo-upload-wrapper {

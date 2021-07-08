@@ -2,8 +2,6 @@ import React from 'react';
 import { FaUserAlt, FaMinusCircle } from 'react-icons/fa';
 import DeleteModalContainer from './delete_modal_container';
 
-
-
 class CommentsShow extends React.Component {
     constructor(props) {
         super (props)
@@ -16,7 +14,6 @@ class CommentsShow extends React.Component {
     this.toggleModalShow = this.toggleModalShow.bind(this);
     }
 
-
     componentDidMount() {
         this.props.fetchViewComments(this.props.viewId)
     }
@@ -27,8 +24,7 @@ class CommentsShow extends React.Component {
 
     handleDelete(comment){
         this.setState({deleteModalShow: true,
-                        commentToDelete: comment})
-        
+                        commentToDelete: comment}) 
     }
 
     toggleModalShow(){
@@ -69,9 +65,6 @@ class CommentsShow extends React.Component {
             </div>
         )
     }
-
-
-
 
 };
 

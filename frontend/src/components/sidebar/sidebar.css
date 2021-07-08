@@ -3,20 +3,6 @@
   src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 }
 
-
-
-
-
-/* .photoapp-upload {
-  position: absolute;
-  top: 1%;
-  right: 51%;
-  z-index: 999;
-} */
-
-
-
-
 .upload-photo {
   min-width: 100px;
   height: 30px;
@@ -51,11 +37,6 @@
   color: rgb(34, 172, 34);
 }
 
-.carousel-test {
-  /* height: 100% */
-  /* height: 50% */
-}
-
 .directions-action {
   position: absolute;
   z-index: 999;
@@ -65,7 +46,6 @@
 
 .picture-carousel {
   height: 55vh;
-
   width: 100%;
 }
 
@@ -81,9 +61,9 @@
   padding-right: 10px;
   padding-top: 0px;
   position: fixed;
-  top: 132px;
+  top: 120px;
   z-index: 999;
-  /* margin-left: 28%; */
+
   font-family: "Ubuntu", sans-serif;
   width: 400px;
   right: 5vw;
@@ -128,20 +108,7 @@
   padding: 10px;
   line-height: 18px;
   overflow-y: auto;
-  /* position: fixed; 
-  top: 75vh;
-  left: 55%; */
-  /* padding-top: 10px;
-  position: fixed;
-  bottom: 67px; */
 }
-
-/* .wc-contain {
-  width: 100%;
-  align-items: center;
-  height: 12%;
-  padding-top: 10px;
-} */
 
 .write-comment-container {
   background: #eee;
@@ -152,18 +119,6 @@
   padding: 10px;
   line-height: 18px;
   overflow-y: auto;
-  /* padding-top:0px; */
-
-  /* position: fixed; 
-  top: 75vh;
-  left: 55%; */
-  /* padding-top: 10px;
-  position: fixed;
-  bottom: 67px; */
-
-  /* position: fixed; 
-  top: 75vh;
-  left: 55%; */
 }
 
 .write-comment-input {
@@ -174,7 +129,6 @@
   font-size: 15px;
   padding: 10px;
 }
-
 
 .show-delete-button {
   min-width: 100px;
@@ -220,25 +174,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-   position: relative;
-  z-index: 999; 
-
-  /* position: relative;
-  z-index: 999; */
+  position: relative;
+  z-index: 999;
 }
 .comment-button-container {
   display: flex;
   position: relative;
-  /* padding-top: 20px; */
-  /* width: 200px;
-  right: 20%;
-  align-items: left; */
-  /* top: 30px; */
   margin: 0 auto;
   justify-content: left;
-  /* width: 650px; */
-  /* text-align: center; */
-  /* margin-left: -325px; */
   margin-top: 2px;
   padding-bottom: 5px;
 }
@@ -282,7 +225,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* background-color: rgba(128,128,128,0.5); */
+
   background-color: rgba(0, 0, 0, 0.7);
 }
 .delete-modal-container {
@@ -311,7 +254,6 @@
 .delete-modal-comment {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
-  /* color: rgb(88, 86, 86); */
   color: blue;
   padding-top: 20px;
 }
@@ -325,7 +267,7 @@
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
-  min-width: 75px; 
+  min-width: 75px;
 }
 
 .delete-modal-cancel-button {

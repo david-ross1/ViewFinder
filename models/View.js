@@ -1,21 +1,19 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const Photo = require('./Photo');
-const Comment = require('./Comment');
+const Photo = require("./Photo");
+const Comment = require("./Comment");
 
 const ViewSchema = new Schema({
   locationName: {
     type: String,
   },
-  photos: [
-    {type: Schema.Types.ObjectId, ref: 'photo'}
-  ],
+  photos: [{ type: Schema.Types.ObjectId, ref: "photo" }],
   latitude: {
     type: Number,
     required: true,
   },
   address: {
-    type: String
+    type: String,
   },
   longitude: {
     type: Number,
@@ -24,9 +22,7 @@ const ViewSchema = new Schema({
   description: {
     type: String,
   },
-  comments: [
-    {type: Schema.Types.ObjectId, ref: 'comment'}
-  ]
+  comments: [{ type: Schema.Types.ObjectId, ref: "comment" }],
 });
 
-module.exports = View = mongoose.model("view",ViewSchema);
+module.exports = View = mongoose.model("view", ViewSchema);
