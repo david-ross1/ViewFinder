@@ -92,12 +92,13 @@ background: linear-gradient(0deg, rgba(26,138,139,1) 0%, rgba(38,75,156,1) 100%)
 	font: 10px;
 	cursor: pointer;
 	outline: inherit;
-  width: 170px;
+  width: 185px;
   /* opacity: 100% */
 
+}
 
-  
-
+.login-form input:hover {
+  cursor: text;
 }
 
 
@@ -140,20 +141,24 @@ p.button-text:hover {
 }
 
 .session-form-sign{
-  padding-left: 15%;
+  /* padding-left: 15%; */
+  justify-content: center;
+  display: flex;
   /* opacity: 100%; */
 }
 
 .sign-button {
   margin-top: 15px;
-  border-radius: 10px; 
+  border-radius: 5px; 
   /* background-color: #17ab6e; */
   height: 30px; 
-  width: auto;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-bottom: 0px; 
-  align-items: center; 
+  width: 100px;
+  /* padding-right: 5px; */
+  /* padding-left: 5px; */
+  /* margin-bottom: 0px;  */
+  align-items: center;
+
+   
 background: rgb(37,193,195);
 background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%);
 
@@ -171,11 +176,13 @@ background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%)
 } 
 
 .button-text {
-  color: white
+  color: white;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .close-button {
-  height: 30px; 
+  height: 20px; 
   width: auto;
   padding-right: 5px;
   padding-left: 5px;
@@ -183,7 +190,7 @@ background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%)
   align-items: center;
   font-weight: 600;
   font-size: 20px; 
-  margin-top: 20px;
+  margin-top: 17px;
 
 background: rgb(37,193,195);
 background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%);
@@ -201,19 +208,34 @@ background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%)
   
 }
 
-.demo-button {
-  border-radius: 5px; 
-  background-color: #17ab6e;
-  margin-bottom: 15px; 
-  align-items: center;
-  width: 170px;
-  height: 24px;
-  padding-top: 6px;
-  padding-right: 4px;
-  padding-left: 6px;
-  font-family: 'Offside', cursive;
+.demo-submit {
   text-align: center;
 
+  border-radius: 5px; 
+  margin-bottom: 15px; 
+  align-items: center;
+  width: 190px;
+  height: 5px;
+  font-family: 'Offside', cursive;
+  text-align: center;
+  vertical-align: center;
+
+
+
+  font-family: 'Offside', cursive;
+  font-size: 16px;
+  width: 195px;
+  font-weight: 400; 
+  margin-top: 10px;
+
+}
+
+.demo-button {
+
+  border-radius: 5px; 
+  width: 195px;
+  margin-left: 5px;
+  margin-top: 20px;
 
   background: rgb(37,193,195);
 background: linear-gradient(0deg, rgba(37,193,195,1) 0%, rgba(51,99,203,1) 100%);
@@ -246,14 +268,16 @@ p.button-text {
 input.submit.button {
   font-family: 'Offside', cursive;
   font-size: 16px;
-  width: 175px;
+  width: 195px;
   font-weight: 400; 
+  margin-top: 10px;
 }
 
-.demo-submit {
-  width: 170px;
-  height: 24px;
+input.submit.button:hover {
+  cursor: pointer;
 }
+
+
  
 
 .close-button {
@@ -261,6 +285,13 @@ input.submit.button {
   margin-right: 15px;
   font-family: 'Offside', cursive;
   width: 15px;
+  background: transparent;
+  -webkit-text-fill-color: rgb(255, 255, 255); 
+  font-family: arial;
+}
+
+.close-button:hover {
+ -webkit-text-fill-color: red; 
 }
 
 

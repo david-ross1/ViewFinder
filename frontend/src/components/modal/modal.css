@@ -6,6 +6,7 @@
     left: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: 10;
+  
     
   		/* background-attachment: fixed,							fixed,							fixed;
 		 background-image: url(../../assets/images/sf1.jpg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
@@ -26,15 +27,16 @@
     background: #008FB8;
     width: 350px;
     height: 400px;
-    border-radius: 8%;
+    border-radius: 5px;
+    margin: 0 auto;
 
 
 
     background: #008FB8; 
-    width: 300px;
-    height: 400px;
-    border-radius: 8%;
-    background: blue; 
+    width: 400px;
+    height: 420px;
+    border-radius: 2%;
+    background:5px; 
 
 
       		background-attachment: fixed,							fixed,							fixed;
