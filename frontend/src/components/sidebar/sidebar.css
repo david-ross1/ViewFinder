@@ -8,17 +8,26 @@
   height: 30px;
   text-align: center;
   -webkit-text-fill-color: white;
-  background: green;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   margin-right: 10px;
+background: rgb(2,68,53);
+background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
+
+-moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .upload-photo:hover {
-  background: rgb(29, 153, 29);
+  filter: brightness(90%)
 }
 
 .photoapp-upload {
@@ -144,13 +153,23 @@
   height: 30px;
   text-align: center;
   -webkit-text-fill-color: white;
-  background: #920b0b;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   margin-right: 10px;
+  background: rgb(61,3,25);
+background: linear-gradient(0deg, rgba(61,3,25,1) 0%, rgba(201,1,1,1) 100%);
+
+-moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
 }
 
 .comment-button-outer-container {
@@ -166,21 +185,33 @@
   height: 30px;
   text-align: center;
   -webkit-text-fill-color: white;
-  background: #1d60e0;
+
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   margin-right: 10px;
+  background: rgb(3,76,133);
+background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
+
+
+-moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .write-comment-button:hover {
-  background: #4891d4;
+  filter: brightness(90%)
+
 }
 
 .show-delete-button:hover {
-  background: rgb(165, 22, 22);
+  filter: brightness(90%)
 }
 
 .write-comment-button:active {
@@ -216,7 +247,6 @@
 .write-comment-submit {
   padding: 5px;
   border-radius: 5px;
-  background: #1d60e0;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -224,12 +254,15 @@
   cursor: pointer;
   border: none;
   width: 125px;
+  background: rgb(3,76,133);
+background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
 }
 
 .write-comment-submit:hover {
   color: white;
   cursor: pointer;
-  background: #4186c7;
+  background: rgb(3,102,133);
+background: linear-gradient(0deg, rgba(3,102,133,1) 0%, rgba(37,195,168,1) 100%);
 }
 
 .delete-modal-section {
@@ -279,6 +312,7 @@
 .delete-modal-confirm-button {
   padding: 10px;
   border-radius: 5px;
+  margin-left: 10px; 
   background: red;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -286,6 +320,18 @@
   font-weight: 300;
   cursor: pointer;
   min-width: 75px;
+    background: rgb(61,3,25);
+background: linear-gradient(0deg, rgb(91, 4, 37) 0%, rgba(201,1,1,1) 100%);
+
+-moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
+  border: none; 
 }
 
 .delete-modal-cancel-button {
@@ -297,4 +343,5 @@
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
+
 }
