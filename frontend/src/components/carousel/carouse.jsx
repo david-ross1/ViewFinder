@@ -57,8 +57,8 @@ class Carousel extends React.Component {
           onSlideChanged={this.onSlideChanged}
           autoWidth={false}
           autoHeight={false}
-          autoplay={true}
-          autoPlayControls={true}
+          autoplay={false}
+          autoPlayControls={false}
           autoPlayDirection="ltr"
           autoPlayInterval={2000}
           autoPlayStrategy="none"
