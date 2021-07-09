@@ -92,27 +92,29 @@ class Sidebar extends React.Component {
           </div>
         </div>
         <div className="sidebar-comment-section">
-          <div className="comment-button-container">
-            {isAuthenticated && (
-              <button
-                className="write-comment-button"
-                onClick={this.handleWriteComment}
-              >
-                {this.state.buttonText}
-              </button>
-            )}
-            {isAuthenticated &&
-              (userCommentExist || currentUserEmail === "admin@admin.com") &&
-              !!comments.length && (
+          <div className="comment-button-outer-container">
+            <div className="comment-button-container">
+              {isAuthenticated && (
                 <button
-                  className="show-delete-button"
-                  onClick={this.handleDeleteIcon}
+                  className="write-comment-button"
+                  onClick={this.handleWriteComment}
                 >
-                  {this.state.deleteButtonText}
+                  {this.state.buttonText}
                 </button>
               )}
+              {isAuthenticated &&
+                (userCommentExist || currentUserEmail === "admin@admin.com") &&
+                !!comments.length && (
+                  <button
+                    className="show-delete-button"
+                    onClick={this.handleDeleteIcon}
+                  >
+                    {this.state.deleteButtonText}
+                  </button>
+                )}
 
-            {isAuthenticated ? <PhotoAppContainer /> : ""}
+              {isAuthenticated ? <PhotoAppContainer /> : ""}
+            </div>
           </div>
           {isAuthenticated && !this.state.showPage && (
             <CommentComposeContainer trigerFunction={this.handleWriteComment} />

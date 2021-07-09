@@ -8,29 +8,77 @@
   border-color: #d0e4b0;
   border-radius: 5px;
   width: 200px;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer; 
+background: rgb(3,76,133);
+background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
 }
 
 .mapboxgl-popup-content input {
   margin-bottom: 5px;
+  height: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-  border-bottom-color: #d0e4b0;
+  border-bottom-color: #034c85
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-  border-top-color: #d0e4b0;
+  border-top-color: #034c85
 }
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-right-color: #d0e4b0;
+  border-right-color:#034c85
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-  border-left-color: #d0e4b0;
+  border-left-color:#034c85
 }
 
 .new-location-form {
-  background-color: #d0e4b0;
+    font-family: "Ubuntu", sans-serif;
+    /* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
+   background: transparent; 
+  }
+  
+  
+  .image-modal-text-button {
+    font-family: "Ubuntu", sans-serif;
+    margin: 10px; 
+    padding: 5px;
+    background: rgb(37, 193, 195);
+    background: linear-gradient(
+      0deg,
+    rgba(37, 193, 195, 1) 0%,
+    rgba(51, 99, 203, 1) 100%
+    );
+    color: white; 
+    border-radius: 2px; 
+    border: none;
+    cursor: pointer; 
+  }
+  
+  .mapboxgl-popup-content:hover {
+    cursor: default; 
+  }
+  
+.loc-input {
+  width: 170px; 
+  margin-left: 9px;
+  margin-top: 4px;  
+  font-size: 14px; 
+}
+
+.loc-input:focus {
+  outline: none; 
+}
+
+.loc-title-text {
+  margin-left: 10px;
+  color: white; 
+  font-size: 18px; 
+  /* font-weight: bold;  */
 }
