@@ -102,7 +102,7 @@ const Map = ({ geoJSON, focusId, fetchViews, fetchView, loggedIn }) => {
       {!loggedIn ? (
         ""
       ) : (
-        <div className="place-marker-text">
+        <div className={!readyToPlace ? " notReady place-marker-text" : "ready place-marker-text"}>
           <button
             className={"new-location-button"}
             onClick={() => {
@@ -111,9 +111,9 @@ const Map = ({ geoJSON, focusId, fetchViews, fetchView, loggedIn }) => {
             }}
           >
             {!readyToPlace && (
-              <div>Click here to drop a pin on the map</div>
+              <div>Click to drop a pin on the map</div>
             )}
-            {readyToPlace && <div>Click to exit pin placing mode</div>}
+            {readyToPlace && <div>Click to exit pin-dropping mode</div>}
           </button>
         </div>
       )}

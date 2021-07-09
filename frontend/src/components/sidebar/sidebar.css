@@ -122,6 +122,9 @@ background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
   overflow-y: auto;
   position: fixed; 
   bottom: 65px; 
+        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .write-comment-container {
@@ -137,6 +140,8 @@ background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
   overflow-y: auto;
   position:fixed; 
   bottom: 65px; 
+          background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+
 }
 
 .write-comment-input {
@@ -146,6 +151,7 @@ background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   padding: 10px;
+  background: transparent
 }
 
 .show-delete-button {
@@ -238,10 +244,32 @@ background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
 .delete-comment-button {
   all: unset;
   cursor: pointer;
+  color:red;
+  font-variant: small-caps;
+  background: rgb(3,76,133);
+background: linear-gradient(0deg, rgb(221, 217, 2) 0%, rgb(252, 235, 2) 100%);
+  font-weight: bold;
+  padding: 0 5px;
+    border-radius: 3px;
+
+      -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 .delete-icon {
   color: red;
   font-size: 18px;
+  margin-left: 3px; 
+  margin-right: 3px;
+  padding-top: 2px;  
+}
+
+.delete-comment-button:hover {
+  filter: brightness(90%)
 }
 
 .write-comment-submit {
@@ -293,6 +321,7 @@ background: linear-gradient(0deg, rgba(3,102,133,1) 0%, rgba(37,195,168,1) 100%)
   overflow-y: auto;
   text-align: center;
   z-index: 1000;
+          background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
 }
 
 .delete-modal-confirm-sentence {
@@ -330,8 +359,11 @@ background: linear-gradient(0deg, rgb(91, 4, 37) 0%, rgba(201,1,1,1) 100%);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
-
   border: none; 
+}
+
+.delete-modal-confirm-button:hover {
+    filter: brightness(90%)
 }
 
 .delete-modal-cancel-button {
@@ -343,5 +375,19 @@ background: linear-gradient(0deg, rgb(91, 4, 37) 0%, rgba(201,1,1,1) 100%);
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
+  border: none; 
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
 
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
+    background: rgb(3,76,133);
+background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
+}
+
+.delete-modal-cancel-button:hover {
+  filter: brightness(90%)
 }

@@ -30,7 +30,7 @@ class DeleteModal extends React.Component {
                 <div className="delete-modal-overlay"></div>
                 <div className="delete-modal-container">
                     <p className="delete-modal-confirm-sentence">Are you sure you want to delete this comment?</p>
-                    <p className="delete-modal-comment">{(commentText.length < 40) ? commentText : commentText.slice(0, 40) + " ..."}</p>
+                    <p className="delete-modal-comment">{(commentText.length < 40) ? `"${commentText}"`: `" ${commentText.slice(0, 40)}..."`}</p>
                     <br />
                     <br />
                     <button className="delete-modal-cancel-button" onClick={this.handleNo}>Cancel</button>

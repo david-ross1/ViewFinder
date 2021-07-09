@@ -27,7 +27,7 @@ div.mapbox-marker.view-location.selected > svg.offset {
   fill: green;
 }
 
-.place-marker-text {
+.place-marker-text, .ready {
 background: rgb(147,20,24);
 background: linear-gradient(0deg, rgba(147,20,24,1) 0%, rgba(255,2,45,1) 100%);
   padding: 0px;
@@ -54,6 +54,36 @@ background: linear-gradient(0deg, rgba(147,20,24,1) 0%, rgba(255,2,45,1) 100%);
 
   line-height: 22px; 
 }
+
+
+.ready {
+background: rgb(32, 185, 223);
+background: linear-gradient(0deg, rgb(20, 147, 130) 0%, rgb(2, 175, 255) 100%);
+  padding: 0px;
+  width: 230px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgb(175, 40, 40);
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
+  border-radius: 5px;
+  font-family: "Offside", cursive;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 55px;
+
+  line-height: 22px; 
+}
+
 
 .new-location-button {
   all: unset;
