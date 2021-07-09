@@ -31,7 +31,7 @@
 }
 
 .upload-photo:hover {
-  filter: brightness(90%);
+  filter: brightness(120%)
 }
 
 .photoapp-upload {
@@ -103,7 +103,8 @@
 .comment-place-holder {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
-  color: rgb(88, 86, 86);
+  color: rgb(26, 25, 25);
+  font-weight: bold; 
 }
 
 .comment-section {
@@ -113,7 +114,7 @@
 .show-comment-container {
   background: #eee;
   border-radius: 5px;
-  width: 38vw;
+  width: 39vw;
   height: 20vh;
   margin-left: 5%;
   margin: 0 auto;
@@ -122,7 +123,9 @@
   overflow-y: auto;
   position: fixed;
   bottom: 65px;
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+  /* background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229)); */
+  /* border: 2px solid gray; */
+  opacity: 70%;
 }
 
 .write-comment-container {
@@ -137,7 +140,9 @@
   overflow-y: auto;
   position: fixed;
   bottom: 65px;
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+  /* border: 2px solid gray; */
+  opacity: 70%;
+  /* background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229)); */
 
   
 }
@@ -219,11 +224,11 @@
 }
 
 .write-comment-button:hover {
-  filter: brightness(90%);
+  filter: brightness(120%)
 }
 
 .show-delete-button:hover {
-  filter: brightness(90%);
+  filter: brightness(120%)
 }
 
 .write-comment-button:active {
@@ -253,7 +258,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
   
-  background: rgb(224, 227, 228);
+  background: transparent;
   padding-left: 0px; 
   padding-top: 4px; 
   padding-bottom: 13px; 
@@ -296,7 +301,7 @@
 }
 
 .delete-comment-button:hover {
-  filter: brightness(90%);
+  filter: brightness(120%)
 }
 
 .write-comment-submit {
@@ -415,7 +420,7 @@
 }
 
 .delete-modal-confirm-button:hover {
-  filter: brightness(90%);
+  filter: brightness(120%)
 }
 
 .delete-modal-cancel-button {
@@ -445,5 +450,5 @@
 }
 
 .delete-modal-cancel-button:hover {
-  filter: brightness(90%);
+  filter: brightness(120%)
 }

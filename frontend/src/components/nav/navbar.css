@@ -19,45 +19,55 @@
 }
 
 .NavBar.Links2 {
+
 }
 
 .arrow-symbol {
-  margin-right: 15px;
-  color: rgb(201, 217, 246);
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-right: 4px;
+ color: rgb(0, 44, 241);
 }
 
 .arrow {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Oleo Script", cursive;
-  margin-right: 40px;
+  margin-right: 20px;
   display: flex;
-  margin-top: 6px;
-  font-family: "Orbitron", sans-serif;
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-top: 9px;
+  font-weight: thin;
+color:  rgb(0, 44, 241);
+background: white; 
+height: 18px;
+border-radius: 3px; 
+padding-left: 8px; 
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .logo-link {
   font-family: "Orbitron", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 0.7em;
-
-  /* background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+    text-shadow: 2px 2px 5px rgb(1, 60, 147);
+/* 
+  background: -webkit-linear-gradient(rgb(243, 243, 243), rgb(255, 254, 254));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;  */
+  
 
-  /* text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em blue, 0 0 0.2em blue; */
-  text-shadow: 5px 5px 5px rgb(1, 27, 173);
+  /* text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em blue, 0 0 0.2em blue;
+  /* text-shadow: 5px 5px 5px rgb(1, 27, 173); */
 
   
 }
 
 .logo-link:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 .NavBar {
@@ -142,6 +152,7 @@
   color: white;
   -webkit-text-fill-color: white;
   cursor: pointer;
+  
 }
 
 .comment-links {
@@ -162,6 +173,8 @@
 .logout-lock {
   font-size: 30px;
   margin-right: 20px;
+  color: rgb(0, 26, 255);
+
 }
 
 .link {
@@ -191,7 +204,7 @@ a.link {
 .nav-button-login {
   position: absolute;
   all: unset;
-  color: white;
+  color: rgb(0, 44, 241);
   -webkit-text-fill-color: white;
   cursor: pointer;
   font-size: 30px;
@@ -199,8 +212,8 @@ a.link {
 
 .profile-container {
   position: relative;
-  right: 10%;
-  top: -10px;
+  right: 2%;
+  top: -9px;
 }
 
 .main-logo {
