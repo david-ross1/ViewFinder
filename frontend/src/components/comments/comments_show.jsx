@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUserAlt, FaMinusCircle } from 'react-icons/fa';
+import { FaUserAlt, FaTrashAlt } from 'react-icons/fa';
 import DeleteModalContainer from './delete_modal_container';
 
 class CommentsShow extends React.Component {
@@ -55,7 +55,7 @@ class CommentsShow extends React.Component {
                                                         (currentUserEmail === comment.user.email)) &&
                                                         this.props.showDeleteIcon &&
                                                         <button className="delete-comment-button"onClick={() => this.handleDelete(comment)}>
-                                                        <FaMinusCircle className="delete-icon"/></button>} {comment.text}
+                                                        <FaTrashAlt className="delete-icon"/>Delete</button>} {comment.text}
                                                 </div>
                                                 <br></br>
                                                 </li>))
