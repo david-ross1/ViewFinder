@@ -30,7 +30,7 @@ div.mapbox-marker.view-location.selected > svg.offset {
 .place-marker-text {
 background: rgb(147,20,24);
 background: linear-gradient(0deg, rgba(147,20,24,1) 0%, rgba(255,2,45,1) 100%);
-  padding: 5px;
+  padding: 0px;
   width: 230px;
   border-radius: 10px;
   text-align: center;
@@ -51,6 +51,8 @@ background: linear-gradient(0deg, rgba(147,20,24,1) 0%, rgba(255,2,45,1) 100%);
   position: absolute;
   top: 10px;
   left: 55px;
+
+  line-height: 22px; 
 }
 
 .new-location-button {
@@ -58,9 +60,11 @@ background: linear-gradient(0deg, rgba(147,20,24,1) 0%, rgba(255,2,45,1) 100%);
   color: white;
   /* -webkit-text-fill-color: white; */
   cursor: pointer;
+  height: 16px;
   
 }
 
 .create-view-button {
   cursor: pointer;
+
 }
