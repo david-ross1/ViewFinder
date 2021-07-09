@@ -38,7 +38,7 @@ class Carousel extends React.Component {
     renderGallery() {
       const { currActiveIndex } = this.state;
       const { photos } = this.props;
-      this.mainItems = !photos ? ""
+      const mainItems = !photos ? ""
         : photos.map((photo, i) => (
             <div className="photos-tainer">
               <div key={i} className="photos">
@@ -64,7 +64,7 @@ class Carousel extends React.Component {
           autoPlayStrategy="none"
           infinite={true}
           animationType="slide"
-          items={this.mainItems}
+          items={mainItems}
         />
       );
     }

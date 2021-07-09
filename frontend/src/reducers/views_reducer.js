@@ -23,7 +23,7 @@ const ViewsReducer = (
       return newState;
     case RECEIVE_VIEW_COMMENTS:
       newState = Object.assign({}, state);
-      newState.sidebar.comments = action.comments.data.comments;
+      newState.sidebar.comments = action.comments.data;
       return newState;
     default:
       return state;
