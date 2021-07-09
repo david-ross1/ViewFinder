@@ -81,7 +81,7 @@ class Sidebar extends React.Component {
                 target="_blank"
                 href={`https://www.google.com/maps/dir/Current+Location/${focusView.latitude},${focusView.longitude}`}
               >
-                <div class="car-icon">
+                <div className="car-icon">
                   <FaCar />
                 </div>
               </a>

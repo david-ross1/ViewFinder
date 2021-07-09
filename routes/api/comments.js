@@ -9,7 +9,7 @@ const validateCommentInput = require("../../validation/comments");
 router.get("/view/:view_id", (req, res) => {
   View.findById(req.params.view_id)
     .populate({ path: "comments", populate: { path: "user" } })
-    .then(view => res.json(view))
+    .then(view => res.json(view.comments))
     .catch(err =>
       res
         .status(404)
