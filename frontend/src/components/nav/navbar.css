@@ -30,7 +30,7 @@
 .arrow {
   font-size: 16px;
   font-family: "Oleo Script", cursive;
-  margin-right: 20px;
+  margin-right: 0px;
   display: flex;
   margin-top: 9px;
   font-weight: thin;
@@ -166,14 +166,16 @@ padding-left: 8px;
 }
 
 .logout-button {
-  padding-left: 75%;
+  margin-right: 30px;
   font-size: 30px;
+  
 }
 
 .logout-lock {
   font-size: 30px;
   margin-right: 20px;
   color: rgb(0, 26, 255);
+
 
 }
 
@@ -195,6 +197,8 @@ a.link {
   font-size: 27px;
   margin-bottom: 10px;
   margin-top: 0;
+  margin-right: 20px
+
 }
 
 .logout:hover {
@@ -204,16 +208,19 @@ a.link {
 .nav-button-login {
   position: absolute;
   all: unset;
-  color: rgb(0, 44, 241);
+  color: rgb(0, 26, 255);
   -webkit-text-fill-color: white;
   cursor: pointer;
   font-size: 30px;
+
+  
 }
 
 .profile-container {
   position: relative;
-  right: 2%;
-  top: -9px;
+  margin-right: 70px;
+  top: -8px;
+  margin-left: 10px; 
 }
 
 .main-logo {
