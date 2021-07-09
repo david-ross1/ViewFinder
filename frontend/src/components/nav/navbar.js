@@ -45,7 +45,7 @@ class NavBar extends React.Component {
         <div className="mainconatain">
           <div className="session-container">
             <div className="NavBar Links2">
-                <div className='arrow'>Login to access all features &nbsp; <div className='arrow-symbol'><FaArrowRight /></div></div>
+                <div className='arrow'>Demo login to access all features &nbsp; <div className='arrow-symbol'><FaArrowRight /></div></div>
               <div className="profile-container"> 
                 <button
                   onClick={() => openModal("login")}

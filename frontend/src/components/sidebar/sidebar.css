@@ -14,10 +14,14 @@
   border: none;
   border-radius: 5px;
   margin-right: 10px;
-background: rgb(2,68,53);
-background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
+  background: rgb(2, 68, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 68, 53, 1) 0%,
+    rgba(37, 195, 73, 1) 100%
+  );
 
--moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
 
@@ -27,7 +31,7 @@ background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
 }
 
 .upload-photo:hover {
-  filter: brightness(90%)
+  filter: brightness(120%)
 }
 
 .photoapp-upload {
@@ -92,51 +96,55 @@ background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
-  color: rgba(21, 3, 100, 0.993);
+  color: rgba(70, 69, 69, 0.993);
 }
 
 .show-comment-text,
 .comment-place-holder {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
-  color: rgb(88, 86, 86);
+  color: rgb(26, 25, 25);
+  font-weight: bold; 
 }
 
 .comment-section {
-  /* position: relative;
-  width: 600px;
-  margin: 0 auto;
-  padding: 0; */
   width: 39vw;
-  margin-left: 10%
+  margin-left: 10%;
 }
 .show-comment-container {
   background: #eee;
   border-radius: 5px;
   width: 39vw;
-  height: 21vh;
+  height: 20vh;
   margin-left: 5%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 10px;
   line-height: 18px;
   overflow-y: auto;
-  position: fixed; 
-  bottom: 65px; 
+  position: fixed;
+  bottom: 65px;
+  /* background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229)); */
+  /* border: 2px solid gray; */
+  opacity: 70%;
 }
 
 .write-comment-container {
   background: #eee;
   border-radius: 5px;
-  /* width: 580px; */
   width: 39vw;
-  height: 21vh;
+  height: 20vh;
   margin: 0 auto;
   margin-left: 5%;
   padding: 10px;
   line-height: 18px;
   overflow-y: auto;
-  position:fixed; 
-  bottom: 65px; 
+  position: fixed;
+  bottom: 65px;
+  /* border: 2px solid gray; */
+  opacity: 70%;
+  /* background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229)); */
+
+  
 }
 
 .write-comment-input {
@@ -146,6 +154,15 @@ background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   padding: 10px;
+  background: transparent;
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .show-delete-button {
@@ -159,59 +176,59 @@ background: linear-gradient(0deg, rgba(2,68,53,1) 0%, rgba(37,195,73,1) 100%);
   border: none;
   border-radius: 5px;
   margin-right: 10px;
-  background: rgb(61,3,25);
-background: linear-gradient(0deg, rgba(61,3,25,1) 0%, rgba(201,1,1,1) 100%);
+  background: rgb(61, 3, 25);
+  background: linear-gradient(
+    0deg,
+    rgba(61, 3, 25, 1) 0%,
+    rgba(201, 1, 1, 1) 100%
+  );
 
--moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
-
 }
 
-.comment-button-outer-container {
-  margin-left: 5%; 
-  position: fixed; 
-  margin-bottom: 24vh;
-  bottom: 65px;
-
-}
 
 .write-comment-button {
   width: 120px;
   height: 30px;
   text-align: center;
   -webkit-text-fill-color: white;
-
+  
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   margin-right: 10px;
-  background: rgb(3,76,133);
-background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
-
-
--moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  background: rgb(3, 76, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 76, 133, 1) 0%,
+    rgba(37, 193, 195, 1) 100%
+    );
+    
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+    -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+    box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
+
+  margin-left: 10px; 
 }
 
 .write-comment-button:hover {
-  filter: brightness(90%)
-
+  filter: brightness(120%)
 }
 
 .show-delete-button:hover {
-  filter: brightness(90%)
+  filter: brightness(120%)
 }
 
 .write-comment-button:active {
@@ -230,22 +247,66 @@ background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
   position: relative;
   margin: 0 auto;
   justify-content: left;
-  margin-top: 2px;
+  margin-top: 0px;
   padding-bottom: 5px;
-  top: 10px;
+  top: 0px;
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  
+  background: transparent;
+  padding-left: 0px; 
+  padding-top: 4px; 
+  padding-bottom: 13px; 
+  border-radius: 5px; 
+  border-bottom-left-radius: 0;
 }
 
+.comment-button-outer-container {
+  margin-left: 5%;
+  position: fixed;
+  margin-bottom: 22vh;
+  bottom: 65px;
+  margin-top: 0
+}
 .delete-comment-button {
   all: unset;
   cursor: pointer;
+  color: red;
+  font-variant: small-caps;
+  background: rgb(3, 76, 133);
+  background: linear-gradient(0deg, rgb(221, 217, 2) 0%, rgb(252, 235, 2) 100%);
+  font-weight: bold;
+  padding: 0 5px;
+  border-radius: 3px;
+
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 .delete-icon {
   color: red;
   font-size: 18px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-top: 2px;
+}
+
+.delete-comment-button:hover {
+  filter: brightness(120%)
 }
 
 .write-comment-submit {
   padding: 5px;
+  margin-top: 10px; 
   border-radius: 5px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -254,15 +315,31 @@ background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
   cursor: pointer;
   border: none;
   width: 125px;
-  background: rgb(3,76,133);
-background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
+  background: rgb(3, 76, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 76, 133, 1) 0%,
+    rgba(37, 193, 195, 1) 100%
+  );
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .write-comment-submit:hover {
   color: white;
   cursor: pointer;
-  background: rgb(3,102,133);
-background: linear-gradient(0deg, rgba(3,102,133,1) 0%, rgba(37,195,168,1) 100%);
+  background: rgb(3, 102, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 102, 133, 1) 0%,
+    rgba(37, 195, 168, 1) 100%
+  );
 }
 
 .delete-modal-section {
@@ -293,6 +370,15 @@ background: linear-gradient(0deg, rgba(3,102,133,1) 0%, rgba(37,195,168,1) 100%)
   overflow-y: auto;
   text-align: center;
   z-index: 1000;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .delete-modal-confirm-sentence {
@@ -312,7 +398,7 @@ background: linear-gradient(0deg, rgba(3,102,133,1) 0%, rgba(37,195,168,1) 100%)
 .delete-modal-confirm-button {
   padding: 10px;
   border-radius: 5px;
-  margin-left: 10px; 
+  margin-left: 10px;
   background: red;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -320,18 +406,21 @@ background: linear-gradient(0deg, rgba(3,102,133,1) 0%, rgba(37,195,168,1) 100%)
   font-weight: 300;
   cursor: pointer;
   min-width: 75px;
-    background: rgb(61,3,25);
-background: linear-gradient(0deg, rgb(91, 4, 37) 0%, rgba(201,1,1,1) 100%);
+  background: rgb(61, 3, 25);
+  background: linear-gradient(0deg, rgb(91, 4, 37) 0%, rgba(201, 1, 1, 1) 100%);
 
--moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
+  border: none;
+}
 
-  border: none; 
+.delete-modal-confirm-button:hover {
+  filter: brightness(120%)
 }
 
 .delete-modal-cancel-button {
@@ -343,5 +432,23 @@ background: linear-gradient(0deg, rgb(91, 4, 37) 0%, rgba(201,1,1,1) 100%);
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
+  border: none;
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
 
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
+  background: rgb(3, 76, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 76, 133, 1) 0%,
+    rgba(37, 193, 195, 1) 100%
+  );
+}
+
+.delete-modal-cancel-button:hover {
+  filter: brightness(120%)
 }
