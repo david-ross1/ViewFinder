@@ -96,7 +96,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 700;
-  color: rgba(21, 3, 100, 0.993);
+  color: rgba(70, 69, 69, 0.993);
 }
 
 .show-comment-text,
@@ -113,8 +113,8 @@
 .show-comment-container {
   background: #eee;
   border-radius: 5px;
-  width: 39vw;
-  height: 21vh;
+  width: 38vw;
+  height: 20vh;
   margin-left: 5%;
   margin: 0 auto;
   padding: 10px;
@@ -129,7 +129,7 @@
   background: #eee;
   border-radius: 5px;
   width: 39vw;
-  height: 21vh;
+  height: 20vh;
   margin: 0 auto;
   margin-left: 5%;
   padding: 10px;
@@ -138,6 +138,8 @@
   position: fixed;
   bottom: 65px;
   background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+
+  
 }
 
 .write-comment-input {
@@ -148,6 +150,14 @@
   font-size: 15px;
   padding: 10px;
   background: transparent;
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .show-delete-button {
@@ -177,19 +187,13 @@
   zoom: 1;
 }
 
-.comment-button-outer-container {
-  margin-left: 5%;
-  position: fixed;
-  margin-bottom: 24vh;
-  bottom: 65px;
-}
 
 .write-comment-button {
   width: 120px;
   height: 30px;
   text-align: center;
   -webkit-text-fill-color: white;
-
+  
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   cursor: pointer;
@@ -201,15 +205,17 @@
     0deg,
     rgba(3, 76, 133, 1) 0%,
     rgba(37, 193, 195, 1) 100%
-  );
-
-  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    );
+    
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+    -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+    box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
+
+  margin-left: 10px; 
 }
 
 .write-comment-button:hover {
@@ -236,11 +242,32 @@
   position: relative;
   margin: 0 auto;
   justify-content: left;
-  margin-top: 2px;
+  margin-top: 0px;
   padding-bottom: 5px;
-  top: 10px;
+  top: 0px;
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  
+  background: rgb(224, 227, 228);
+  padding-left: 0px; 
+  padding-top: 4px; 
+  padding-bottom: 13px; 
+  border-radius: 5px; 
+  border-bottom-left-radius: 0;
 }
 
+.comment-button-outer-container {
+  margin-left: 5%;
+  position: fixed;
+  margin-bottom: 22vh;
+  bottom: 65px;
+  margin-top: 0
+}
 .delete-comment-button {
   all: unset;
   cursor: pointer;
@@ -274,6 +301,7 @@
 
 .write-comment-submit {
   padding: 5px;
+  margin-top: 10px; 
   border-radius: 5px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -288,6 +316,14 @@
     rgba(3, 76, 133, 1) 0%,
     rgba(37, 193, 195, 1) 100%
   );
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .write-comment-submit:hover {
@@ -330,6 +366,14 @@
   text-align: center;
   z-index: 1000;
   background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .delete-modal-confirm-sentence {

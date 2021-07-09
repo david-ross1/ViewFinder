@@ -61,6 +61,14 @@
   cursor: pointer;
   outline: inherit;
   width: 185px;
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .login-form input:hover {
@@ -78,6 +86,13 @@
 
 .submit {
   width: 170px;
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .login-head {
@@ -110,6 +125,14 @@
     rgba(37, 193, 195, 1) 0%,
     rgba(51, 99, 203, 1) 100%
   );
+
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .button-text {
@@ -135,6 +158,8 @@
     rgba(37, 193, 195, 1) 0%,
     rgba(51, 99, 203, 1) 100%
   );
+
+  
 }
 
 .demo-submit {
@@ -154,6 +179,8 @@
   width: 195px;
   font-weight: 400;
   margin-top: 10px;
+
+  
 }
 
 .demo-button {
@@ -168,6 +195,13 @@
     rgba(37, 193, 195, 1) 0%,
     rgba(51, 99, 203, 1) 100%
   );
+    -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 }
 
 .login-text {
