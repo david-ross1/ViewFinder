@@ -125,7 +125,7 @@
   bottom: 65px;
   /* background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229)); */
   /* border: 2px solid gray; */
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 .write-comment-container {
@@ -141,7 +141,7 @@
   position: fixed;
   bottom: 65px;
   /* border: 2px solid gray; */
-  opacity: 70%;
+  opacity: 0.7;
   /* background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229)); */
 
   

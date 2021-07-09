@@ -22,9 +22,10 @@ background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-  border-bottom-color: #034c85
+  border-bottom-color:     rgba(37, 193, 195, 1) 
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
@@ -75,7 +76,19 @@ background: linear-gradient(0deg, rgba(3,76,133,1) 0%, rgba(37,193,195,1) 100%);
   margin-left: 9px;
   margin-top: 4px;  
   font-size: 14px; 
-  color:rgb(72, 71, 71)
+  color:rgb(72, 71, 71);
+
+      -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+
+  border: none
+
+  
 }
 
 .loc-input:focus {
