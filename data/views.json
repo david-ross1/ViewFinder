@@ -8,203 +8,203 @@
     },
     "Fort Point National Historic Site": {
         "photos": ["02_SF_GoldenGate1", "02_SF_GoldenGate2", "02_SF_GoldenGate3"],
-        "comments": ["com5"],
+        "comments": ["com5", "com1", "com2", "com3", "com4"],
         "latitude": 37.810616699474515,
         "longitude": -122.47692231355698,
         "locationName": "Fort Point National Historic Site"
     },
     "Immigrant Point Overlook": {
         "photos": ["03_SF_GoldenGate1", "03_SF_GoldenGate2", "03_SF_GoldenGate3"],
-        "comments": ["com9"],
+        "comments": ["com9", "com5", "com6", "com7", "com8"],
         "latitude": 37.79629962576967,
         "longitude": -122.47795891725578,
         "locationName": "Immigrant Point Overlook"
     },
     "Lincoln Park Steps": {
         "photos": ["05_SF_LincolnPark"],
-        "comments": ["com10"],
+        "comments": ["com10", "com9", "com10", "com11", "com12"],
         "latitude": 37.78358239374311,
         "longitude": -122.49354973074924,
         "locationName": "Lincoln Park Steps"
     },   
     "Lands End Labyrinth": {
         "photos": ["04_SF_LandsEnd"],
-        "comments": ["com12"],
+        "comments": ["com12", "com13", "com14", "com15", "com16"],
         "latitude": 37.788081531458616,
         "longitude": -122.5058492595848,
         "locationName": "Lands End Labyrinth"
     },
     "USS San Francisco Memorial": {
         "photos": ["06_SF_USSMemorial1", "06_SF_USSMemorial2", "06_SF_USSMemorial3", "06_SF_USSMemorial4"],
-        "comments": ["com16"],
+        "comments": ["com16", "com17", "com18", "com19", "com20"],
         "latitude": 37.78292077383886,
         "longitude": -122.51161810191377,
         "locationName": "USS San Francisco Memorial"
     },
     "Queen Wilhelmina Tulip Garden": {
         "photos": ["07_SF_QueenWilh1", "07_SF_QueenWilh2", "07_SF_QueenWilh3", "07_SF_QueenWilh4"],
-        "comments": ["com17"],
+        "comments": ["com17", "com21", "com22", "com23", "com24"],
         "latitude": 37.770196707564644,
         "longitude": -122.50927913074969,
         "locationName": "Queen Wilhelmina Tulip Garden"
     },
     "San Francisco Botanical Garden": {
         "photos": ["08_SF_Botanical1", "08_SF_Botanical2", "08_SF_Botanical3"],
-        "comments": ["com19"],
+        "comments": ["com19", "com1", "com2", "com3", "com4"],
         "latitude": 37.76826023975391,
         "longitude": -122.46920127394549,
         "locationName": "San Francisco Botanical Garden"
     },
     "Oracle Park": {
         "photos": ["09_SF_Oracle1", "09_SF_Oracle2", "09_SF_Oracle3"],
-        "comments": ["com23"],
+        "comments": ["com23", "com5", "com6", "com7", "com8"],
         "latitude": 37.7792829923467,
         "longitude": -122.3894637661022,
         "locationName": "Oracle Park"
     },
     "Twin Peaks": {
         "photos": ["10_SF_TwinPeaks1", "10_SF_TwinPeaks2", "10_SF_TwinPeaks3", "10_SF_TwinPeaks4"],
-        "comments": ["com24"],
+        "comments": ["com24", "com11", "com12", "com13", "com14"],
         "latitude": 37.7539046789921,
         "longitude": -122.44750142359653,
         "locationName": "Twin Peaks"
     },
     "Berkeley Bay View Point": {
         "photos": ["11_BR_BayView1", "11_BR_BayView2"],
-        "comments": ["com6"],
+        "comments": ["com6", "com15", "com21", "com30", "com24"],
         "latitude": 37.88548561337808,
         "longitude": -122.24818668408264,
         "locationName": "Berkeley Bay View Point"
     },
     "Tilden Regional Park": {
         "photos": ["12_BR_Tilden1", "12_BR_Tilden2", "12_BR_Tilden3", "12_BR_Tilden4"],
-        "comments": ["com7"],
+        "comments": ["com7", "com19", "com8", "com7", "com4"],
         "latitude": 37.89688473242625,
         "longitude": -122.24321918129702,
         "locationName": "Tilden Regional Park"
     },
     "Richmond-San Rafael Bridge": {
         "photos": ["13_RI_RichmondBr1", "13_RI_RichmondBr2", "13_RI_RichmondBr3", "13_RI_RichmondBr4"],
-        "comments": ["com8"],
+        "comments": ["com8", "com10", "com22", "com30", "com31"],
         "latitude": 37.94940065065999,
         "longitude": -122.48002648630892,
         "locationName": "Richmond-San Rafael Bridge"
     },
     "Gardner Fire Lookout": {
         "photos": ["14_MI_GardnerFire1", "14_MI_GardnerFire2", "14_MI_GardnerFire3"],
-        "comments": ["com11"],
+        "comments": ["com11", "com14", "com27", "com30", "com2"],
         "latitude": 37.931787503883115,
         "longitude":  -122.5782545106463,
         "locationName": "Gardner Fire Lookout"
     },
     "Jack London Square": {
         "photos": ["15_OK_JackLondon1", "15_OK_JackLondon2", "15_OK_JackLondon3"],
-        "comments": ["com13"],
+        "comments": ["com13", "com1", "com2", "com3", "com4"],
         "latitude": 37.80103741109289,
         "longitude": -122.28054206547593,
         "locationName": "Jack London Square"
     },
     "Vista Point Treasure Island": {
         "photos": ["16_SF_VistaPoint1", "16_SF_VistaPoint2", "16_SF_VistaPoint3", "16_SF_VistaPoint4"],
-        "comments": ["com14"],
+        "comments": ["com14", "com5", "com8", "com30", "com24"],
         "latitude": 37.81702984193086,
         "longitude": -122.37214095386783,
         "locationName": "Vista Point Treasure Island"
     },
     "Terran Linda Sleepy Hollow Ridge": {
         "photos": ["17_SR_HollowRidge1", "17_SR_HollowRidge2", "17_SR_HollowRidge3"],
-        "comments": ["com15"],
+        "comments": ["com15", "com10", "com2", "com9", "com8"],
         "latitude": 38.012044597702044,
         "longitude":  -122.56908731148616,
         "locationName": "Terran Linda Sleepy Hollow Ridge"
     },
     "McNears Beach County Park": {
         "photos": ["18_SR_McNears1", "18_SR_McNears2", "18_SR_McNears3"],
-        "comments": ["com18"],
+        "comments": ["com18", "com10", "com20", "com30", "com2"],
         "latitude": 37.99660956094123,
         "longitude": -122.45409231848166,
         "locationName": "McNears Beach County Park"
     },
     "Sawyer Camp Trail": {
         "photos": ["19_SM_Sawyer1", "19_SM_Sawyer2", "19_SM_Sawyer3"],
-        "comments": ["com20"],
+        "comments": ["com20", "com11", "com12", "com13", "com14"],
         "latitude": 37.5383320813204,
         "longitude": -122.36581359105799,
         "locationName": "Sawyer Camp Trail"
     },
     "Leo J. Ryan Park": {
         "photos": ["20_SM_Leo1", "20_SM_Leo2", "20_SM_Leo3"],
-        "comments": ["com21"],
+        "comments": ["com21", "com18", "com27", "com23", "com14"],
         "latitude": 37.56625374478659,
         "longitude": -122.26823210907408,
         "locationName": "Leo J. Ryan Park"
     },
     "Bay View Point": {
         "photos": ["21_BR_BayView"],
-        "comments": ["com22"],
+        "comments": ["com22", "com14", "com2", "com13", "com7"],
         "latitude": 37.59900575280438,
         "longitude": -122.35910653500274,
         "locationName": "Bay View Point"
     },
     "Arizona Garden": {
         "photos": ["22_ST_Arizona1", "22_ST_Arizona2", "22_ST_Arizona3", "22_ST_Arizona4"],
-        "comments": ["com25"],
+        "comments": ["com25", "com7", "com8", "com6", "com5"],
         "latitude": 37.439290036402596,
         "longitude": -122.1706042822069,
         "locationName": "Arizona Garden"
     },
     "Vista Hill": {
         "photos": ["23_PA_VistaHill1", "23_PA_VistaHill2", "23_PA_VistaHill3"],
-        "comments": ["com26"],
+        "comments": ["com26", "com17", "com28", "com13", "com25"],
         "latitude": 37.367257358129194,
         "longitude": -122.1810730829349,
         "locationName": "Vista Hill"
     },
     "Stevens Creek Reservoir": {
         "photos": ["24_CU_StevenCr1", "24_CU_StevenCr2"],
-        "comments": ["com27"],
+        "comments": ["com27", "com16", "com25", "com15", "com5"],
         "latitude": 37.29790033059437,
         "longitude":  -122.07549230068177,
         "locationName": "Stevens Creek Reservoir"
     },
     "Scenic Vista Dr": {
         "photos": ["25_SJ_VistaDr1"],
-        "comments": ["com28"],
+        "comments": ["com28", "com1", "com22", "com30", "com14"],
         "latitude": 37.22735044453641,
         "longitude": -121.82360983314474,
         "locationName": "Scenic Vista Dr"
     },
     "Rancho Arroyo Park": {
         "photos": ["26_FR_Rancho1", "26_FR_Rancho2", "26_FR_Rancho3", "26_FR_Rancho4"],
-        "comments": ["com29"],
+        "comments": ["com29", "com21", "com23", "com3", "com14"],
         "latitude": 37.574109851410256,
         "longitude": -121.99148447853568,
         "locationName": "Rancho Arroyo Park"
     },
     "Canyon Heights": {
         "photos": ["27_FR_Canyon1", "27_FR_Canyon2", "27_FR_Canyon3"],
-        "comments": ["com30"],
+        "comments": ["com30", "com14", "com27", "com3", "com24"],
         "latitude": 37.577427789567494,
         "longitude": -121.94138413085439,
         "locationName": "Canyon Heights"
     },
     "Fairmont Ridge Staging Area": {
         "photos": ["28_SL_Fairmont3", "28_SL_Fairmont2", "28_SL_Fairmont1"],
-        "comments": ["com31"],
+        "comments": ["com31", "com10", "com12", "com23", "com14"],
         "latitude": 37.72196266719451,
         "longitude": -122.11380184547413,
         "locationName": "Fairmont Ridge Staging Area"
     },
     "Middle Harbor Shorline Park": {
         "photos": ["29_OK_Harbor1", "29_OK_Harbor2", "29_OK_Harbor3"],
-        "comments": ["com32"],
+        "comments": ["com32", "com33", "com34", "com14", "com20", "com3", "com2"],
         "latitude": 37.80745837720541,
         "longitude": -122.3236800067275,
         "locationName": "Middle Harbor Shorline Park"
     },
     "SanPablo Bay National Wildlife Refuge": {
         "photos": ["30_SO_Wildlife1", "30_SO_Wildlife2", "30_SO_Wildlife3", "30_SO_Wildlife4"],
-        "comments": ["com33", "com34"],
+        "comments": ["com33", "com34", "com5", "com21", "com23", "com12"],
         "latitude": 38.144450577370726,
         "longitude": -122.3975504723036,
         "locationName": "SanPablo Bay National Wildlife Refuge"
