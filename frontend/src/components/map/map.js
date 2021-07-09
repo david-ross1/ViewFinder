@@ -110,7 +110,10 @@ const Map = ({ geoJSON, focusId, fetchViews, fetchView, loggedIn }) => {
               setReadyToPlace(!readyToPlace);
             }}
           >
-            Click here, then click on the map to upload your photos
+            {!readyToPlace && (
+              <div>Click here to drop a pin on the map</div>
+            )}
+            {readyToPlace && <div>Click to exit pin placing mode</div>}
           </button>
         </div>
       )}
