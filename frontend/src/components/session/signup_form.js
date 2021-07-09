@@ -70,7 +70,7 @@ class SignupForm extends React.Component {
       <div className="login-form-container">
         <div className="login-head">
           <button className="sign-button" onClick={this.otherForm}>
-            <p className="button-text">Login</p>
+            <p className="button-text">Go to login</p>
           </button>
           <button className="close-button" onClick={this.props.closeModal}>
             X

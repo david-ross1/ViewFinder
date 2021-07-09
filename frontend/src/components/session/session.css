@@ -84,6 +84,14 @@
   cursor: pointer;
 }
 
+.close-button:hover,
+.demo-button:hover,
+.submit:hover,
+.sign-button:hover,
+.demo-submit:hover {
+  filter: brightness(120%)
+}
+
 .submit {
   width: 170px;
     -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
@@ -94,6 +102,8 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
 }
+
+
 
 .login-head {
   display: flex;
@@ -211,6 +221,7 @@
 
 p.button-text {
   font-family: "Offside", cursive;
+  font-size: 12px;
 }
 
 .demo-button .submit {

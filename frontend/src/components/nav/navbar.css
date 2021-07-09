@@ -169,6 +169,7 @@ padding-left: 8px;
   margin-right: 30px;
   font-size: 30px;
   
+  
 }
 
 .logout-lock {
@@ -197,7 +198,9 @@ a.link {
   font-size: 27px;
   margin-bottom: 10px;
   margin-top: 0;
-  margin-right: 20px
+  margin-right: 20px;
+  
+  
 
 }
 
@@ -212,6 +215,13 @@ a.link {
   -webkit-text-fill-color: white;
   cursor: pointer;
   font-size: 30px;
+      -moz-box-shadow: 7px 7px 7px rgba(233, 227, 227, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 7px 7px 7px rgba(178, 178, 176, 0.7);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
 
   
 }
