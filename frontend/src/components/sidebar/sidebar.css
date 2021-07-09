@@ -94,36 +94,45 @@
 }
 
 .comment-section {
-  position: relative;
+  /* position: relative;
   width: 600px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0; */
+  width: 39vw;
+  margin-left: 10%
 }
 .show-comment-container {
   background: #eee;
   border-radius: 5px;
-  width: 580px;
-  height: 11vh;
-  margin: 0 auto;
+  width: 39vw;
+  height: 21vh;
+  margin-left: 5%;
+  margin: 0 auto; 
   padding: 10px;
   line-height: 18px;
   overflow-y: auto;
+  position: fixed; 
+  bottom: 65px; 
 }
 
 .write-comment-container {
   background: #eee;
   border-radius: 5px;
-  width: 580px;
-  height: 12vh;
+  /* width: 580px; */
+  width: 39vw;
+  height: 21vh;
   margin: 0 auto;
+  margin-left: 5%;
   padding: 10px;
   line-height: 18px;
   overflow-y: auto;
+  position:fixed; 
+  bottom: 65px; 
 }
 
 .write-comment-input {
-  width: 580px;
-  height: 9vh;
+  width: 39vw;
+  height: 15vh;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
@@ -142,6 +151,14 @@
   border: none;
   border-radius: 5px;
   margin-right: 10px;
+}
+
+.comment-button-outer-container {
+  margin-left: 5%; 
+  position: fixed; 
+  margin-bottom: 24vh;
+  bottom: 65px;
+
 }
 
 .write-comment-button {
@@ -184,6 +201,7 @@
   justify-content: left;
   margin-top: 2px;
   padding-bottom: 5px;
+  top: 10px;
 }
 
 .delete-comment-button {
