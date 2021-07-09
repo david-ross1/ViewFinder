@@ -22,21 +22,21 @@
 }
 
 .arrow-symbol {
-  margin-right: 15px; 
-color: rgb(201, 217, 246);
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+  margin-right: 15px;
+  color: rgb(201, 217, 246);
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .arrow {
-  font-size: 20px; 
+  font-size: 20px;
   font-family: "Oleo Script", cursive;
   margin-right: 40px;
-  display: flex; 
+  display: flex;
   margin-top: 6px;
   font-family: "Orbitron", sans-serif;
-      background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -46,12 +46,9 @@ color: rgb(201, 217, 246);
   color: rgb(255, 255, 255);
   font-size: 0.7em;
 
-
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(12, 131, 229));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
 }
 
 .logo-link:hover {
