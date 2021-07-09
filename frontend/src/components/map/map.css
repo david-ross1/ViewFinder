@@ -27,7 +27,7 @@ div.mapbox-marker.view-location.selected > svg.offset {
   fill: green;
 }
 
-.place-marker-text, .ready {
+.place-marker-text  {
 background: rgb(147,20,24);
 background: linear-gradient(0deg, rgba(147,20,24,1) 0%, rgba(255,2,45,1) 100%);
   padding: 0px;
@@ -55,6 +55,13 @@ background: linear-gradient(0deg, rgba(147,20,24,1) 0%, rgba(255,2,45,1) 100%);
   line-height: 22px; 
 }
 
+.place-marker-text:hover {
+  filter: brightness(120%)
+}
+
+.ready:hover {
+  filter: brightness(120%)
+}
 
 .ready {
 background: rgb(32, 185, 223);

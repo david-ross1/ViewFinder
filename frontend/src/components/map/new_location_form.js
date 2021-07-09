@@ -41,7 +41,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       handleSubmit().then(fetchViews);
       setDisplayLocationForm(false);
     }}>
-      <label className='loc-title-text'>Location Title
+      <label className='loc-title-text'>Name your location
         <input className='loc-input' value={name} onChange={(e) => setName(e.target.value)}/>
       </label>
       <br/>
@@ -49,7 +49,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
         <button className='image-modal-text-button' onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
-          imageInput.current.click();}}>Add Image</button>
+          imageInput.current.click();}}>Add Images</button>
         <input type="file" id="new-location-images" onChange={uploadImage} style={{display: "none"}} ref={imageInput}/>
       </label>
       {previews.length === 0 ? "" : (
