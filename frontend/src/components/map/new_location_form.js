@@ -41,12 +41,12 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
       handleSubmit().then(fetchViews);
       setDisplayLocationForm(false);
     }}>
-      <label><h2>Name:</h2>
-        <input value={name} onChange={(e) => setName(e.target.value)}/>
+      <label className='loc-title-text'>Location Title
+        <input className='loc-input' value={name} onChange={(e) => setName(e.target.value)}/>
       </label>
       <br/>
-      <label>Images:
-        <button onClick={(e) => {
+      <label>
+        <button className='image-modal-text-button' onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
           imageInput.current.click();}}>Add Image</button>
@@ -59,7 +59,7 @@ const NewLocationForm = ({fetchViews, longitude,latitude,createView,setDisplayLo
           ))}
         </nav>
       )}
-      <button className="create-view-button">Create View</button>
+      <button className="image-modal-text-button">Create View</button>
     </form>
   );
 }
