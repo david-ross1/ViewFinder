@@ -320,6 +320,7 @@
     0deg,
     rgba(3, 76, 133, 1) 0%,
     rgba(37, 193, 195, 1) 100%
+    
   );
 
     -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
@@ -340,6 +341,7 @@
     rgba(3, 102, 133, 1) 0%,
     rgba(37, 195, 168, 1) 100%
   );
+  filter: brightness(120%)
 }
 
 .delete-modal-section {
